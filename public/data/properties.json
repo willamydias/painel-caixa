@@ -1,0 +1,4544 @@
+{
+  "last_scraping_date": "24/07/2026",
+  "properties": [
+    {
+      "id": "1013765-3",
+      "cidade_satelite": "Brasília",
+      "bairro": "Setor Bancário Sul (SBS)",
+      "logradouro_curto": "SBS QUADRA 1 BL K LOJA,N. 04, SETOR BANCARIO SUL",
+      "endereco": "SBS QUADRA 1 BL K LOJA,N. 04, SETOR BANCARIO SUL - CEP: 70093-900, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.7979,
+      "lng": -47.88215,
+      "tipo": "Loja",
+      "area": "79,15m2",
+      "valor_avaliacao": "R$ 700.000,00",
+      "valor_avaliacao_num": 700000.0,
+      "valor_minimo": "R$ 229.201,38",
+      "valor_minimo_num": 229201.38,
+      "veredicto": "COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1013765-3",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1013765-3",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1013765-3/fotos/F000001013765321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010137653.pdf",
+          "url": "/data/ativos/1013765-3/0000010137653.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1013765-3 - 0525325X.pdf",
+          "url": "/data/ativos/1013765-3/Certidão de IPTU - 1013765-3 - 0525325X.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1013765-3 - 0525325X.pdf",
+          "url": "/data/ativos/1013765-3/DAR 2026 - 1013765-3 - 0525325X.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/1013765-3/EA00160326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1013765-3 - 0525325X.pdf",
+          "url": "/data/ativos/1013765-3/Ficha Cadastral - 1013765-3 - 0525325X.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1013765-3 - 0525325X.pdf",
+          "url": "/data/ativos/1013765-3/Pauta de IPTU - 1013765-3 - 0525325X.pdf"
+        }
+      ],
+      "desconto_pct": 67.3,
+      "score": 71,
+      "classificacao": "Boa"
+    },
+    {
+      "id": "1013765-4",
+      "cidade_satelite": "Brasília",
+      "bairro": "Setor Bancário Sul (SBS)",
+      "logradouro_curto": "SBS QUADRA 1 BL K LOJA,N. 05, SETOR BANCARIO SUL",
+      "endereco": "SBS QUADRA 1 BL K LOJA,N. 05, SETOR BANCARIO SUL - CEP: 70093-900, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.7952,
+      "lng": -47.8766,
+      "tipo": "Loja",
+      "area": "76,00m2",
+      "valor_avaliacao": "R$ 475.000,00",
+      "valor_avaliacao_num": 475000.0,
+      "valor_minimo": "R$ 131.601,89",
+      "valor_minimo_num": 131601.89,
+      "veredicto": "COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1013765-4",
+      "url_leiloeiro": "https://www.lancetotal.com.br",
+      "site_leiloeiro_nome": "lancetotal",
+      "site_leiloeiro_clean": "lancetotal",
+      "fotos_list": [
+        "/data/ativos/1013765-4/fotos/F000001013765421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010137654.pdf",
+          "url": "/data/ativos/1013765-4/0000010137654.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1013765-4 - 05253268.pdf",
+          "url": "/data/ativos/1013765-4/Certidão de IPTU - 1013765-4 - 05253268.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1013765-4 - 05253268.pdf",
+          "url": "/data/ativos/1013765-4/DAR 2026 - 1013765-4 - 05253268.pdf"
+        },
+        {
+          "nome": "EA00190326CPVERE.PDF",
+          "url": "/data/ativos/1013765-4/EA00190326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1013765-4 - 05253268.pdf",
+          "url": "/data/ativos/1013765-4/Ficha Cadastral - 1013765-4 - 05253268.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1013765-4 - 05253268.pdf",
+          "url": "/data/ativos/1013765-4/Pauta de IPTU - 1013765-4 - 05253268.pdf"
+        }
+      ],
+      "desconto_pct": 72.3,
+      "score": 71,
+      "classificacao": "Boa"
+    },
+    {
+      "id": "1021573-9",
+      "cidade_satelite": "Sobradinho",
+      "bairro": "Alto da Boa Vista",
+      "logradouro_curto": "RODOVIA BR-020BL B, LT 12, ENTRE QUADRA 101/102, ALTO DA BOA VISTA (SOBRADINHO)",
+      "endereco": "RODOVIA BR-020,N. 00  BL B, LT 12, ENTRE QUADRA 101/102, ALTO DA BOA VISTA (SOBRADINHO) - CEP: 73130-900, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.66935,
+      "lng": -47.79215,
+      "tipo": "Terreno",
+      "area": "Não informada",
+      "valor_avaliacao": "R$ 395.000,00",
+      "valor_avaliacao_num": 395000.0,
+      "valor_minimo": "R$ 235.157,05",
+      "valor_minimo_num": 235157.05,
+      "veredicto": "COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Direta Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1021573-9",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1021573-9",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1021573-9/fotos/F000001021573921.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010215739.pdf",
+          "url": "/data/ativos/1021573-9/0000010215739.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1021573-9 - 48790192.pdf",
+          "url": "/data/ativos/1021573-9/Certidão de IPTU - 1021573-9 - 48790192.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1021573-9 - 48790192.pdf",
+          "url": "/data/ativos/1021573-9/DAR 2026 - 1021573-9 - 48790192.pdf"
+        },
+        {
+          "nome": "Ficha Cadastral - 1021573-9 - 48790192.pdf",
+          "url": "/data/ativos/1021573-9/Ficha Cadastral - 1021573-9 - 48790192.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1021573-9 - 48790192.pdf",
+          "url": "/data/ativos/1021573-9/Pauta de IPTU - 1021573-9 - 48790192.pdf"
+        }
+      ],
+      "desconto_pct": 40.5,
+      "score": 63,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "1027824-3",
+      "cidade_satelite": "Brasília",
+      "bairro": "SRTVN (Asa Norte)",
+      "logradouro_curto": "SETOR SRTVN LT PCJ P, LOJA SS-1, ASA NORTE",
+      "endereco": "SETOR SRTVN LT P,N. S/N  CJ P, LOJA SS-1, ASA NORTE - CEP: 70719-900, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8012,
+      "lng": -47.882,
+      "tipo": "Sala",
+      "area": "600,00m2",
+      "valor_avaliacao": "R$ 3.300.000,00",
+      "valor_avaliacao_num": 3300000.0,
+      "valor_minimo": "R$ 2.050.558,76",
+      "valor_minimo_num": 2050558.76,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Direta Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1027824-3",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1027824-3",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1027824-3/fotos/F000001027824321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010278243.pdf",
+          "url": "/data/ativos/1027824-3/0000010278243.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1027824-3 - 08300461.pdf",
+          "url": "/data/ativos/1027824-3/Certidão de IPTU - 1027824-3 - 08300461.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1027824-3 - 08300461.pdf",
+          "url": "/data/ativos/1027824-3/DAR 2026 - 1027824-3 - 08300461.pdf"
+        },
+        {
+          "nome": "Ficha Cadastral - 1027824-3 - 08300461.pdf",
+          "url": "/data/ativos/1027824-3/Ficha Cadastral - 1027824-3 - 08300461.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1027824-3 - 08300461.pdf",
+          "url": "/data/ativos/1027824-3/Pauta de IPTU - 1027824-3 - 08300461.pdf"
+        }
+      ],
+      "desconto_pct": 37.9,
+      "score": 54,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "1028632-2",
+      "cidade_satelite": "Brasília",
+      "bairro": "Setor de Diversões Sul (SDS)",
+      "logradouro_curto": "SETOR SDS,N. 208  SALA 208 ED VENANCIO VI, ASA SUL",
+      "endereco": "SETOR SDS,N. 208  SALA 208 ED VENANCIO VI, ASA SUL - CEP: 70393-905, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.79565,
+      "lng": -47.88815,
+      "tipo": "Sala",
+      "area": "18,53m2",
+      "valor_avaliacao": "R$ 87.000,00",
+      "valor_avaliacao_num": 87000.0,
+      "valor_minimo": "R$ 52.541,70",
+      "valor_minimo_num": 52541.7,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "23/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1028632-2",
+      "url_leiloeiro": "https://www.fidalgoleiloes.com.br",
+      "site_leiloeiro_nome": "fidalgoleiloes",
+      "site_leiloeiro_clean": "fidalgoleiloes",
+      "fotos_list": [
+        "/data/ativos/1028632-2/fotos/F000001028632221.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "Certidão de IPTU - 1028632-2 - 06717055.pdf",
+          "url": "/data/ativos/1028632-2/Certidão de IPTU - 1028632-2 - 06717055.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1028632-2 - 06717055.pdf",
+          "url": "/data/ativos/1028632-2/DAR 2026 - 1028632-2 - 06717055.pdf"
+        },
+        {
+          "nome": "EA00180326CPVERE.PDF",
+          "url": "/data/ativos/1028632-2/EA00180326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1028632-2 - 06717055.pdf",
+          "url": "/data/ativos/1028632-2/Ficha Cadastral - 1028632-2 - 06717055.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1028632-2 - 06717055.pdf",
+          "url": "/data/ativos/1028632-2/Pauta de IPTU - 1028632-2 - 06717055.pdf"
+        }
+      ],
+      "desconto_pct": 39.6,
+      "score": 49,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1029099-3",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Sul",
+      "logradouro_curto": "CSB 2LTS 1 A 4, TR B, SL 327, TAGUATINGA SUL",
+      "endereco": "CSB 2,N. 00  LTS 1 A 4, TR B, SL 327, TAGUATINGA SUL - CEP: 72015-525, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8513,
+      "lng": -48.05935,
+      "tipo": "Sala",
+      "area": "32,90m2",
+      "valor_avaliacao": "R$ 212.000,00",
+      "valor_avaliacao_num": 212000.0,
+      "valor_minimo": "R$ 133.437,74",
+      "valor_minimo_num": 133437.74,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-3",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-3",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1029099-3/fotos/F000001029099321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010290993.pdf",
+          "url": "/data/ativos/1029099-3/0000010290993.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1029099-3 - 48588903.pdf",
+          "url": "/data/ativos/1029099-3/Certidão de IPTU - 1029099-3 - 48588903.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1029099-3 - 48588903.pdf",
+          "url": "/data/ativos/1029099-3/DAR 2026 - 1029099-3 - 48588903.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/1029099-3/EA00160326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1029099-3 - 48588903.pdf",
+          "url": "/data/ativos/1029099-3/Ficha Cadastral - 1029099-3 - 48588903.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1029099-3 - 48588903.pdf",
+          "url": "/data/ativos/1029099-3/Pauta de IPTU - 1029099-3 - 48588903.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 49,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1029099-4",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Sul",
+      "logradouro_curto": "CSB 2LTS 1 A 4, TR B, SL 333, TAGUATINGA SUL",
+      "endereco": "CSB 2,N. 00  LTS 1 A 4, TR B, SL 333, TAGUATINGA SUL - CEP: 72015-525, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8423,
+      "lng": -48.0613,
+      "tipo": "Sala",
+      "area": "32,33m2",
+      "valor_avaliacao": "R$ 210.000,00",
+      "valor_avaliacao_num": 210000.0,
+      "valor_minimo": "R$ 132.178,89",
+      "valor_minimo_num": 132178.89,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-4",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-4",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1029099-4/fotos/F000001029099421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010290994.pdf",
+          "url": "/data/ativos/1029099-4/0000010290994.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1029099-4 - 48589527.pdf",
+          "url": "/data/ativos/1029099-4/Certidão de IPTU - 1029099-4 - 48589527.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1029099-4 - 48589527.pdf",
+          "url": "/data/ativos/1029099-4/DAR 2026 - 1029099-4 - 48589527.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/1029099-4/EA00160326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1029099-4 - 48589527.pdf",
+          "url": "/data/ativos/1029099-4/Ficha Cadastral - 1029099-4 - 48589527.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1029099-4 - 48589527.pdf",
+          "url": "/data/ativos/1029099-4/Pauta de IPTU - 1029099-4 - 48589527.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 49,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1029099-5",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Sul",
+      "logradouro_curto": "CSB 2LTS 1 A 4, TR B, SL 325, TAGUATINGA SUL",
+      "endereco": "CSB 2,N. 00  LTS 1 A 4, TR B, SL 325, TAGUATINGA SUL - CEP: 72015-525, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8399,
+      "lng": -48.0586,
+      "tipo": "Sala",
+      "area": "32,33m2",
+      "valor_avaliacao": "R$ 210.000,00",
+      "valor_avaliacao_num": 210000.0,
+      "valor_minimo": "R$ 132.178,89",
+      "valor_minimo_num": 132178.89,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-5",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-5",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1029099-5/fotos/F000001029099521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010290995.pdf",
+          "url": "/data/ativos/1029099-5/0000010290995.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1029099-5 - 48589497.pdf",
+          "url": "/data/ativos/1029099-5/Certidão de IPTU - 1029099-5 - 48589497.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1029099-5 - 48589497.pdf",
+          "url": "/data/ativos/1029099-5/DAR 2026 - 1029099-5 - 48589497.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/1029099-5/EA00160326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1029099-5 - 48589497.pdf",
+          "url": "/data/ativos/1029099-5/Ficha Cadastral - 1029099-5 - 48589497.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1029099-5 - 48589497.pdf",
+          "url": "/data/ativos/1029099-5/Pauta de IPTU - 1029099-5 - 48589497.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 49,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1029099-6",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Sul",
+      "logradouro_curto": "CSB 2LTS 1 A 4, TR B, SL 329, TAGUATINGA SUL",
+      "endereco": "CSB 2,N. 00  LTS 1 A 4, TR B, SL 329, TAGUATINGA SUL - CEP: 72015-525, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8471,
+      "lng": -48.05245,
+      "tipo": "Sala",
+      "area": "32,90m2",
+      "valor_avaliacao": "R$ 212.000,00",
+      "valor_avaliacao_num": 212000.0,
+      "valor_minimo": "R$ 133.437,74",
+      "valor_minimo_num": 133437.74,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-6",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-6",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1029099-6/fotos/F000001029099621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010290996.pdf",
+          "url": "/data/ativos/1029099-6/0000010290996.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1029099-6 - 4858892X.pdf",
+          "url": "/data/ativos/1029099-6/Certidão de IPTU - 1029099-6 - 4858892X.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1029099-6 - 4858892X.pdf",
+          "url": "/data/ativos/1029099-6/DAR 2026 - 1029099-6 - 4858892X.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/1029099-6/EA00160326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1029099-6 - 4858892X.pdf",
+          "url": "/data/ativos/1029099-6/Ficha Cadastral - 1029099-6 - 4858892X.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1029099-6 - 4858892X.pdf",
+          "url": "/data/ativos/1029099-6/Pauta de IPTU - 1029099-6 - 4858892X.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 49,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1029099-7",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Sul",
+      "logradouro_curto": "CSB 2LTS 1 A 4, TR B, SL 323, TAGUATINGA SUL",
+      "endereco": "CSB 2,N. 00  LTS 1 A 4, TR B, SL 323, TAGUATINGA SUL - CEP: 72015-525, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8378,
+      "lng": -48.06415,
+      "tipo": "Sala",
+      "area": "32,33m2",
+      "valor_avaliacao": "R$ 210.000,00",
+      "valor_avaliacao_num": 210000.0,
+      "valor_minimo": "R$ 132.178,89",
+      "valor_minimo_num": 132178.89,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-7",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-7",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1029099-7/fotos/F000001029099721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010290997.pdf",
+          "url": "/data/ativos/1029099-7/0000010290997.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1029099-7 - 48589489.pdf",
+          "url": "/data/ativos/1029099-7/Certidão de IPTU - 1029099-7 - 48589489.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1029099-7 - 48589489.pdf",
+          "url": "/data/ativos/1029099-7/DAR 2026 - 1029099-7 - 48589489.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/1029099-7/EA00160326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1029099-7 - 48589489.pdf",
+          "url": "/data/ativos/1029099-7/Ficha Cadastral - 1029099-7 - 48589489.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1029099-7 - 48589489.pdf",
+          "url": "/data/ativos/1029099-7/Pauta de IPTU - 1029099-7 - 48589489.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 49,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1029099-8",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Sul",
+      "logradouro_curto": "CSB 2LTS 1 A 4, TR B, SL 331, TAGUATINGA SUL",
+      "endereco": "CSB 2,N. 00  LTS 1 A 4, TR B, SL 331, TAGUATINGA SUL - CEP: 72015-525, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8384,
+      "lng": -48.0655,
+      "tipo": "Sala",
+      "area": "32,33m2",
+      "valor_avaliacao": "R$ 210.000,00",
+      "valor_avaliacao_num": 210000.0,
+      "valor_minimo": "R$ 132.178,89",
+      "valor_minimo_num": 132178.89,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-8",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029099-8",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/1029099-8/fotos/F000001029099821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010290998.pdf",
+          "url": "/data/ativos/1029099-8/0000010290998.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1029099-8 - 48589500.pdf",
+          "url": "/data/ativos/1029099-8/DAR 2026 - 1029099-8 - 48589500.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/1029099-8/EA00160326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1029099-8 - 48589500.pdf",
+          "url": "/data/ativos/1029099-8/Ficha Cadastral - 1029099-8 - 48589500.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1029099-8 - 48589500.pdf",
+          "url": "/data/ativos/1029099-8/Pauta de IPTU - 1029099-8 - 48589500.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 49,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1029204-1",
+      "cidade_satelite": "Gama",
+      "bairro": "Gama",
+      "logradouro_curto": "QUADRA 17LOTE 06, SETOR LESTE (GAMA)",
+      "endereco": "QUADRA 17,N. 00  LOTE 06, SETOR LESTE (GAMA) - CEP: 72450-170, BRASILIA - DISTRITO FEDERAL",
+      "lat": -16.02095,
+      "lng": -48.06655,
+      "tipo": "Comercial",
+      "area": "200,00m2",
+      "valor_avaliacao": "R$ 772.000,00",
+      "valor_avaliacao_num": 772000.0,
+      "valor_minimo": "R$ 772.000,00",
+      "valor_minimo_num": 772000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1029204-1",
+      "url_leiloeiro": "https://www.mgl.com.br",
+      "site_leiloeiro_nome": "mgl",
+      "site_leiloeiro_clean": "mgl",
+      "fotos_list": [
+        "/data/ativos/1029204-1/fotos/F000001029204121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010292041.pdf",
+          "url": "/data/ativos/1029204-1/0000010292041.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1029204-1 - 17302161.pdf",
+          "url": "/data/ativos/1029204-1/Certidão de IPTU - 1029204-1 - 17302161.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1029204-1 - 17302161.pdf",
+          "url": "/data/ativos/1029204-1/DAR 2026 - 1029204-1 - 17302161.pdf"
+        },
+        {
+          "nome": "EL00320226CPARE.PDF",
+          "url": "/data/ativos/1029204-1/EL00320226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1029204-1 - 17302161.pdf",
+          "url": "/data/ativos/1029204-1/Ficha Cadastral - 1029204-1 - 17302161.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1029204-1 - 17302161.pdf",
+          "url": "/data/ativos/1029204-1/Pauta de IPTU - 1029204-1 - 17302161.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 30,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1030231-4",
+      "cidade_satelite": "Águas Claras",
+      "bairro": "Águas Claras Norte",
+      "logradouro_curto": "RUA DAS FIGUEIRASLT 07, SL 08, NORTE (AGUAS CLARAS)",
+      "endereco": "RUA DAS FIGUEIRAS,N. 00  LT 07, SL 08, NORTE (AGUAS CLARAS) - CEP: 71906-750, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.83005,
+      "lng": -48.03355,
+      "tipo": "Sala",
+      "area": "32,22m2",
+      "valor_avaliacao": "R$ 220.000,00",
+      "valor_avaliacao_num": 220000.0,
+      "valor_minimo": "R$ 240.000,00",
+      "valor_minimo_num": 240000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "03/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1030231-4",
+      "url_leiloeiro": "https://www.faleiloes.com.br",
+      "site_leiloeiro_nome": "faleiloes",
+      "site_leiloeiro_clean": "faleiloes",
+      "fotos_list": [
+        "/data/ativos/1030231-4/fotos/F000001030231421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "0000010302314.pdf",
+          "url": "/data/ativos/1030231-4/0000010302314.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1030231-4 - 51719797.pdf",
+          "url": "/data/ativos/1030231-4/Certidão de IPTU - 1030231-4 - 51719797.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1030231-4 - 51719797.pdf",
+          "url": "/data/ativos/1030231-4/DAR 2026 - 1030231-4 - 51719797.pdf"
+        },
+        {
+          "nome": "EL00340226CPARE.PDF",
+          "url": "/data/ativos/1030231-4/EL00340226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 1030231-4 - 51719797.pdf",
+          "url": "/data/ativos/1030231-4/Ficha Cadastral - 1030231-4 - 51719797.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1030231-4 - 51719797.pdf",
+          "url": "/data/ativos/1030231-4/Pauta de IPTU - 1030231-4 - 51719797.pdf"
+        }
+      ],
+      "desconto_pct": -9.1,
+      "score": 30,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "1030935-9",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Sul",
+      "logradouro_curto": "QUADRA CSB - 02 LT 06 VAGA 40 TAGUATINGA SUL",
+      "endereco": "QUADRA CSB - 02 LT 06 VAGA 40,N. SN, TAGUATINGA SUL - CEP: 72015-932, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.8414,
+      "lng": -48.0619,
+      "tipo": "Outros",
+      "area": "11,25m2",
+      "valor_avaliacao": "R$ 33.000,00",
+      "valor_avaliacao_num": 33000.0,
+      "valor_minimo": "R$ 33.000,00",
+      "valor_minimo_num": 33000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": false,
+      "modalidade": "Venda Online",
+      "data_1": "20/07/2026",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1030935-9",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=1030935-9",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [],
+      "documentos_list": [
+        {
+          "nome": "0000010309359.pdf",
+          "url": "/data/ativos/1030935-9/0000010309359.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 1030935-9 - 45633274.pdf",
+          "url": "/data/ativos/1030935-9/Certidão de IPTU - 1030935-9 - 45633274.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 1030935-9 - 45633274.pdf",
+          "url": "/data/ativos/1030935-9/DAR 2026 - 1030935-9 - 45633274.pdf"
+        },
+        {
+          "nome": "Ficha Cadastral - 1030935-9 - 45633274.pdf",
+          "url": "/data/ativos/1030935-9/Ficha Cadastral - 1030935-9 - 45633274.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 1030935-9 - 45633274.pdf",
+          "url": "/data/ativos/1030935-9/Pauta de IPTU - 1030935-9 - 45633274.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 29,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144440061732-6",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QNN-03CONJUNTO P, LT 10, CEILANDIA NORTE",
+      "endereco": "QNN-03,N. S/N  CONJUNTO P, LT 10, CEILANDIA NORTE - CEP: 72225-046, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8014,
+      "lng": -48.0993,
+      "tipo": "Casa",
+      "area": "340,00m2",
+      "valor_avaliacao": "R$ 640.000,00",
+      "valor_avaliacao_num": 640000.0,
+      "valor_minimo": "R$ 407.881,15",
+      "valor_minimo_num": 407881.15,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Direta Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144440061732-6",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144440061732-6",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/144440061732-6/fotos/F144440061732621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444400617326.pdf",
+          "url": "/data/ativos/144440061732-6/1444400617326.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144440061732-6 - 35121866.pdf",
+          "url": "/data/ativos/144440061732-6/Certidão de IPTU - 144440061732-6 - 35121866.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144440061732-6 - 35121866.pdf",
+          "url": "/data/ativos/144440061732-6/DAR 2026 - 144440061732-6 - 35121866.pdf"
+        },
+        {
+          "nome": "Ficha Cadastral - 144440061732-6 - 35121866.pdf",
+          "url": "/data/ativos/144440061732-6/Ficha Cadastral - 144440061732-6 - 35121866.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144440061732-6 - 35121866.pdf",
+          "url": "/data/ativos/144440061732-6/Pauta de IPTU - 144440061732-6 - 35121866.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 57,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144440282100-1",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QD 5 CJ L LT 11,N. 11, CEILANDIA NORTE",
+      "endereco": "QD 5 CJ L LT 11,N. 11, CEILANDIA NORTE - CEP: 72225-062, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.8014,
+      "lng": -48.09855,
+      "tipo": "Casa",
+      "area": "129,00m2",
+      "valor_avaliacao": "R$ 231.316,47",
+      "valor_avaliacao_num": 231316.47,
+      "valor_minimo": "R$ 145.595,98",
+      "valor_minimo_num": 145595.98,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "06/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144440282100-1",
+      "url_leiloeiro": "https://www.oesteleiloes.com.br",
+      "site_leiloeiro_nome": "oesteleiloes",
+      "site_leiloeiro_clean": "oesteleiloes",
+      "fotos_list": [
+        "/data/ativos/144440282100-1/fotos/F144440282100121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444402821001.pdf",
+          "url": "/data/ativos/144440282100-1/1444402821001.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144440282100-1 - 35133686.pdf",
+          "url": "/data/ativos/144440282100-1/Certidão de IPTU - 144440282100-1 - 35133686.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144440282100-1 - 35133686.pdf",
+          "url": "/data/ativos/144440282100-1/DAR 2026 - 144440282100-1 - 35133686.pdf"
+        },
+        {
+          "nome": "EA00210326CPVERE.PDF",
+          "url": "/data/ativos/144440282100-1/EA00210326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144440282100-1 - 35133686.pdf",
+          "url": "/data/ativos/144440282100-1/Ficha Cadastral - 144440282100-1 - 35133686.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144440282100-1 - 35133686.pdf",
+          "url": "/data/ativos/144440282100-1/Pauta de IPTU - 144440282100-1 - 35133686.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 56,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144440838561-0",
+      "cidade_satelite": "Brasília",
+      "bairro": "Asa Sul",
+      "logradouro_curto": "SQS 403APTO. 206 BL L, ASA SUL",
+      "endereco": "SQS 403,N. SN APTO. 206 BL L, ASA SUL - CEP: 70237-110, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8168,
+      "lng": -47.90245,
+      "tipo": "Apartamento",
+      "area": "82,55m2",
+      "valor_avaliacao": "R$ 751.000,00",
+      "valor_avaliacao_num": 751000.0,
+      "valor_minimo": "R$ 826.432,25",
+      "valor_minimo_num": 826432.25,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144440838561-0",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/144440838561-0/fotos/F144440838561021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444408385610.pdf",
+          "url": "/data/ativos/144440838561-0/1444408385610.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144440838561-0 - 30116899.pdf",
+          "url": "/data/ativos/144440838561-0/Certidão de IPTU - 144440838561-0 - 30116899.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144440838561-0 - 30116899.pdf",
+          "url": "/data/ativos/144440838561-0/DAR 2026 - 144440838561-0 - 30116899.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/144440838561-0/EL00360226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144440838561-0 - 30116899.pdf",
+          "url": "/data/ativos/144440838561-0/Ficha Cadastral - 144440838561-0 - 30116899.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144440838561-0 - 30116899.pdf",
+          "url": "/data/ativos/144440838561-0/Pauta de IPTU - 144440838561-0 - 30116899.pdf"
+        }
+      ],
+      "desconto_pct": -10.0,
+      "score": 36,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144441219205-8",
+      "cidade_satelite": "Guará",
+      "bairro": "Guará I",
+      "logradouro_curto": "QI-10 CONJUNTO B,N. 114",
+      "endereco": "QI-10 CONJUNTO B,N. 114, GUARA I - CEP: 71010-001, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8111,
+      "lng": -47.9737,
+      "tipo": "Casa",
+      "area": "228,00m2",
+      "valor_avaliacao": "R$ 760.000,00",
+      "valor_avaliacao_num": 760000.0,
+      "valor_minimo": "R$ 760.000,00",
+      "valor_minimo_num": 760000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441219205-8",
+      "url_leiloeiro": "https://www.danielgarcialeiloes.com.br",
+      "site_leiloeiro_nome": "danielgarcialeiloes",
+      "site_leiloeiro_clean": "danielgarcialeiloes",
+      "fotos_list": [
+        "/data/ativos/144441219205-8/fotos/F144441219205821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444412192058.pdf",
+          "url": "/data/ativos/144441219205-8/1444412192058.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441219205-8 - 1820516X.pdf",
+          "url": "/data/ativos/144441219205-8/Certidão de IPTU - 144441219205-8 - 1820516X.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441219205-8 - 1820516X.pdf",
+          "url": "/data/ativos/144441219205-8/DAR 2026 - 144441219205-8 - 1820516X.pdf"
+        },
+        {
+          "nome": "EL00380226CPARE.PDF",
+          "url": "/data/ativos/144441219205-8/EL00380226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441219205-8 - 1820516X.pdf",
+          "url": "/data/ativos/144441219205-8/Ficha Cadastral - 144441219205-8 - 1820516X.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441219205-8 - 1820516X.pdf",
+          "url": "/data/ativos/144441219205-8/Pauta de IPTU - 144441219205-8 - 1820516X.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144441289894-5",
+      "cidade_satelite": "Gama",
+      "bairro": "Gama",
+      "logradouro_curto": "QUADRA 55APTO. 312 BL 06   LOT 03 04 05 E 06, SETOR CENTRAL",
+      "endereco": "QUADRA 55,N. SN APTO. 312 BL 06   LOT 03 04 05 E 06, SETOR CENTRAL - CEP: 72405-550, GAMA - DISTRITO FEDERAL",
+      "lat": -16.0094,
+      "lng": -48.07315,
+      "tipo": "Apartamento",
+      "area": "44,56m2",
+      "valor_avaliacao": "R$ 204.000,00",
+      "valor_avaliacao_num": 204000.0,
+      "valor_minimo": "R$ 227.628,55",
+      "valor_minimo_num": 227628.55,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441289894-5",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/144441289894-5/fotos/F144441289894521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444412898945.pdf",
+          "url": "/data/ativos/144441289894-5/1444412898945.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441289894-5 - 45938717.pdf",
+          "url": "/data/ativos/144441289894-5/Certidão de IPTU - 144441289894-5 - 45938717.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441289894-5 - 45938717.pdf",
+          "url": "/data/ativos/144441289894-5/DAR 2026 - 144441289894-5 - 45938717.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/144441289894-5/EL00400226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441289894-5 - 45938717.pdf",
+          "url": "/data/ativos/144441289894-5/Ficha Cadastral - 144441289894-5 - 45938717.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441289894-5 - 45938717.pdf",
+          "url": "/data/ativos/144441289894-5/Pauta de IPTU - 144441289894-5 - 45938717.pdf"
+        }
+      ],
+      "desconto_pct": -11.6,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144441301435-8",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QR 404 CONJUNTO 17LT 26, SAMAMBAIA NORTE",
+      "endereco": "QR 404 CONJUNTO 17,N. SN  LT 26, SAMAMBAIA NORTE - CEP: 72318-119, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8722,
+      "lng": -48.07925,
+      "tipo": "Casa",
+      "area": "0,01m2",
+      "valor_avaliacao": "R$ 620.000,00",
+      "valor_avaliacao_num": 620000.0,
+      "valor_minimo": "R$ 378.571,57",
+      "valor_minimo_num": 378571.57,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Direta Online",
+      "data_1": "16/07/2026",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441301435-8",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441301435-8",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/144441301435-8/fotos/F144441301435821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444413014358.pdf",
+          "url": "/data/ativos/144441301435-8/1444413014358.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441301435-8 - 000.pdf",
+          "url": "/data/ativos/144441301435-8/DAR 2026 - 144441301435-8 - 000.pdf"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441301435-8 - 000.pdf",
+          "url": "/data/ativos/144441301435-8/Ficha Cadastral - 144441301435-8 - 000.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441301435-8 - 000.pdf",
+          "url": "/data/ativos/144441301435-8/Pauta de IPTU - 144441301435-8 - 000.pdf"
+        }
+      ],
+      "desconto_pct": 38.9,
+      "score": 64,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441454460-1",
+      "cidade_satelite": "Park Way",
+      "bairro": "Park Way",
+      "logradouro_curto": "SMPW QUADRA 25 CONJUNTO 03LT 03 CJ 102 TRECHO 01 E 02, PARK WAY",
+      "endereco": "SMPW QUADRA 25 CONJUNTO 03,N. SN  LT 03 CJ 102 TRECHO 01 E 02, PARK WAY             - CEP: 71745-503, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.88255,
+      "lng": -47.96,
+      "tipo": "Casa",
+      "area": "975,60m2",
+      "valor_avaliacao": "R$ 1.585.000,00",
+      "valor_avaliacao_num": 1585000.0,
+      "valor_minimo": "R$ 3.568.262,40",
+      "valor_minimo_num": 3568262.4,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "30/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441454460-1",
+      "url_leiloeiro": "https://www.flexleiloes.com.br",
+      "site_leiloeiro_nome": "flexleiloes",
+      "site_leiloeiro_clean": "flexleiloes",
+      "fotos_list": [
+        "/data/ativos/144441454460-1/fotos/F144441454460121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444414544601.pdf",
+          "url": "/data/ativos/144441454460-1/1444414544601.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441454460-1 - 5087862X.pdf",
+          "url": "/data/ativos/144441454460-1/Certidão de IPTU - 144441454460-1 - 5087862X.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441454460-1 - 5087862X.pdf",
+          "url": "/data/ativos/144441454460-1/DAR 2026 - 144441454460-1 - 5087862X.pdf"
+        },
+        {
+          "nome": "EL00330226CPARE.PDF",
+          "url": "/data/ativos/144441454460-1/EL00330226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441454460-1 - 5087862X.pdf",
+          "url": "/data/ativos/144441454460-1/Ficha Cadastral - 144441454460-1 - 5087862X.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441454460-1 - 5087862X.pdf",
+          "url": "/data/ativos/144441454460-1/Pauta de IPTU - 144441454460-1 - 5087862X.pdf"
+        }
+      ],
+      "desconto_pct": -125.1,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144441489554-4",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QD QR 408LT 2APTO. 210 CJ 24A, SAMAMBAIA NORTE",
+      "endereco": "QD QR 408LT 2,N. SN APTO. 210 CJ 24A, SAMAMBAIA NORTE - CEP: 72318-327, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.85795,
+      "lng": -48.08585,
+      "tipo": "Apartamento",
+      "area": "30,14m2",
+      "valor_avaliacao": "R$ 154.000,00",
+      "valor_avaliacao_num": 154000.0,
+      "valor_minimo": "R$ 94.012,81",
+      "valor_minimo_num": 94012.81,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "06/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441489554-4",
+      "url_leiloeiro": "https://www.oesteleiloes.com.br",
+      "site_leiloeiro_nome": "oesteleiloes",
+      "site_leiloeiro_clean": "oesteleiloes",
+      "fotos_list": [
+        "/data/ativos/144441489554-4/fotos/F144441489554421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444414895544.pdf",
+          "url": "/data/ativos/144441489554-4/1444414895544.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441489554-4 - 51906457.pdf",
+          "url": "/data/ativos/144441489554-4/Certidão de IPTU - 144441489554-4 - 51906457.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441489554-4 - 51906457.pdf",
+          "url": "/data/ativos/144441489554-4/DAR 2026 - 144441489554-4 - 51906457.pdf"
+        },
+        {
+          "nome": "EA00210326CPVERE.PDF",
+          "url": "/data/ativos/144441489554-4/EA00210326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441489554-4 - 51906457.pdf",
+          "url": "/data/ativos/144441489554-4/Ficha Cadastral - 144441489554-4 - 51906457.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441489554-4 - 51906457.pdf",
+          "url": "/data/ativos/144441489554-4/Pauta de IPTU - 144441489554-4 - 51906457.pdf"
+        }
+      ],
+      "desconto_pct": 39.0,
+      "score": 54,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441688930-4",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QNO 19CJ 33  LOT 11, CEILANDIA NORTE",
+      "endereco": "QNO 19,N. SN  CJ 33  LOT 11, CEILANDIA NORTE - CEP: 72261-033, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.8065,
+      "lng": -48.1038,
+      "tipo": "Casa",
+      "area": "115,00m2",
+      "valor_avaliacao": "R$ 260.000,00",
+      "valor_avaliacao_num": 260000.0,
+      "valor_minimo": "R$ 267.170,63",
+      "valor_minimo_num": 267170.63,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441688930-4",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/144441688930-4/fotos/F144441688930421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444416889304.pdf",
+          "url": "/data/ativos/144441688930-4/1444416889304.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441688930-4 - 4539055X.pdf",
+          "url": "/data/ativos/144441688930-4/Certidão de IPTU - 144441688930-4 - 4539055X.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441688930-4 - 4539055X.pdf",
+          "url": "/data/ativos/144441688930-4/DAR 2026 - 144441688930-4 - 4539055X.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/144441688930-4/EL00400226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441688930-4 - 4539055X.pdf",
+          "url": "/data/ativos/144441688930-4/Ficha Cadastral - 144441688930-4 - 4539055X.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441688930-4 - 4539055X.pdf",
+          "url": "/data/ativos/144441688930-4/Pauta de IPTU - 144441688930-4 - 4539055X.pdf"
+        }
+      ],
+      "desconto_pct": -2.8,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144441751070-8",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QUADRA QR 104LT 01 CJ 15, SAMAMBAIA SUL",
+      "endereco": "QUADRA QR 104,N. SN  LT 01 CJ 15, SAMAMBAIA SUL - CEP: 72302-016, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8796,
+      "lng": -48.0963,
+      "tipo": "Casa",
+      "area": "85,00m2",
+      "valor_avaliacao": "R$ 310.000,00",
+      "valor_avaliacao_num": 310000.0,
+      "valor_minimo": "R$ 370.937,70",
+      "valor_minimo_num": 370937.7,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "30/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441751070-8",
+      "url_leiloeiro": "https://www.flexleiloes.com.br",
+      "site_leiloeiro_nome": "flexleiloes",
+      "site_leiloeiro_clean": "flexleiloes",
+      "fotos_list": [
+        "/data/ativos/144441751070-8/fotos/F144441751070821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444417510708.pdf",
+          "url": "/data/ativos/144441751070-8/1444417510708.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441751070-8 - 45473498.pdf",
+          "url": "/data/ativos/144441751070-8/Certidão de IPTU - 144441751070-8 - 45473498.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441751070-8 - 45473498.pdf",
+          "url": "/data/ativos/144441751070-8/DAR 2026 - 144441751070-8 - 45473498.pdf"
+        },
+        {
+          "nome": "EL00330226CPARE.PDF",
+          "url": "/data/ativos/144441751070-8/EL00330226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441751070-8 - 45473498.pdf",
+          "url": "/data/ativos/144441751070-8/Ficha Cadastral - 144441751070-8 - 45473498.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441751070-8 - 45473498.pdf",
+          "url": "/data/ativos/144441751070-8/Pauta de IPTU - 144441751070-8 - 45473498.pdf"
+        }
+      ],
+      "desconto_pct": -19.7,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144441759699-8",
+      "cidade_satelite": "Sobradinho",
+      "bairro": "Grande Colorado",
+      "logradouro_curto": "RODOVIA DF-150LT 28 CJ P, GRANDE COLORADO",
+      "endereco": "RODOVIA DF-150,N. SN  LT 28 CJ P, GRANDE COLORADO - CEP: 73105-905, SOBRADINHO - DISTRITO FEDERAL",
+      "lat": -15.65665,
+      "lng": -47.7926,
+      "tipo": "Casa",
+      "area": "354,96m2",
+      "valor_avaliacao": "R$ 1.035.000,00",
+      "valor_avaliacao_num": 1035000.0,
+      "valor_minimo": "R$ 659.620,30",
+      "valor_minimo_num": 659620.3,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441759699-8",
+      "url_leiloeiro": "https://www.lancetotal.com.br",
+      "site_leiloeiro_nome": "lancetotal",
+      "site_leiloeiro_clean": "lancetotal",
+      "fotos_list": [
+        "/data/ativos/144441759699-8/fotos/F144441759699821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444417596998.pdf",
+          "url": "/data/ativos/144441759699-8/1444417596998.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441759699-8 - 49060899.pdf",
+          "url": "/data/ativos/144441759699-8/Certidão de IPTU - 144441759699-8 - 49060899.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441759699-8 - 49060899.pdf",
+          "url": "/data/ativos/144441759699-8/DAR 2026 - 144441759699-8 - 49060899.pdf"
+        },
+        {
+          "nome": "EA00190326CPVERE.PDF",
+          "url": "/data/ativos/144441759699-8/EA00190326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441759699-8 - 49060899.pdf",
+          "url": "/data/ativos/144441759699-8/Ficha Cadastral - 144441759699-8 - 49060899.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441759699-8 - 49060899.pdf",
+          "url": "/data/ativos/144441759699-8/Pauta de IPTU - 144441759699-8 - 49060899.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 55,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441860059-0",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QNQ 5CJ 05 LT 13, CEILANDIA NORTE",
+      "endereco": "QNQ 5,N. SN  CJ 05 LT 13, CEILANDIA NORTE - CEP: 72270-505, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.8116,
+      "lng": -48.10755,
+      "tipo": "Casa",
+      "area": "130,00m2",
+      "valor_avaliacao": "R$ 330.000,00",
+      "valor_avaliacao_num": 330000.0,
+      "valor_minimo": "R$ 210.313,72",
+      "valor_minimo_num": 210313.72,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "07/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441860059-0",
+      "url_leiloeiro": "https://www.gestordeleiloes.com.br",
+      "site_leiloeiro_nome": "gestordeleiloes",
+      "site_leiloeiro_clean": "gestordeleiloes",
+      "fotos_list": [
+        "/data/ativos/144441860059-0/fotos/F144441860059021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444418600590.pdf",
+          "url": "/data/ativos/144441860059-0/1444418600590.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441860059-0 - 46033548.pdf",
+          "url": "/data/ativos/144441860059-0/Certidão de IPTU - 144441860059-0 - 46033548.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441860059-0 - 46033548.pdf",
+          "url": "/data/ativos/144441860059-0/DAR 2026 - 144441860059-0 - 46033548.pdf"
+        },
+        {
+          "nome": "EA00240326CPVERE.PDF",
+          "url": "/data/ativos/144441860059-0/EA00240326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441860059-0 - 46033548.pdf",
+          "url": "/data/ativos/144441860059-0/Ficha Cadastral - 144441860059-0 - 46033548.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441860059-0 - 46033548.pdf",
+          "url": "/data/ativos/144441860059-0/Pauta de IPTU - 144441860059-0 - 46033548.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 55,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441861850-2",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QR 512LT 07 CJ 03, SAMAMBAIA SUL",
+      "endereco": "QR 512,N. SN  LT 07 CJ 03, SAMAMBAIA SUL - CEP: 72312-803, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.86605,
+      "lng": -48.0731,
+      "tipo": "Casa",
+      "area": "93,00m2",
+      "valor_avaliacao": "R$ 315.000,00",
+      "valor_avaliacao_num": 315000.0,
+      "valor_minimo": "R$ 200.754,00",
+      "valor_minimo_num": 200754.0,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441861850-2",
+      "url_leiloeiro": "https://www.machadoleiloeiro.com.br",
+      "site_leiloeiro_nome": "machadoleiloeiro",
+      "site_leiloeiro_clean": "machadoleiloeiro",
+      "fotos_list": [
+        "/data/ativos/144441861850-2/fotos/F144441861850221.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444418618502.pdf",
+          "url": "/data/ativos/144441861850-2/1444418618502.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441861850-2 - 45688044.pdf",
+          "url": "/data/ativos/144441861850-2/Certidão de IPTU - 144441861850-2 - 45688044.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441861850-2 - 45688044.pdf",
+          "url": "/data/ativos/144441861850-2/DAR 2026 - 144441861850-2 - 45688044.pdf"
+        },
+        {
+          "nome": "EA00220326CPVERE.PDF",
+          "url": "/data/ativos/144441861850-2/EA00220326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441861850-2 - 45688044.pdf",
+          "url": "/data/ativos/144441861850-2/Ficha Cadastral - 144441861850-2 - 45688044.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441861850-2 - 45688044.pdf",
+          "url": "/data/ativos/144441861850-2/Pauta de IPTU - 144441861850-2 - 45688044.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 55,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441874549-0",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Taguatinga Norte",
+      "logradouro_curto": "QUADRA QNL 01APTO. 309 BL D, TAGUATINGA NORTE",
+      "endereco": "QUADRA QNL 01,N. SN APTO. 309 BL D, TAGUATINGA NORTE - CEP: 72150-117, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.81325,
+      "lng": -48.05725,
+      "tipo": "Apartamento",
+      "area": "63,64m2",
+      "valor_avaliacao": "R$ 419.000,00",
+      "valor_avaliacao_num": 419000.0,
+      "valor_minimo": "R$ 267.034,69",
+      "valor_minimo_num": 267034.69,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441874549-0",
+      "url_leiloeiro": "https://www.machadoleiloeiro.com.br",
+      "site_leiloeiro_nome": "machadoleiloeiro",
+      "site_leiloeiro_clean": "machadoleiloeiro",
+      "fotos_list": [
+        "/data/ativos/144441874549-0/fotos/F144441874549021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444418745490.pdf",
+          "url": "/data/ativos/144441874549-0/1444418745490.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441874549-0 - 30896878.pdf",
+          "url": "/data/ativos/144441874549-0/Certidão de IPTU - 144441874549-0 - 30896878.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441874549-0 - 30896878.pdf",
+          "url": "/data/ativos/144441874549-0/DAR 2026 - 144441874549-0 - 30896878.pdf"
+        },
+        {
+          "nome": "EA00220326CPVERE.PDF",
+          "url": "/data/ativos/144441874549-0/EA00220326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441874549-0 - 30896878.pdf",
+          "url": "/data/ativos/144441874549-0/Ficha Cadastral - 144441874549-0 - 30896878.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441874549-0 - 30896878.pdf",
+          "url": "/data/ativos/144441874549-0/Pauta de IPTU - 144441874549-0 - 30896878.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 59,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441908153-7",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Sul",
+      "logradouro_curto": "QNM 7LOTE 02 CONJUNTO C, CEILANDIA SUL",
+      "endereco": "QNM 7,N. SN   LOTE 02 CONJUNTO C, CEILANDIA SUL - CEP: 72215-073, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.82155,
+      "lng": -48.1144,
+      "tipo": "Casa",
+      "area": "99,77m2",
+      "valor_avaliacao": "R$ 420.000,00",
+      "valor_avaliacao_num": 420000.0,
+      "valor_minimo": "R$ 717.513,19",
+      "valor_minimo_num": 717513.19,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441908153-7",
+      "url_leiloeiro": "https://www.danielgarcialeiloes.com.br",
+      "site_leiloeiro_nome": "danielgarcialeiloes",
+      "site_leiloeiro_clean": "danielgarcialeiloes",
+      "fotos_list": [
+        "/data/ativos/144441908153-7/fotos/F144441908153721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444419081537.pdf",
+          "url": "/data/ativos/144441908153-7/1444419081537.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441908153-7 - 35033274.pdf",
+          "url": "/data/ativos/144441908153-7/Certidão de IPTU - 144441908153-7 - 35033274.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441908153-7 - 35033274.pdf",
+          "url": "/data/ativos/144441908153-7/DAR 2026 - 144441908153-7 - 35033274.pdf"
+        },
+        {
+          "nome": "EL00380226CPARE.PDF",
+          "url": "/data/ativos/144441908153-7/EL00380226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441908153-7 - 35033274.pdf",
+          "url": "/data/ativos/144441908153-7/Ficha Cadastral - 144441908153-7 - 35033274.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441908153-7 - 35033274.pdf",
+          "url": "/data/ativos/144441908153-7/Pauta de IPTU - 144441908153-7 - 35033274.pdf"
+        }
+      ],
+      "desconto_pct": -70.8,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144441909041-2",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QUADRA QN 408APTO. 703 LT 01 CJ F, SAMAMBAIA NORTE",
+      "endereco": "QUADRA QN 408,N. SN APTO. 703 LT 01 CJ F, SAMAMBAIA NORTE - CEP: 72318-586, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.862,
+      "lng": -48.0824,
+      "tipo": "Apartamento",
+      "area": "30,38m2",
+      "valor_avaliacao": "R$ 212.000,00",
+      "valor_avaliacao_num": 212000.0,
+      "valor_minimo": "R$ 133.437,74",
+      "valor_minimo_num": 133437.74,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "23/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441909041-2",
+      "url_leiloeiro": "https://www.fidalgoleiloes.com.br",
+      "site_leiloeiro_nome": "fidalgoleiloes",
+      "site_leiloeiro_clean": "fidalgoleiloes",
+      "fotos_list": [
+        "/data/ativos/144441909041-2/fotos/F144441909041221.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444419090412.pdf",
+          "url": "/data/ativos/144441909041-2/1444419090412.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441909041-2 - 51568780.pdf",
+          "url": "/data/ativos/144441909041-2/Certidão de IPTU - 144441909041-2 - 51568780.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441909041-2 - 51568780.pdf",
+          "url": "/data/ativos/144441909041-2/DAR 2026 - 144441909041-2 - 51568780.pdf"
+        },
+        {
+          "nome": "EA00180326CPVERE.PDF",
+          "url": "/data/ativos/144441909041-2/EA00180326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441909041-2 - 51568780.pdf",
+          "url": "/data/ativos/144441909041-2/Ficha Cadastral - 144441909041-2 - 51568780.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441909041-2 - 51568780.pdf",
+          "url": "/data/ativos/144441909041-2/Pauta de IPTU - 144441909041-2 - 51568780.pdf"
+        }
+      ],
+      "desconto_pct": 37.1,
+      "score": 58,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441915841-6",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QUADRA QR 325LT 19 CJ 04, SAMAMBAIA SUL",
+      "endereco": "QUADRA QR 325,N. SN  LT 19 CJ 04, SAMAMBAIA SUL - CEP: 72309-804, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8826,
+      "lng": -48.0921,
+      "tipo": "Casa",
+      "area": "100,00m2",
+      "valor_avaliacao": "R$ 267.000,00",
+      "valor_avaliacao_num": 267000.0,
+      "valor_minimo": "R$ 170.162,92",
+      "valor_minimo_num": 170162.92,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441915841-6",
+      "url_leiloeiro": "https://www.machadoleiloeiro.com.br",
+      "site_leiloeiro_nome": "machadoleiloeiro",
+      "site_leiloeiro_clean": "machadoleiloeiro",
+      "fotos_list": [
+        "/data/ativos/144441915841-6/fotos/F144441915841621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444419158416.pdf",
+          "url": "/data/ativos/144441915841-6/1444419158416.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441915841-6 - 46755160.pdf",
+          "url": "/data/ativos/144441915841-6/Certidão de IPTU - 144441915841-6 - 46755160.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441915841-6 - 46755160.pdf",
+          "url": "/data/ativos/144441915841-6/DAR 2026 - 144441915841-6 - 46755160.pdf"
+        },
+        {
+          "nome": "EA00220326CPVERE.PDF",
+          "url": "/data/ativos/144441915841-6/EA00220326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441915841-6 - 46755160.pdf",
+          "url": "/data/ativos/144441915841-6/Ficha Cadastral - 144441915841-6 - 46755160.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441915841-6 - 46755160.pdf",
+          "url": "/data/ativos/144441915841-6/Pauta de IPTU - 144441915841-6 - 46755160.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 55,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "144441935070-8",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QUADRA NORTE O 5LT 52 CONJUNTO A, CEILANDIA NORTE",
+      "endereco": "QUADRA NORTE O 5,N. SN  LT 52 CONJUNTO A, CEILANDIA NORTE - CEP: 72251-002, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.81055,
+      "lng": -48.1101,
+      "tipo": "Casa",
+      "area": "43,80m2",
+      "valor_avaliacao": "R$ 285.000,00",
+      "valor_avaliacao_num": 285000.0,
+      "valor_minimo": "R$ 516.224,41",
+      "valor_minimo_num": 516224.41,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441935070-8",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144441935070-8",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/144441935070-8/fotos/F144441935070821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444419350708.pdf",
+          "url": "/data/ativos/144441935070-8/1444419350708.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144441935070-8 - 30323819.pdf",
+          "url": "/data/ativos/144441935070-8/Certidão de IPTU - 144441935070-8 - 30323819.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144441935070-8 - 30323819.pdf",
+          "url": "/data/ativos/144441935070-8/DAR 2026 - 144441935070-8 - 30323819.pdf"
+        },
+        {
+          "nome": "EL00290226CPARE.PDF",
+          "url": "/data/ativos/144441935070-8/EL00290226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144441935070-8 - 30323819.pdf",
+          "url": "/data/ativos/144441935070-8/Ficha Cadastral - 144441935070-8 - 30323819.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144441935070-8 - 30323819.pdf",
+          "url": "/data/ativos/144441935070-8/Pauta de IPTU - 144441935070-8 - 30323819.pdf"
+        }
+      ],
+      "desconto_pct": -81.1,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144442003424-5",
+      "cidade_satelite": "Guará",
+      "bairro": "Guará II",
+      "logradouro_curto": "LOTE 06 CONJUNTO F QE-42",
+      "endereco": "LOTE 06 CONJUNTO F QE-42,N. SN, SRIA-GUARA           - CEP: 71070-065, GUARA - DISTRITO FEDERAL",
+      "lat": -15.83475,
+      "lng": -47.98465,
+      "tipo": "Casa",
+      "area": "128,00m2",
+      "valor_avaliacao": "R$ 489.000,00",
+      "valor_avaliacao_num": 489000.0,
+      "valor_minimo": "R$ 489.000,00",
+      "valor_minimo_num": 489000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "28/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144442003424-5",
+      "url_leiloeiro": "https://www.hastaleiloes.com.br",
+      "site_leiloeiro_nome": "hastaleiloes",
+      "site_leiloeiro_clean": "hastaleiloes",
+      "fotos_list": [
+        "/data/ativos/144442003424-5/fotos/F144442003424521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444420034245.pdf",
+          "url": "/data/ativos/144442003424-5/1444420034245.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144442003424-5 - 46907807.pdf",
+          "url": "/data/ativos/144442003424-5/Certidão de IPTU - 144442003424-5 - 46907807.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144442003424-5 - 46907807.pdf",
+          "url": "/data/ativos/144442003424-5/DAR 2026 - 144442003424-5 - 46907807.pdf"
+        },
+        {
+          "nome": "EL00390226CPARE.PDF",
+          "url": "/data/ativos/144442003424-5/EL00390226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144442003424-5 - 46907807.pdf",
+          "url": "/data/ativos/144442003424-5/Ficha Cadastral - 144442003424-5 - 46907807.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144442003424-5 - 46907807.pdf",
+          "url": "/data/ativos/144442003424-5/Pauta de IPTU - 144442003424-5 - 46907807.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "144442018263-5",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Recanto das Emas",
+      "logradouro_curto": "QD 403 LT 21 CJ 11 RECANTO DAS EMAS",
+      "endereco": "QD 403 LT 21 CJ 11,N. SN, RECANTO DAS EMAS - CEP: 72630-311, RECANTO DAS EMAS - DISTRITO FEDERAL",
+      "lat": -15.90725,
+      "lng": -48.0681,
+      "tipo": "Casa",
+      "area": "127,00m2",
+      "valor_avaliacao": "R$ 271.000,00",
+      "valor_avaliacao_num": 271000.0,
+      "valor_minimo": "R$ 172.712,18",
+      "valor_minimo_num": 172712.18,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "06/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=144442018263-5",
+      "url_leiloeiro": "https://www.oesteleiloes.com.br",
+      "site_leiloeiro_nome": "oesteleiloes",
+      "site_leiloeiro_clean": "oesteleiloes",
+      "fotos_list": [
+        "/data/ativos/144442018263-5/fotos/F144442018263521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1444420182635.pdf",
+          "url": "/data/ativos/144442018263-5/1444420182635.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 144442018263-5 - 47860200.pdf",
+          "url": "/data/ativos/144442018263-5/Certidão de IPTU - 144442018263-5 - 47860200.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 144442018263-5 - 47860200.pdf",
+          "url": "/data/ativos/144442018263-5/DAR 2026 - 144442018263-5 - 47860200.pdf"
+        },
+        {
+          "nome": "EA00210326CPVERE.PDF",
+          "url": "/data/ativos/144442018263-5/EA00210326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 144442018263-5 - 47860200.pdf",
+          "url": "/data/ativos/144442018263-5/Ficha Cadastral - 144442018263-5 - 47860200.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 144442018263-5 - 47860200.pdf",
+          "url": "/data/ativos/144442018263-5/Pauta de IPTU - 144442018263-5 - 47860200.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 55,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "155550675161-3",
+      "cidade_satelite": "Riacho Fundo",
+      "bairro": "Riacho Fundo II",
+      "logradouro_curto": "Q QN 07  LOTE 21 CONJUNTO 18 RIACHO FUNDO",
+      "endereco": "Q QN 07  LOTE 21 CONJUNTO 18,N. SN, RIACHO FUNDO         - CEP: 71805-718, RIACHO FUNDO - DISTRITO FEDERAL",
+      "lat": -15.89445,
+      "lng": -48.0178,
+      "tipo": "Casa",
+      "area": "115,00m2",
+      "valor_avaliacao": "R$ 481.000,00",
+      "valor_avaliacao_num": 481000.0,
+      "valor_minimo": "R$ 481.000,00",
+      "valor_minimo_num": 481000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155550675161-3",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/155550675161-3/fotos/F155550675161321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1555506751613.pdf",
+          "url": "/data/ativos/155550675161-3/1555506751613.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 155550675161-3 - 47051159.pdf",
+          "url": "/data/ativos/155550675161-3/Certidão de IPTU - 155550675161-3 - 47051159.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 155550675161-3 - 47051159.pdf",
+          "url": "/data/ativos/155550675161-3/DAR 2026 - 155550675161-3 - 47051159.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/155550675161-3/EL00360226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 155550675161-3 - 47051159.pdf",
+          "url": "/data/ativos/155550675161-3/Ficha Cadastral - 155550675161-3 - 47051159.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 155550675161-3 - 47051159.pdf",
+          "url": "/data/ativos/155550675161-3/Pauta de IPTU - 155550675161-3 - 47051159.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 34,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "155551239754-0",
+      "cidade_satelite": "Brasília",
+      "bairro": "Brasília",
+      "logradouro_curto": "RUA  ASAFELT 19, LOT. MORADA DE DEUS",
+      "endereco": "RUA  ASAFE,N. SN   LT 19, LOT. MORADA DE DEUS  - CEP: 71680-613, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.79985,
+      "lng": -47.8889,
+      "tipo": "Terreno",
+      "area": "Não informada",
+      "valor_avaliacao": "R$ 390.000,00",
+      "valor_avaliacao_num": 390000.0,
+      "valor_minimo": "R$ 390.000,00",
+      "valor_minimo_num": 390000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155551239754-0",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/155551239754-0/fotos/F155551239754021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1555512397540.pdf",
+          "url": "/data/ativos/155551239754-0/1555512397540.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 155551239754-0 - 49071513.pdf",
+          "url": "/data/ativos/155551239754-0/Certidão de IPTU - 155551239754-0 - 49071513.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 155551239754-0 - 49071513.pdf",
+          "url": "/data/ativos/155551239754-0/DAR 2026 - 155551239754-0 - 49071513.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/155551239754-0/EL00400226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 155551239754-0 - 49071513.pdf",
+          "url": "/data/ativos/155551239754-0/Ficha Cadastral - 155551239754-0 - 49071513.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 155551239754-0 - 49071513.pdf",
+          "url": "/data/ativos/155551239754-0/Pauta de IPTU - 155551239754-0 - 49071513.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 30,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "155552137022-6",
+      "cidade_satelite": "Águas Claras",
+      "bairro": "Águas Claras Norte",
+      "logradouro_curto": "ALAMEDA DOS EUCALIPITOSAPTO. 908 VG 115 BLOCO B QUADRA 107, NORTE (AGUAS CLARAS)",
+      "endereco": "ALAMEDA DOS EUCALIPITOS,N. SN APTO. 908 VG 115 BLOCO B QUADRA 107, NORTE (AGUAS CLARAS) - CEP: 71919-700, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.8305,
+      "lng": -48.02605,
+      "tipo": "Apartamento",
+      "area": "75,89m2",
+      "valor_avaliacao": "R$ 602.000,00",
+      "valor_avaliacao_num": 602000.0,
+      "valor_minimo": "R$ 602.000,00",
+      "valor_minimo_num": 602000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "31/07/2026   10h00",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155552137022-6",
+      "url_leiloeiro": "https://www.mgl.com.br",
+      "site_leiloeiro_nome": "mgl",
+      "site_leiloeiro_clean": "mgl",
+      "fotos_list": [
+        "/data/ativos/155552137022-6/fotos/F155552137022621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1555521370226.pdf",
+          "url": "/data/ativos/155552137022-6/1555521370226.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 155552137022-6 - 51190125.pdf",
+          "url": "/data/ativos/155552137022-6/Certidão de IPTU - 155552137022-6 - 51190125.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 155552137022-6 - 51190125.pdf",
+          "url": "/data/ativos/155552137022-6/DAR 2026 - 155552137022-6 - 51190125.pdf"
+        },
+        {
+          "nome": "EL00320226CPARE.PDF",
+          "url": "/data/ativos/155552137022-6/EL00320226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 155552137022-6 - 51190125.pdf",
+          "url": "/data/ativos/155552137022-6/Ficha Cadastral - 155552137022-6 - 51190125.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 155552137022-6 - 51190125.pdf",
+          "url": "/data/ativos/155552137022-6/Pauta de IPTU - 155552137022-6 - 51190125.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "155552155346-0",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Setor Industrial (Taguatinga)",
+      "logradouro_curto": "LOTES N° 1 A 13 QUADRA QI-24APTO. 303 TORRE B VAGA N°499, SETOR INDUSTRIAL",
+      "endereco": "LOTES N° 1 A 13 QUADRA QI-24,N. SN APTO. 303 TORRE B VAGA N°499, SETOR INDUSTRIAL     - CEP: 72135-240, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.81665,
+      "lng": -48.0405,
+      "tipo": "Apartamento",
+      "area": "50,46m2",
+      "valor_avaliacao": "R$ 265.000,00",
+      "valor_avaliacao_num": 265000.0,
+      "valor_minimo": "R$ 265.000,00",
+      "valor_minimo_num": 265000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "28/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155552155346-0",
+      "url_leiloeiro": "https://www.hastaleiloes.com.br",
+      "site_leiloeiro_nome": "hastaleiloes",
+      "site_leiloeiro_clean": "hastaleiloes",
+      "fotos_list": [
+        "/data/ativos/155552155346-0/fotos/F155552155346021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1555521553460.pdf",
+          "url": "/data/ativos/155552155346-0/1555521553460.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 155552155346-0 - 52618161.pdf",
+          "url": "/data/ativos/155552155346-0/Certidão de IPTU - 155552155346-0 - 52618161.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 155552155346-0 - 52618161.pdf",
+          "url": "/data/ativos/155552155346-0/DAR 2026 - 155552155346-0 - 52618161.pdf"
+        },
+        {
+          "nome": "EL00390226CPARE.PDF",
+          "url": "/data/ativos/155552155346-0/EL00390226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 155552155346-0 - 52618161.pdf",
+          "url": "/data/ativos/155552155346-0/Ficha Cadastral - 155552155346-0 - 52618161.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 155552155346-0 - 52618161.pdf",
+          "url": "/data/ativos/155552155346-0/Pauta de IPTU - 155552155346-0 - 52618161.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 43,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "155552404749-3",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Setor Industrial (Taguatinga)",
+      "logradouro_curto": "QUADRA QI 24APTO. 110 TR A VG 568, SETOR INDUSTRIAL",
+      "endereco": "QUADRA QI 24,N. SN APTO. 110 TR A VG 568, SETOR INDUSTRIAL - CEP: 72135-240, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.80885,
+      "lng": -48.0381,
+      "tipo": "Apartamento",
+      "area": "50,52m2",
+      "valor_avaliacao": "R$ 315.000,00",
+      "valor_avaliacao_num": 315000.0,
+      "valor_minimo": "R$ 315.000,00",
+      "valor_minimo_num": 315000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155552404749-3",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/155552404749-3/fotos/F155552404749321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1555524047493.pdf",
+          "url": "/data/ativos/155552404749-3/1555524047493.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 155552404749-3 - 52601439.pdf",
+          "url": "/data/ativos/155552404749-3/Certidão de IPTU - 155552404749-3 - 52601439.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 155552404749-3 - 52601439.pdf",
+          "url": "/data/ativos/155552404749-3/DAR 2026 - 155552404749-3 - 52601439.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/155552404749-3/EL00360226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 155552404749-3 - 52601439.pdf",
+          "url": "/data/ativos/155552404749-3/Ficha Cadastral - 155552404749-3 - 52601439.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 155552404749-3 - 52601439.pdf",
+          "url": "/data/ativos/155552404749-3/Pauta de IPTU - 155552404749-3 - 52601439.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 38,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "155552649020-3",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QNO 12 AREA ESPECIAL IAPTO. 406 BL B, CEILANDIA NORTE",
+      "endereco": "QNO 12 AREA ESPECIAL I,N. SN APTO. 406 BL B, CEILANDIA NORTE - CEP: 72255-209, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.8059,
+      "lng": -48.10245,
+      "tipo": "Apartamento",
+      "area": "49,30m2",
+      "valor_avaliacao": "R$ 255.000,00",
+      "valor_avaliacao_num": 255000.0,
+      "valor_minimo": "R$ 162.515,15",
+      "valor_minimo_num": 162515.15,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "06/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155552649020-3",
+      "url_leiloeiro": "https://www.oesteleiloes.com.br",
+      "site_leiloeiro_nome": "oesteleiloes",
+      "site_leiloeiro_clean": "oesteleiloes",
+      "fotos_list": [
+        "/data/ativos/155552649020-3/fotos/F155552649020321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1555526490203.pdf",
+          "url": "/data/ativos/155552649020-3/1555526490203.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 155552649020-3 - 52346587.pdf",
+          "url": "/data/ativos/155552649020-3/Certidão de IPTU - 155552649020-3 - 52346587.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 155552649020-3 - 52346587.pdf",
+          "url": "/data/ativos/155552649020-3/DAR 2026 - 155552649020-3 - 52346587.pdf"
+        },
+        {
+          "nome": "EA00210326CPVERE.PDF",
+          "url": "/data/ativos/155552649020-3/EA00210326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 155552649020-3 - 52346587.pdf",
+          "url": "/data/ativos/155552649020-3/Ficha Cadastral - 155552649020-3 - 52346587.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 155552649020-3 - 52346587.pdf",
+          "url": "/data/ativos/155552649020-3/Pauta de IPTU - 155552649020-3 - 52346587.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 57,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "155553375969-7",
+      "cidade_satelite": "Águas Claras",
+      "bairro": "Águas Claras Norte",
+      "logradouro_curto": "RUA 25APTO. 412 LT 14 VAGA 245, NORTE (AGUAS CLARAS)",
+      "endereco": "RUA 25,N. SN APTO. 412 LT 14 VAGA 245, NORTE (AGUAS CLARAS) - CEP: 71917-180, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.8392,
+      "lng": -48.02245,
+      "tipo": "Apartamento",
+      "area": "38,98m2",
+      "valor_avaliacao": "R$ 364.086,81",
+      "valor_avaliacao_num": 364086.81,
+      "valor_minimo": "R$ 364.086,81",
+      "valor_minimo_num": 364086.81,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "14/07/2026   10h00",
+      "data_2": "20/07/2026   10h00",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155553375969-7",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=155553375969-7",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/155553375969-7/fotos/F155553375969721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1555533759697.pdf",
+          "url": "/data/ativos/155553375969-7/1555533759697.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 155553375969-7 - 000.pdf",
+          "url": "/data/ativos/155553375969-7/DAR 2026 - 155553375969-7 - 000.pdf"
+        },
+        {
+          "nome": "EL00300226CPARE.PDF",
+          "url": "/data/ativos/155553375969-7/EL00300226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 155553375969-7 - 000.pdf",
+          "url": "/data/ativos/155553375969-7/Ficha Cadastral - 155553375969-7 - 000.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 155553375969-7 - 000.pdf",
+          "url": "/data/ativos/155553375969-7/Pauta de IPTU - 155553375969-7 - 000.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "178770129899-0",
+      "cidade_satelite": "Brasília",
+      "bairro": "Centro Urbano (Brasília)",
+      "logradouro_curto": "QUADRA 301APTO. 603 TORRE B, LT 1, CONJ 08, CENTRO URBANO",
+      "endereco": "QUADRA 301,N. SN APTO. 603 TORRE B, LT 1, CONJ 08, CENTRO URBANO        - CEP: 72300-545, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.7913,
+      "lng": -47.8778,
+      "tipo": "Apartamento",
+      "area": "54,10m2",
+      "valor_avaliacao": "R$ 381.749,20",
+      "valor_avaliacao_num": 381749.2,
+      "valor_minimo": "R$ 381.749,20",
+      "valor_minimo_num": 381749.2,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "30/07/2026   10h00",
+      "data_2": "05/08/2026   10h00",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=178770129899-0",
+      "url_leiloeiro": "https://www.flexleiloes.com.br",
+      "site_leiloeiro_nome": "flexleiloes",
+      "site_leiloeiro_clean": "flexleiloes",
+      "fotos_list": [
+        "/data/ativos/178770129899-0/fotos/F178770129899021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1787701298990.pdf",
+          "url": "/data/ativos/178770129899-0/1787701298990.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 178770129899-0 - 53510046.pdf",
+          "url": "/data/ativos/178770129899-0/Certidão de IPTU - 178770129899-0 - 53510046.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 178770129899-0 - 53510046.pdf",
+          "url": "/data/ativos/178770129899-0/DAR 2026 - 178770129899-0 - 53510046.pdf"
+        },
+        {
+          "nome": "EL00330226CPARE.PDF",
+          "url": "/data/ativos/178770129899-0/EL00330226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 178770129899-0 - 53510046.pdf",
+          "url": "/data/ativos/178770129899-0/Ficha Cadastral - 178770129899-0 - 53510046.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 178770129899-0 - 53510046.pdf",
+          "url": "/data/ativos/178770129899-0/Pauta de IPTU - 178770129899-0 - 53510046.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "178770169875-1",
+      "cidade_satelite": "Brasília",
+      "bairro": "Centro Urbano (Brasília)",
+      "logradouro_curto": "QUADRA 301APTO. 1403 TR ALT 01 QD 301 VG 16, CENTRO URBANO",
+      "endereco": "QUADRA 301,N. SN APTO. 1403 TR ALT 01 QD 301 VG 16, CENTRO URBANO        - CEP: 72300-545, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.78785,
+      "lng": -47.879,
+      "tipo": "Apartamento",
+      "area": "54,10m2",
+      "valor_avaliacao": "R$ 384.985,88",
+      "valor_avaliacao_num": 384985.88,
+      "valor_minimo": "R$ 384.985,88",
+      "valor_minimo_num": 384985.88,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "19/08/2026   10h00",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=178770169875-1",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/178770169875-1/fotos/F178770169875121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1787701698751.pdf",
+          "url": "/data/ativos/178770169875-1/1787701698751.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 178770169875-1 - 53509269.pdf",
+          "url": "/data/ativos/178770169875-1/Certidão de IPTU - 178770169875-1 - 53509269.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 178770169875-1 - 53509269.pdf",
+          "url": "/data/ativos/178770169875-1/DAR 2026 - 178770169875-1 - 53509269.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/178770169875-1/EL00360226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 178770169875-1 - 53509269.pdf",
+          "url": "/data/ativos/178770169875-1/Ficha Cadastral - 178770169875-1 - 53509269.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 178770169875-1 - 53509269.pdf",
+          "url": "/data/ativos/178770169875-1/Pauta de IPTU - 178770169875-1 - 53509269.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "178770171992-9",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Subcentro Urbano (Recanto das Emas)",
+      "logradouro_curto": "AVENIDA BURITIAPTO. 146 LT 05 SUBCENTRO 400 600, RECANTO DAS EMAS",
+      "endereco": "AVENIDA BURITI,N. SN APTO. 146 LT 05 SUBCENTRO 400 600, RECANTO DAS EMAS - CEP: 72630-250, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.9017,
+      "lng": -48.06225,
+      "tipo": "Apartamento",
+      "area": "45,04m2",
+      "valor_avaliacao": "R$ 205.000,00",
+      "valor_avaliacao_num": 205000.0,
+      "valor_minimo": "R$ 266.979,70",
+      "valor_minimo_num": 266979.7,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=178770171992-9",
+      "url_leiloeiro": "https://www.nasarleiloes.com.br",
+      "site_leiloeiro_nome": "nasarleiloes",
+      "site_leiloeiro_clean": "nasarleiloes",
+      "fotos_list": [
+        "/data/ativos/178770171992-9/fotos/F178770171992921.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1787701719929.pdf",
+          "url": "/data/ativos/178770171992-9/1787701719929.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 178770171992-9 - 53573439.pdf",
+          "url": "/data/ativos/178770171992-9/Certidão de IPTU - 178770171992-9 - 53573439.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 178770171992-9 - 53573439.pdf",
+          "url": "/data/ativos/178770171992-9/DAR 2026 - 178770171992-9 - 53573439.pdf"
+        },
+        {
+          "nome": "EL00310226CPARE.PDF",
+          "url": "/data/ativos/178770171992-9/EL00310226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 178770171992-9 - 53573439.pdf",
+          "url": "/data/ativos/178770171992-9/Ficha Cadastral - 178770171992-9 - 53573439.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 178770171992-9 - 53573439.pdf",
+          "url": "/data/ativos/178770171992-9/Pauta de IPTU - 178770171992-9 - 53573439.pdf"
+        }
+      ],
+      "desconto_pct": -30.2,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "178770188902-6",
+      "cidade_satelite": "Guará",
+      "bairro": "SGCV / Park Sul",
+      "logradouro_curto": "SGCVAPTO. 305 LT 14 TORRE D, ZONA INDUSTRIAL",
+      "endereco": "SGCV,N. SN APTO. 305 LT 14 TORRE D, ZONA INDUSTRIAL - CEP: 71215-100, GUARA - DISTRITO FEDERAL",
+      "lat": -15.83305,
+      "lng": -47.95005,
+      "tipo": "Apartamento",
+      "area": "76,32m2",
+      "valor_avaliacao": "R$ 945.448,54",
+      "valor_avaliacao_num": 945448.54,
+      "valor_minimo": "R$ 1.064.267,70",
+      "valor_minimo_num": 1064267.7,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "20/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=178770188902-6",
+      "url_leiloeiro": "https://www.fidalgoleiloes.com.br",
+      "site_leiloeiro_nome": "fidalgoleiloes",
+      "site_leiloeiro_clean": "fidalgoleiloes",
+      "fotos_list": [
+        "/data/ativos/178770188902-6/fotos/F178770188902621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1787701889026.pdf",
+          "url": "/data/ativos/178770188902-6/1787701889026.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 178770188902-6 - 53470168.pdf",
+          "url": "/data/ativos/178770188902-6/Certidão de IPTU - 178770188902-6 - 53470168.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 178770188902-6 - 53470168.pdf",
+          "url": "/data/ativos/178770188902-6/DAR 2026 - 178770188902-6 - 53470168.pdf"
+        },
+        {
+          "nome": "EL00370226CPARE.PDF",
+          "url": "/data/ativos/178770188902-6/EL00370226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 178770188902-6 - 53470168.pdf",
+          "url": "/data/ativos/178770188902-6/Ficha Cadastral - 178770188902-6 - 53470168.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 178770188902-6 - 53470168.pdf",
+          "url": "/data/ativos/178770188902-6/Pauta de IPTU - 178770188902-6 - 53470168.pdf"
+        }
+      ],
+      "desconto_pct": -12.6,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "178770228123-4",
+      "cidade_satelite": "Itapoã",
+      "bairro": "Itapoã Parque",
+      "logradouro_curto": "QUADRA 402APTO. 101 BL  F1 LT 08 CONJ 01, ITAPOA PARQUE (ITAPOA)",
+      "endereco": "QUADRA 402,N. SN APTO. 101 BL  F1 LT 08 CONJ 01, ITAPOA PARQUE (ITAPOA) - CEP: 71592-045, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.74695,
+      "lng": -47.7702,
+      "tipo": "Apartamento",
+      "area": "46,40m2",
+      "valor_avaliacao": "R$ 199.000,00",
+      "valor_avaliacao_num": 199000.0,
+      "valor_minimo": "R$ 199.000,00",
+      "valor_minimo_num": 199000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "04/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=178770228123-4",
+      "url_leiloeiro": "https://www.emleilao.com.br",
+      "site_leiloeiro_nome": "emleilao",
+      "site_leiloeiro_clean": "emleilao",
+      "fotos_list": [
+        "/data/ativos/178770228123-4/fotos/F178770228123421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "1787702281234.pdf",
+          "url": "/data/ativos/178770228123-4/1787702281234.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 178770228123-4 - 53629027.pdf",
+          "url": "/data/ativos/178770228123-4/Certidão de IPTU - 178770228123-4 - 53629027.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 178770228123-4 - 53629027.pdf",
+          "url": "/data/ativos/178770228123-4/DAR 2026 - 178770228123-4 - 53629027.pdf"
+        },
+        {
+          "nome": "EL00350226CPARE.PDF",
+          "url": "/data/ativos/178770228123-4/EL00350226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 178770228123-4 - 53629027.pdf",
+          "url": "/data/ativos/178770228123-4/Ficha Cadastral - 178770228123-4 - 53629027.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 178770228123-4 - 53629027.pdf",
+          "url": "/data/ativos/178770228123-4/Pauta de IPTU - 178770228123-4 - 53629027.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "800029002020-8",
+      "cidade_satelite": "Águas Claras",
+      "bairro": "Areal (Águas Claras)",
+      "logradouro_curto": "QS 5APTO. 702 LT 01 VG 13, AREAL (AGUAS CLARAS)",
+      "endereco": "QS 5,N. SN APTO. 702 LT 01 VG 13, AREAL (AGUAS CLARAS) - CEP: 71955-000, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.84145,
+      "lng": -48.0275,
+      "tipo": "Apartamento",
+      "area": "41,88m2",
+      "valor_avaliacao": "R$ 254.442,13",
+      "valor_avaliacao_num": 254442.13,
+      "valor_minimo": "R$ 162.159,61",
+      "valor_minimo_num": 162159.61,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=800029002020-8",
+      "url_leiloeiro": "https://www.lancetotal.com.br",
+      "site_leiloeiro_nome": "lancetotal",
+      "site_leiloeiro_clean": "lancetotal",
+      "fotos_list": [
+        "/data/ativos/800029002020-8/fotos/F800029002020821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8000290020208.pdf",
+          "url": "/data/ativos/800029002020-8/8000290020208.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 800029002020-8 - 52811344.pdf",
+          "url": "/data/ativos/800029002020-8/Certidão de IPTU - 800029002020-8 - 52811344.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 800029002020-8 - 52811344.pdf",
+          "url": "/data/ativos/800029002020-8/DAR 2026 - 800029002020-8 - 52811344.pdf"
+        },
+        {
+          "nome": "EA00190326CPVERE.PDF",
+          "url": "/data/ativos/800029002020-8/EA00190326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 800029002020-8 - 52811344.pdf",
+          "url": "/data/ativos/800029002020-8/Ficha Cadastral - 800029002020-8 - 52811344.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 800029002020-8 - 52811344.pdf",
+          "url": "/data/ativos/800029002020-8/Pauta de IPTU - 800029002020-8 - 52811344.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 57,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "844440977014-1",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QNP 13CJ C LT13, CEILANDIA NORTE",
+      "endereco": "QNP 13,N. SN  CJ C LT13, CEILANDIA NORTE - CEP: 72241-303, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.8131,
+      "lng": -48.1092,
+      "tipo": "Casa",
+      "area": "252,41m2",
+      "valor_avaliacao": "R$ 560.000,00",
+      "valor_avaliacao_num": 560000.0,
+      "valor_minimo": "R$ 356.896,01",
+      "valor_minimo_num": 356896.01,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Direta Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844440977014-1",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844440977014-1",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/844440977014-1/fotos/F844440977014121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444409770141.pdf",
+          "url": "/data/ativos/844440977014-1/8444409770141.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844440977014-1 - 30627427.pdf",
+          "url": "/data/ativos/844440977014-1/Certidão de IPTU - 844440977014-1 - 30627427.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844440977014-1 - 30627427.pdf",
+          "url": "/data/ativos/844440977014-1/DAR 2026 - 844440977014-1 - 30627427.pdf"
+        },
+        {
+          "nome": "Ficha Cadastral - 844440977014-1 - 30627427.pdf",
+          "url": "/data/ativos/844440977014-1/Ficha Cadastral - 844440977014-1 - 30627427.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844440977014-1 - 30627427.pdf",
+          "url": "/data/ativos/844440977014-1/Pauta de IPTU - 844440977014-1 - 30627427.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 62,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "844441002639-6",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QUADRA  312APTO. 507 LT 01 CONJ 04-A, SAMAMBAIA SUL",
+      "endereco": "QUADRA  312,N. SN APTO. 507 LT 01 CONJ 04-A, SAMAMBAIA SUL - CEP: 72308-105, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8778,
+      "lng": -48.08865,
+      "tipo": "Apartamento",
+      "area": "30,02m2",
+      "valor_avaliacao": "R$ 143.000,00",
+      "valor_avaliacao_num": 143000.0,
+      "valor_minimo": "R$ 162.527,76",
+      "valor_minimo_num": 162527.76,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "04/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844441002639-6",
+      "url_leiloeiro": "https://www.emleilao.com.br",
+      "site_leiloeiro_nome": "emleilao",
+      "site_leiloeiro_clean": "emleilao",
+      "fotos_list": [
+        "/data/ativos/844441002639-6/fotos/F844441002639621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444410026396.pdf",
+          "url": "/data/ativos/844441002639-6/8444410026396.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844441002639-6 - 51569493.pdf",
+          "url": "/data/ativos/844441002639-6/Certidão de IPTU - 844441002639-6 - 51569493.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844441002639-6 - 51569493.pdf",
+          "url": "/data/ativos/844441002639-6/DAR 2026 - 844441002639-6 - 51569493.pdf"
+        },
+        {
+          "nome": "EL00350226CPARE.PDF",
+          "url": "/data/ativos/844441002639-6/EL00350226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 844441002639-6 - 51569493.pdf",
+          "url": "/data/ativos/844441002639-6/Ficha Cadastral - 844441002639-6 - 51569493.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844441002639-6 - 51569493.pdf",
+          "url": "/data/ativos/844441002639-6/Pauta de IPTU - 844441002639-6 - 51569493.pdf"
+        }
+      ],
+      "desconto_pct": -13.7,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "844441400262-9",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Recanto das Emas",
+      "logradouro_curto": "QUADRA 116,N. 01   CJ 07, RECANTO DAS EMAS",
+      "endereco": "QUADRA 116,N. 01   CJ 07, RECANTO DAS EMAS - CEP: 72603-400, RECANTO DAS EMAS - DISTRITO FEDERAL",
+      "lat": -15.89915,
+      "lng": -48.05955,
+      "tipo": "Casa",
+      "area": "69,00m2",
+      "valor_avaliacao": "R$ 146.000,00",
+      "valor_avaliacao_num": 146000.0,
+      "valor_minimo": "R$ 168.840,81",
+      "valor_minimo_num": 168840.81,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "30/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844441400262-9",
+      "url_leiloeiro": "https://www.flexleiloes.com.br",
+      "site_leiloeiro_nome": "flexleiloes",
+      "site_leiloeiro_clean": "flexleiloes",
+      "fotos_list": [
+        "/data/ativos/844441400262-9/fotos/F844441400262921.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444414002629.pdf",
+          "url": "/data/ativos/844441400262-9/8444414002629.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844441400262-9 - 46987495.pdf",
+          "url": "/data/ativos/844441400262-9/Certidão de IPTU - 844441400262-9 - 46987495.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844441400262-9 - 46987495.pdf",
+          "url": "/data/ativos/844441400262-9/DAR 2026 - 844441400262-9 - 46987495.pdf"
+        },
+        {
+          "nome": "EL00330226CPARE.PDF",
+          "url": "/data/ativos/844441400262-9/EL00330226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 844441400262-9 - 46987495.pdf",
+          "url": "/data/ativos/844441400262-9/Ficha Cadastral - 844441400262-9 - 46987495.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844441400262-9 - 46987495.pdf",
+          "url": "/data/ativos/844441400262-9/Pauta de IPTU - 844441400262-9 - 46987495.pdf"
+        }
+      ],
+      "desconto_pct": -15.6,
+      "score": 39,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "844442021459-4",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QR 108APTO. 1204 LT 1 CJT 6, SAMAMBAIA",
+      "endereco": "QR 108,N. SN APTO. 1204 LT 1 CJT 6, SAMAMBAIA - CEP: 72302-206, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8841,
+      "lng": -48.09675,
+      "tipo": "Apartamento",
+      "area": "52,63m2",
+      "valor_avaliacao": "R$ 240.000,00",
+      "valor_avaliacao_num": 240000.0,
+      "valor_minimo": "R$ 152.955,43",
+      "valor_minimo_num": 152955.43,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844442021459-4",
+      "url_leiloeiro": "https://www.machadoleiloeiro.com.br",
+      "site_leiloeiro_nome": "machadoleiloeiro",
+      "site_leiloeiro_clean": "machadoleiloeiro",
+      "fotos_list": [
+        "/data/ativos/844442021459-4/fotos/F844442021459421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444420214594.pdf",
+          "url": "/data/ativos/844442021459-4/8444420214594.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844442021459-4 - 50922378.pdf",
+          "url": "/data/ativos/844442021459-4/Certidão de IPTU - 844442021459-4 - 50922378.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844442021459-4 - 50922378.pdf",
+          "url": "/data/ativos/844442021459-4/DAR 2026 - 844442021459-4 - 50922378.pdf"
+        },
+        {
+          "nome": "EA00220326CPVERE.PDF",
+          "url": "/data/ativos/844442021459-4/EA00220326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 844442021459-4 - 50922378.pdf",
+          "url": "/data/ativos/844442021459-4/Ficha Cadastral - 844442021459-4 - 50922378.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844442021459-4 - 50922378.pdf",
+          "url": "/data/ativos/844442021459-4/Pauta de IPTU - 844442021459-4 - 50922378.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 57,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "844442038141-5",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QUADRA QN 312APTO. 101 LT 02 CJ 05, SAMAMBAIA SUL",
+      "endereco": "QUADRA QN 312,N. SN APTO. 101 LT 02 CJ 05, SAMAMBAIA SUL - CEP: 72308-000, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.88575,
+      "lng": -48.08505,
+      "tipo": "Apartamento",
+      "area": "47,87m2",
+      "valor_avaliacao": "R$ 207.000,00",
+      "valor_avaliacao_num": 207000.0,
+      "valor_minimo": "R$ 125.113,59",
+      "valor_minimo_num": 125113.59,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "23/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844442038141-5",
+      "url_leiloeiro": "https://www.fidalgoleiloes.com.br",
+      "site_leiloeiro_nome": "fidalgoleiloes",
+      "site_leiloeiro_clean": "fidalgoleiloes",
+      "fotos_list": [
+        "/data/ativos/844442038141-5/fotos/F844442038141521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444420381415.pdf",
+          "url": "/data/ativos/844442038141-5/8444420381415.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844442038141-5 - 53218698.pdf",
+          "url": "/data/ativos/844442038141-5/Certidão de IPTU - 844442038141-5 - 53218698.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844442038141-5 - 53218698.pdf",
+          "url": "/data/ativos/844442038141-5/DAR 2026 - 844442038141-5 - 53218698.pdf"
+        },
+        {
+          "nome": "EA00180326CPVERE.PDF",
+          "url": "/data/ativos/844442038141-5/EA00180326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 844442038141-5 - 53218698.pdf",
+          "url": "/data/ativos/844442038141-5/Ficha Cadastral - 844442038141-5 - 53218698.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844442038141-5 - 53218698.pdf",
+          "url": "/data/ativos/844442038141-5/Pauta de IPTU - 844442038141-5 - 53218698.pdf"
+        }
+      ],
+      "desconto_pct": 39.6,
+      "score": 55,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "844442080262-3",
+      "cidade_satelite": "Ceilândia",
+      "bairro": "Ceilândia Norte",
+      "logradouro_curto": "QNP 15LT 45, CEILANDIA NORTE",
+      "endereco": "QNP 15,N. SN   LT 45, CEILANDIA NORTE - CEP: 72241-619, CEILANDIA - DISTRITO FEDERAL",
+      "lat": -15.8011,
+      "lng": -48.1104,
+      "tipo": "Casa",
+      "area": "45,77m2",
+      "valor_avaliacao": "R$ 247.000,00",
+      "valor_avaliacao_num": 247000.0,
+      "valor_minimo": "R$ 157.416,63",
+      "valor_minimo_num": 157416.63,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844442080262-3",
+      "url_leiloeiro": "https://www.lancetotal.com.br",
+      "site_leiloeiro_nome": "lancetotal",
+      "site_leiloeiro_clean": "lancetotal",
+      "fotos_list": [
+        "/data/ativos/844442080262-3/fotos/F844442080262321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444420802623.pdf",
+          "url": "/data/ativos/844442080262-3/8444420802623.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844442080262-3 - 30644941.pdf",
+          "url": "/data/ativos/844442080262-3/Certidão de IPTU - 844442080262-3 - 30644941.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844442080262-3 - 30644941.pdf",
+          "url": "/data/ativos/844442080262-3/DAR 2026 - 844442080262-3 - 30644941.pdf"
+        },
+        {
+          "nome": "EA00190326CPVERE.PDF",
+          "url": "/data/ativos/844442080262-3/EA00190326CPVERE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 844442080262-3 - 30644941.pdf",
+          "url": "/data/ativos/844442080262-3/Ficha Cadastral - 844442080262-3 - 30644941.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844442080262-3 - 30644941.pdf",
+          "url": "/data/ativos/844442080262-3/Pauta de IPTU - 844442080262-3 - 30644941.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 55,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "844442827470-7",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QUADRA QRLOTE 20 CONJUNTO 2 QUADRA QR 1031, SAMAMBAIA NORTE",
+      "endereco": "QUADRA QR,N. SN  LOTE 20 CONJUNTO 2 QUADRA QR 1031, SAMAMBAIA NORTE - CEP: 72339-032, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8617,
+      "lng": -48.07655,
+      "tipo": "Casa",
+      "area": "108,00m2",
+      "valor_avaliacao": "R$ 334.000,00",
+      "valor_avaliacao_num": 334000.0,
+      "valor_minimo": "R$ 212.862,98",
+      "valor_minimo_num": 212862.98,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Direta Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844442827470-7",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844442827470-7",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/844442827470-7/fotos/F844442827470721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444428274707.pdf",
+          "url": "/data/ativos/844442827470-7/8444428274707.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844442827470-7 - 5071869X.pdf",
+          "url": "/data/ativos/844442827470-7/Certidão de IPTU - 844442827470-7 - 5071869X.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844442827470-7 - 5071869X.pdf",
+          "url": "/data/ativos/844442827470-7/DAR 2026 - 844442827470-7 - 5071869X.pdf"
+        },
+        {
+          "nome": "Ficha Cadastral - 844442827470-7 - 5071869X.pdf",
+          "url": "/data/ativos/844442827470-7/Ficha Cadastral - 844442827470-7 - 5071869X.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844442827470-7 - 5071869X.pdf",
+          "url": "/data/ativos/844442827470-7/Pauta de IPTU - 844442827470-7 - 5071869X.pdf"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 62,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "844443042603-9",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QUADRA QR 414APTO. 305 LT 01 CJTO 10A, SAMAMBAIA NORTE",
+      "endereco": "QUADRA QR 414,N. SN APTO. 305 LT 01 CJTO 10A, SAMAMBAIA NORTE - CEP: 72320-214, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.85915,
+      "lng": -48.0839,
+      "tipo": "Apartamento",
+      "area": "59,40m2",
+      "valor_avaliacao": "R$ 218.500,00",
+      "valor_avaliacao_num": 218500.0,
+      "valor_minimo": "R$ 218.500,00",
+      "valor_minimo_num": 218500.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "20/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844443042603-9",
+      "url_leiloeiro": "https://www.fidalgoleiloes.com.br",
+      "site_leiloeiro_nome": "fidalgoleiloes",
+      "site_leiloeiro_clean": "fidalgoleiloes",
+      "fotos_list": [
+        "/data/ativos/844443042603-9/fotos/F844443042603921.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444430426039.pdf",
+          "url": "/data/ativos/844443042603-9/8444430426039.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844443042603-9 - 5143251X.pdf",
+          "url": "/data/ativos/844443042603-9/Certidão de IPTU - 844443042603-9 - 5143251X.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844443042603-9 - 5143251X.pdf",
+          "url": "/data/ativos/844443042603-9/DAR 2026 - 844443042603-9 - 5143251X.pdf"
+        },
+        {
+          "nome": "EL00370226CPARE.PDF",
+          "url": "/data/ativos/844443042603-9/EL00370226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 844443042603-9 - 5143251X.pdf",
+          "url": "/data/ativos/844443042603-9/Ficha Cadastral - 844443042603-9 - 5143251X.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844443042603-9 - 5143251X.pdf",
+          "url": "/data/ativos/844443042603-9/Pauta de IPTU - 844443042603-9 - 5143251X.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "844443312639-7",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "Q QN 108APTO. 401  BL A LT 01 CJ 01 ENTRADA D, SAMAMBAIA",
+      "endereco": "Q QN 108,N. SN APTO. 401  BL A LT 01 CJ 01 ENTRADA D, SAMAMBAIA            - CEP: 72302-251, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.885,
+      "lng": -48.0831,
+      "tipo": "Apartamento",
+      "area": "43,15m2",
+      "valor_avaliacao": "R$ 180.000,00",
+      "valor_avaliacao_num": 180000.0,
+      "valor_minimo": "R$ 200.258,19",
+      "valor_minimo_num": 200258.19,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=844443312639-7",
+      "url_leiloeiro": "https://www.nasarleiloes.com.br",
+      "site_leiloeiro_nome": "nasarleiloes",
+      "site_leiloeiro_clean": "nasarleiloes",
+      "fotos_list": [
+        "/data/ativos/844443312639-7/fotos/F844443312639721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8444433126397.pdf",
+          "url": "/data/ativos/844443312639-7/8444433126397.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 844443312639-7 - 50060457.pdf",
+          "url": "/data/ativos/844443312639-7/Certidão de IPTU - 844443312639-7 - 50060457.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 844443312639-7 - 50060457.pdf",
+          "url": "/data/ativos/844443312639-7/DAR 2026 - 844443312639-7 - 50060457.pdf"
+        },
+        {
+          "nome": "EL00310226CPARE.PDF",
+          "url": "/data/ativos/844443312639-7/EL00310226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 844443312639-7 - 50060457.pdf",
+          "url": "/data/ativos/844443312639-7/Ficha Cadastral - 844443312639-7 - 50060457.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 844443312639-7 - 50060457.pdf",
+          "url": "/data/ativos/844443312639-7/Pauta de IPTU - 844443312639-7 - 50060457.pdf"
+        }
+      ],
+      "desconto_pct": -11.3,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "855552866882-2",
+      "cidade_satelite": "Santa Maria",
+      "bairro": "Santa Maria",
+      "logradouro_curto": "COMÉRCIO LOCAL 105APTO. 110 LT H, SANTA MARIA",
+      "endereco": "COMÉRCIO LOCAL 105,N. SN APTO. 110 LT H, SANTA MARIA - CEP: 72505-000, SANTA MARIA - DISTRITO FEDERAL",
+      "lat": -16.01575,
+      "lng": -48.0144,
+      "tipo": "Apartamento",
+      "area": "54,54m2",
+      "valor_avaliacao": "R$ 175.000,00",
+      "valor_avaliacao_num": 175000.0,
+      "valor_minimo": "R$ 175.000,00",
+      "valor_minimo_num": 175000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=855552866882-2",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/855552866882-2/fotos/F855552866882221.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8555528668822.pdf",
+          "url": "/data/ativos/855552866882-2/8555528668822.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 855552866882-2 - 52756653.pdf",
+          "url": "/data/ativos/855552866882-2/Certidão de IPTU - 855552866882-2 - 52756653.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 855552866882-2 - 52756653.pdf",
+          "url": "/data/ativos/855552866882-2/DAR 2026 - 855552866882-2 - 52756653.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/855552866882-2/EL00360226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 855552866882-2 - 52756653.pdf",
+          "url": "/data/ativos/855552866882-2/Ficha Cadastral - 855552866882-2 - 52756653.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 855552866882-2 - 52756653.pdf",
+          "url": "/data/ativos/855552866882-2/Pauta de IPTU - 855552866882-2 - 52756653.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "855553460800-3",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QS 421APTO. 1202 LT 1 E B CJ B, SAMAMBAIA NORTE",
+      "endereco": "QS 421,N. SN APTO. 1202 LT 1 E B CJ B, SAMAMBAIA NORTE - CEP: 72325-552, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.86185,
+      "lng": -48.07475,
+      "tipo": "Apartamento",
+      "area": "41,67m2",
+      "valor_avaliacao": "R$ 192.000,00",
+      "valor_avaliacao_num": 192000.0,
+      "valor_minimo": "R$ 192.000,00",
+      "valor_minimo_num": 192000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "03/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=855553460800-3",
+      "url_leiloeiro": "https://www.faleiloes.com.br",
+      "site_leiloeiro_nome": "faleiloes",
+      "site_leiloeiro_clean": "faleiloes",
+      "fotos_list": [
+        "/data/ativos/855553460800-3/fotos/F855553460800321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8555534608003.pdf",
+          "url": "/data/ativos/855553460800-3/8555534608003.pdf"
+        },
+        {
+          "nome": "Certidão de IPTU - 855553460800-3 - 52754502.pdf",
+          "url": "/data/ativos/855553460800-3/Certidão de IPTU - 855553460800-3 - 52754502.pdf"
+        },
+        {
+          "nome": "DAR 2026 - 855553460800-3 - 52754502.pdf",
+          "url": "/data/ativos/855553460800-3/DAR 2026 - 855553460800-3 - 52754502.pdf"
+        },
+        {
+          "nome": "EL00340226CPARE.PDF",
+          "url": "/data/ativos/855553460800-3/EL00340226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 855553460800-3 - 52754502.pdf",
+          "url": "/data/ativos/855553460800-3/Ficha Cadastral - 855553460800-3 - 52754502.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 855553460800-3 - 52754502.pdf",
+          "url": "/data/ativos/855553460800-3/Pauta de IPTU - 855553460800-3 - 52754502.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 36,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "855553791039-8",
+      "cidade_satelite": "Taguatinga",
+      "bairro": "Setor Industrial (Taguatinga)",
+      "logradouro_curto": "QI 24APTO. 105 LOT 01 A 13 TORRE C QD QI 24, SETOR INDUSTRIAL",
+      "endereco": "QI 24,N. SN APTO. 105 LOT 01 A 13 TORRE C QD QI 24, SETOR INDUSTRIAL - CEP: 72135-240, TAGUATINGA - DISTRITO FEDERAL",
+      "lat": -15.8156,
+      "lng": -48.03915,
+      "tipo": "Apartamento",
+      "area": "51,55m2",
+      "valor_avaliacao": "R$ 300.000,00",
+      "valor_avaliacao_num": 300000.0,
+      "valor_minimo": "R$ 300.000,00",
+      "valor_minimo_num": 300000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "03/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=855553791039-8",
+      "url_leiloeiro": "https://www.faleiloes.com.br",
+      "site_leiloeiro_nome": "faleiloes",
+      "site_leiloeiro_clean": "faleiloes",
+      "fotos_list": [
+        "/data/ativos/855553791039-8/fotos/F855553791039821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8555537910398.pdf",
+          "url": "/data/ativos/855553791039-8/8555537910398.pdf"
+        },
+        {
+          "nome": "EL00340226CPARE.PDF",
+          "url": "/data/ativos/855553791039-8/EL00340226CPARE.PDF"
+        },
+        {
+          "nome": "Ficha Cadastral - 855553791039-8 - 52620220.pdf",
+          "url": "/data/ativos/855553791039-8/Ficha Cadastral - 855553791039-8 - 52620220.pdf"
+        },
+        {
+          "nome": "Pauta de IPTU - 855553791039-8 - 52620220.pdf",
+          "url": "/data/ativos/855553791039-8/Pauta de IPTU - 855553791039-8 - 52620220.pdf"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 43,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878770007222-9",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QN 505APTO. 201 QD  QN505, SAMAMBAIA SUL",
+      "endereco": "QN 505,N. SN APTO. 201 QD  QN505, SAMAMBAIA SUL - CEP: 72311-704, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.86785,
+      "lng": -48.0851,
+      "tipo": "Apartamento",
+      "area": "30,97m2",
+      "valor_avaliacao": "R$ 170.000,00",
+      "valor_avaliacao_num": 170000.0,
+      "valor_minimo": "R$ 170.000,00",
+      "valor_minimo_num": 170000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770007222-9",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/878770007222-9/fotos/F878770007222921.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787700072229.pdf",
+          "url": "/data/ativos/878770007222-9/8787700072229.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/878770007222-9/EL00360226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878770010563-1",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QUADRA QN 503APTO. 102 LT 02 AO 06 CJTO 05, SAMAMBAIA SUL",
+      "endereco": "QUADRA QN 503,N. SN APTO. 102 LT 02 AO 06 CJTO 05, SAMAMBAIA SUL - CEP: 72311-405, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8674,
+      "lng": -48.08045,
+      "tipo": "Apartamento",
+      "area": "31,05m2",
+      "valor_avaliacao": "R$ 210.000,00",
+      "valor_avaliacao_num": 210000.0,
+      "valor_minimo": "R$ 210.000,00",
+      "valor_minimo_num": 210000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "20/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770010563-1",
+      "url_leiloeiro": "https://www.fidalgoleiloes.com.br",
+      "site_leiloeiro_nome": "fidalgoleiloes",
+      "site_leiloeiro_clean": "fidalgoleiloes",
+      "fotos_list": [
+        "/data/ativos/878770010563-1/fotos/F878770010563121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787700105631.pdf",
+          "url": "/data/ativos/878770010563-1/8787700105631.pdf"
+        },
+        {
+          "nome": "EL00370226CPARE.PDF",
+          "url": "/data/ativos/878770010563-1/EL00370226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878770074184-8",
+      "cidade_satelite": "Riacho Fundo",
+      "bairro": "Riacho Fundo II",
+      "logradouro_curto": "QN 29 CONJUNTO 10APTO. 402 BLOCO 02, RIACHO FUNDO II",
+      "endereco": "QN 29 CONJUNTO 10,N. SN APTO. 402 BLOCO 02, RIACHO FUNDO II - CEP: 71880-684, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.89295,
+      "lng": -48.01735,
+      "tipo": "Apartamento",
+      "area": "50,10m2",
+      "valor_avaliacao": "R$ 195.000,00",
+      "valor_avaliacao_num": 195000.0,
+      "valor_minimo": "R$ 195.000,00",
+      "valor_minimo_num": 195000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770074184-8",
+      "url_leiloeiro": "https://www.danielgarcialeiloes.com.br",
+      "site_leiloeiro_nome": "danielgarcialeiloes",
+      "site_leiloeiro_clean": "danielgarcialeiloes",
+      "fotos_list": [
+        "/data/ativos/878770074184-8/fotos/F878770074184821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787700741848.pdf",
+          "url": "/data/ativos/878770074184-8/8787700741848.pdf"
+        },
+        {
+          "nome": "EL00380226CPARE.PDF",
+          "url": "/data/ativos/878770074184-8/EL00380226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878770174554-5",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QS 309APTO. 326  CONJ 10, SAMAMBAIA SUL",
+      "endereco": "QS 309,N. SN APTO. 326  CONJ 10, SAMAMBAIA SUL - CEP: 72305-540, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8808,
+      "lng": -48.09285,
+      "tipo": "Apartamento",
+      "area": "32,00m2",
+      "valor_avaliacao": "R$ 130.000,00",
+      "valor_avaliacao_num": 130000.0,
+      "valor_minimo": "R$ 140.200,03",
+      "valor_minimo_num": 140200.03,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770174554-5",
+      "url_leiloeiro": "https://www.danielgarcialeiloes.com.br",
+      "site_leiloeiro_nome": "danielgarcialeiloes",
+      "site_leiloeiro_clean": "danielgarcialeiloes",
+      "fotos_list": [
+        "/data/ativos/878770174554-5/fotos/F878770174554521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787701745545.pdf",
+          "url": "/data/ativos/878770174554-5/8787701745545.pdf"
+        },
+        {
+          "nome": "EL00380226CPARE.PDF",
+          "url": "/data/ativos/878770174554-5/EL00380226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -7.8,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878770205011-7",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QS 309 CONJUNTO 10APTO. 225 LT 03 A 17, SAMAMBAIA SUL",
+      "endereco": "QS 309 CONJUNTO 10,N. SN APTO. 225 LT 03 A 17, SAMAMBAIA SUL - CEP: 72305-530, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8805,
+      "lng": -48.0966,
+      "tipo": "Apartamento",
+      "area": "32,56m2",
+      "valor_avaliacao": "R$ 118.000,00",
+      "valor_avaliacao_num": 118000.0,
+      "valor_minimo": "R$ 136.316,74",
+      "valor_minimo_num": 136316.74,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770205011-7",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/878770205011-7/fotos/F878770205011721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787702050117.pdf",
+          "url": "/data/ativos/878770205011-7/8787702050117.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/878770205011-7/EL00360226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -15.5,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878770296198-5",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QN 508APTO. 701 LT 02 QD QN 508 VG SS1/16, SAMAMBAIA SUL",
+      "endereco": "QN 508,N. SN APTO. 701 LT 02 QD QN 508 VG SS1/16, SAMAMBAIA SUL - CEP: 72312-201, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.871,
+      "lng": -48.07745,
+      "tipo": "Apartamento",
+      "area": "56,17m2",
+      "valor_avaliacao": "R$ 341.287,80",
+      "valor_avaliacao_num": 341287.8,
+      "valor_minimo": "R$ 208.972,06",
+      "valor_minimo_num": 208972.06,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "05/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770296198-5",
+      "url_leiloeiro": "https://www.lancenoleilao.com.br",
+      "site_leiloeiro_nome": "lancenoleilao",
+      "site_leiloeiro_clean": "lancenoleilao",
+      "fotos_list": [
+        "/data/ativos/878770296198-5/fotos/F878770296198521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787702961985.pdf",
+          "url": "/data/ativos/878770296198-5/8787702961985.pdf"
+        },
+        {
+          "nome": "EA00200326CPVERE.PDF",
+          "url": "/data/ativos/878770296198-5/EA00200326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 38.8,
+      "score": 59,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878770481573-0",
+      "cidade_satelite": "Santa Maria",
+      "bairro": "Setor Meireles",
+      "logradouro_curto": "AVENIDA MONUMENTALAPTO. 201 BLOCO X LOTE RESIDENCIAL 17, SETOR MEIRELES (SANTA MARIA)",
+      "endereco": "AVENIDA MONUMENTAL,N. SN APTO. 201 BLOCO X LOTE RESIDENCIAL 17, SETOR MEIRELES (SANTA MARIA) - CEP: 72583-500, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.99975,
+      "lng": -47.9849,
+      "tipo": "Apartamento",
+      "area": "45,17m2",
+      "valor_avaliacao": "R$ 182.000,00",
+      "valor_avaliacao_num": 182000.0,
+      "valor_minimo": "R$ 182.000,00",
+      "valor_minimo_num": 182000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770481573-0",
+      "url_leiloeiro": "https://www.danielgarcialeiloes.com.br",
+      "site_leiloeiro_nome": "danielgarcialeiloes",
+      "site_leiloeiro_clean": "danielgarcialeiloes",
+      "fotos_list": [
+        "/data/ativos/878770481573-0/fotos/F878770481573021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787704815730.pdf",
+          "url": "/data/ativos/878770481573-0/8787704815730.pdf"
+        },
+        {
+          "nome": "EL00380226CPARE.PDF",
+          "url": "/data/ativos/878770481573-0/EL00380226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878770578536-3",
+      "cidade_satelite": "Itapoã",
+      "bairro": "Itapoã",
+      "logradouro_curto": "QUADRA 502 - CONJUNTO 02APTO. 01 LT 11 BL B1, SET HAB ITAPOA",
+      "endereco": "QUADRA 502 - CONJUNTO 02,N. SN APTO. 01 LT 11 BL B1, SET HAB ITAPOA       - CEP: 71592-070, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.751,
+      "lng": -47.7865,
+      "tipo": "Apartamento",
+      "area": "46,40m2",
+      "valor_avaliacao": "R$ 183.400,00",
+      "valor_avaliacao_num": 183400.0,
+      "valor_minimo": "R$ 110.849,44",
+      "valor_minimo_num": 110849.44,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770578536-3",
+      "url_leiloeiro": "https://www.lancetotal.com.br",
+      "site_leiloeiro_nome": "lancetotal",
+      "site_leiloeiro_clean": "lancetotal",
+      "fotos_list": [
+        "/data/ativos/878770578536-3/fotos/F878770578536321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787705785363.pdf",
+          "url": "/data/ativos/878770578536-3/8787705785363.pdf"
+        },
+        {
+          "nome": "EA00190326CPVERE.PDF",
+          "url": "/data/ativos/878770578536-3/EA00190326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 39.6,
+      "score": 60,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878770761790-5",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Centro Urbano (Samambaia)",
+      "logradouro_curto": "QD 101 LT 4APTO. 503 BL B, CENTRO URBANO",
+      "endereco": "QD 101 LT 4,N. SN APTO. 503 BL B, CENTRO URBANO        - CEP: 72300-507, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.87335,
+      "lng": -48.08365,
+      "tipo": "Apartamento",
+      "area": "33,24m2",
+      "valor_avaliacao": "R$ 157.000,00",
+      "valor_avaliacao_num": 157000.0,
+      "valor_minimo": "R$ 93.037,35",
+      "valor_minimo_num": 93037.35,
+      "veredicto": "COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "06/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878770761790-5",
+      "url_leiloeiro": "https://www.oesteleiloes.com.br",
+      "site_leiloeiro_nome": "oesteleiloes",
+      "site_leiloeiro_clean": "oesteleiloes",
+      "fotos_list": [
+        "/data/ativos/878770761790-5/fotos/F878770761790521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787707617905.pdf",
+          "url": "/data/ativos/878770761790-5/8787707617905.pdf"
+        },
+        {
+          "nome": "EA00210326CPVERE.PDF",
+          "url": "/data/ativos/878770761790-5/EA00210326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 40.7,
+      "score": 63,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878771022866-3",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QUADRA 101 - CONJUNTO 4,N. .LOTE 04 APTO. 702 BLOCO C, SAMAMBAIA NORTE",
+      "endereco": "QUADRA 101 - CONJUNTO 4,N. .LOTE 04 APTO. 702 BLOCO C, SAMAMBAIA NORTE - CEP: 72300-507, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.85825,
+      "lng": -48.07385,
+      "tipo": "Apartamento",
+      "area": "33,56m2",
+      "valor_avaliacao": "R$ 200.000,00",
+      "valor_avaliacao_num": 200000.0,
+      "valor_minimo": "R$ 120.882,70",
+      "valor_minimo_num": 120882.7,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771022866-3",
+      "url_leiloeiro": "https://www.lancetotal.com.br",
+      "site_leiloeiro_nome": "lancetotal",
+      "site_leiloeiro_clean": "lancetotal",
+      "fotos_list": [
+        "/data/ativos/878771022866-3/fotos/F878771022866321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787710228663.pdf",
+          "url": "/data/ativos/878771022866-3/8787710228663.pdf"
+        },
+        {
+          "nome": "EA00190326CPVERE.PDF",
+          "url": "/data/ativos/878771022866-3/EA00190326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 39.6,
+      "score": 60,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878771113127-2",
+      "cidade_satelite": "Itapoã",
+      "bairro": "Itapoã Parque",
+      "logradouro_curto": "Q QUADRA 502APTO. 201 BL E2  LOT 07  CJ 01, ITAPOA PARQUE (ITAPOA)",
+      "endereco": "Q QUADRA 502,N. SN APTO. 201 BL E2  LOT 07  CJ 01, ITAPOA PARQUE (ITAPOA) - CEP: 71592-071, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.74335,
+      "lng": -47.77575,
+      "tipo": "Apartamento",
+      "area": "46,40m2",
+      "valor_avaliacao": "R$ 180.000,00",
+      "valor_avaliacao_num": 180000.0,
+      "valor_minimo": "R$ 180.000,00",
+      "valor_minimo_num": 180000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771113127-2",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/878771113127-2/fotos/F878771113127221.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787711131272.pdf",
+          "url": "/data/ativos/878771113127-2/8787711131272.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/878771113127-2/EL00400226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771135510-3",
+      "cidade_satelite": "Sobradinho",
+      "bairro": "Sobradinho",
+      "logradouro_curto": "QUADRA 501APTO. 204 BLOCO D2 LOTE 06 CONJUNTO 02, SETOR HABIT ITAPOA",
+      "endereco": "QUADRA 501,N. SN APTO. 204 BLOCO D2 LOTE 06 CONJUNTO 02, SETOR HABIT ITAPOA   - CEP: 71592-059, SOBRADINHO - DISTRITO FEDERAL",
+      "lat": -15.65705,
+      "lng": -47.77955,
+      "tipo": "Apartamento",
+      "area": "46,40m2",
+      "valor_avaliacao": "R$ 177.500,00",
+      "valor_avaliacao_num": 177500.0,
+      "valor_minimo": "R$ 177.500,00",
+      "valor_minimo_num": 177500.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "28/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771135510-3",
+      "url_leiloeiro": "https://www.hastaleiloes.com.br",
+      "site_leiloeiro_nome": "hastaleiloes",
+      "site_leiloeiro_clean": "hastaleiloes",
+      "fotos_list": [
+        "/data/ativos/878771135510-3/fotos/F878771135510321.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787711355103.pdf",
+          "url": "/data/ativos/878771135510-3/8787711355103.pdf"
+        },
+        {
+          "nome": "EL00390226CPARE.PDF",
+          "url": "/data/ativos/878771135510-3/EL00390226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771206884-1",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QUADRA 301APTO. 107 TORRE B, VG 516, SAMAMBAIA",
+      "endereco": "QUADRA 301,N. SN APTO. 107 TORRE B, VG 516, SAMAMBAIA            - CEP: 72300-545, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.85825,
+      "lng": -48.0836,
+      "tipo": "Apartamento",
+      "area": "48,56m2",
+      "valor_avaliacao": "R$ 290.000,00",
+      "valor_avaliacao_num": 290000.0,
+      "valor_minimo": "R$ 177.568,31",
+      "valor_minimo_num": 177568.31,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "21/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771206884-1",
+      "url_leiloeiro": "https://www.confiancaleiloes.leilao.br/",
+      "site_leiloeiro_nome": "confiancaleiloes.leilao.br",
+      "site_leiloeiro_clean": "confiancaleiloes.leilao.br",
+      "fotos_list": [
+        "/data/ativos/878771206884-1/fotos/F878771206884121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787712068841.pdf",
+          "url": "/data/ativos/878771206884-1/8787712068841.pdf"
+        },
+        {
+          "nome": "EA00140326CPVERE.PDF",
+          "url": "/data/ativos/878771206884-1/EA00140326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 38.8,
+      "score": 59,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878771232127-0",
+      "cidade_satelite": "Santa Maria",
+      "bairro": "Setor Meireles",
+      "logradouro_curto": "AVENIDA MONUMENTALAPTO. 103 BLOCO 08 LOTE 05, SETOR MEIRELES (SANTA MARIA)",
+      "endereco": "AVENIDA MONUMENTAL,N. SN APTO. 103 BLOCO 08 LOTE 05, SETOR MEIRELES (SANTA MARIA) - CEP: 72583-500, BRASILIA - DISTRITO FEDERAL",
+      "lat": -16.0098,
+      "lng": -47.9837,
+      "tipo": "Apartamento",
+      "area": "97,86m2",
+      "valor_avaliacao": "R$ 219.000,00",
+      "valor_avaliacao_num": 219000.0,
+      "valor_minimo": "R$ 236.842,10",
+      "valor_minimo_num": 236842.1,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771232127-0",
+      "url_leiloeiro": "https://www.danielgarcialeiloes.com.br",
+      "site_leiloeiro_nome": "danielgarcialeiloes",
+      "site_leiloeiro_clean": "danielgarcialeiloes",
+      "fotos_list": [
+        "/data/ativos/878771232127-0/fotos/F878771232127021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787712321270.pdf",
+          "url": "/data/ativos/878771232127-0/8787712321270.pdf"
+        },
+        {
+          "nome": "EL00380226CPARE.PDF",
+          "url": "/data/ativos/878771232127-0/EL00380226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -8.1,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771354567-8",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Norte",
+      "logradouro_curto": "QUADRA QN 407APTO. 13 BL A LT 01 CJ E, SAMAMBAIA NORTE",
+      "endereco": "QUADRA QN 407,N. SN APTO. 13 BL A LT 01 CJ E, SAMAMBAIA NORTE - CEP: 72321-505, SAMAMBAIA - DISTRITO FEDERAL",
+      "lat": -15.8662,
+      "lng": -48.077,
+      "tipo": "Apartamento",
+      "area": "47,06m2",
+      "valor_avaliacao": "R$ 213.000,00",
+      "valor_avaliacao_num": 213000.0,
+      "valor_minimo": "R$ 128.740,08",
+      "valor_minimo_num": 128740.08,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771354567-8",
+      "url_leiloeiro": "https://www.machadoleiloeiro.com.br",
+      "site_leiloeiro_nome": "machadoleiloeiro",
+      "site_leiloeiro_clean": "machadoleiloeiro",
+      "fotos_list": [
+        "/data/ativos/878771354567-8/fotos/F878771354567821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787713545678.pdf",
+          "url": "/data/ativos/878771354567-8/8787713545678.pdf"
+        },
+        {
+          "nome": "EA00220326CPVERE.PDF",
+          "url": "/data/ativos/878771354567-8/EA00220326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 39.6,
+      "score": 60,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878771421207-9",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Recanto das Emas",
+      "logradouro_curto": "AVENIDA BURITIAPTO. 240 LT 05, RECANTO DAS EMAS",
+      "endereco": "AVENIDA BURITI,N. SN APTO. 240 LT 05, RECANTO DAS EMAS - CEP: 72630-250, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.89885,
+      "lng": -48.07095,
+      "tipo": "Apartamento",
+      "area": "45,04m2",
+      "valor_avaliacao": "R$ 240.000,00",
+      "valor_avaliacao_num": 240000.0,
+      "valor_minimo": "R$ 146.953,08",
+      "valor_minimo_num": 146953.08,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "05/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771421207-9",
+      "url_leiloeiro": "https://www.lancenoleilao.com.br",
+      "site_leiloeiro_nome": "lancenoleilao",
+      "site_leiloeiro_clean": "lancenoleilao",
+      "fotos_list": [
+        "/data/ativos/878771421207-9/fotos/F878771421207921.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787714212079.pdf",
+          "url": "/data/ativos/878771421207-9/8787714212079.pdf"
+        },
+        {
+          "nome": "EA00200326CPVERE.PDF",
+          "url": "/data/ativos/878771421207-9/EA00200326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 38.8,
+      "score": 59,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878771471261-6",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Subcentro Urbano (Recanto das Emas)",
+      "logradouro_curto": "AVENIDA BURITI SUBCENTRO URBANO 400/600APTO. 448 LOTE 5, RECANTO DAS EMAS",
+      "endereco": "AVENIDA BURITI SUBCENTRO URBANO 400/600,N. SN APTO. 448 LOTE 5, RECANTO DAS EMAS - CEP: 72630-000, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.9032,
+      "lng": -48.06555,
+      "tipo": "Apartamento",
+      "area": "45,04m2",
+      "valor_avaliacao": "R$ 239.000,00",
+      "valor_avaliacao_num": 239000.0,
+      "valor_minimo": "R$ 266.979,70",
+      "valor_minimo_num": 266979.7,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "27/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771471261-6",
+      "url_leiloeiro": "https://www.mgl.com.br",
+      "site_leiloeiro_nome": "mgl",
+      "site_leiloeiro_clean": "mgl",
+      "fotos_list": [
+        "/data/ativos/878771471261-6/fotos/F878771471261621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787714712616.pdf",
+          "url": "/data/ativos/878771471261-6/8787714712616.pdf"
+        },
+        {
+          "nome": "EL00320226CPARE.PDF",
+          "url": "/data/ativos/878771471261-6/EL00320226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -11.7,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771482325-6",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Subcentro Urbano (Recanto das Emas)",
+      "logradouro_curto": "AVENIDA BURITIAPTO. 242 LT 05 SUBCENTRO URBANO 400 600, RECANTO DAS EMAS",
+      "endereco": "AVENIDA BURITI,N. SN APTO. 242 LT 05 SUBCENTRO URBANO 400 600, RECANTO DAS EMAS - CEP: 72600-000, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.90875,
+      "lng": -48.06885,
+      "tipo": "Apartamento",
+      "area": "27,79m2",
+      "valor_avaliacao": "R$ 131.000,00",
+      "valor_avaliacao_num": 131000.0,
+      "valor_minimo": "R$ 164.756,74",
+      "valor_minimo_num": 164756.74,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771482325-6",
+      "url_leiloeiro": "https://www.nasarleiloes.com.br",
+      "site_leiloeiro_nome": "nasarleiloes",
+      "site_leiloeiro_clean": "nasarleiloes",
+      "fotos_list": [
+        "/data/ativos/878771482325-6/fotos/F878771482325621.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787714823256.pdf",
+          "url": "/data/ativos/878771482325-6/8787714823256.pdf"
+        },
+        {
+          "nome": "EL00310226CPARE.PDF",
+          "url": "/data/ativos/878771482325-6/EL00310226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -25.8,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771534086-0",
+      "cidade_satelite": "Itapoã",
+      "bairro": "Itapoã Parque",
+      "logradouro_curto": "Q QUADRA 401APTO. 204 BL D  LOT 11   CJ 2   RA XXVIII, ITAPOA PARQUE (ITAPOA)",
+      "endereco": "Q QUADRA 401,N. SN APTO. 204 BL D  LOT 11   CJ 2   RA XXVIII, ITAPOA PARQUE (ITAPOA) - CEP: 71592-034, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.7468,
+      "lng": -47.77605,
+      "tipo": "Apartamento",
+      "area": "46,60m2",
+      "valor_avaliacao": "R$ 186.000,00",
+      "valor_avaliacao_num": 186000.0,
+      "valor_minimo": "R$ 186.000,00",
+      "valor_minimo_num": 186000.0,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771534086-0",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/878771534086-0/fotos/F878771534086021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787715340860.pdf",
+          "url": "/data/ativos/878771534086-0/8787715340860.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/878771534086-0/EL00400226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": 0.0,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771624285-4",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Subcentro Urbano (Recanto das Emas)",
+      "logradouro_curto": "RUA 06APTO. 344 SUBCENTRO URBANO 400 600, RECANTO DAS EMAS",
+      "endereco": "RUA 06,N. SN APTO. 344 SUBCENTRO URBANO 400 600, RECANTO DAS EMAS - CEP: 72630-000, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.9014,
+      "lng": -48.06375,
+      "tipo": "Apartamento",
+      "area": "27,79m2",
+      "valor_avaliacao": "R$ 151.000,00",
+      "valor_avaliacao_num": 151000.0,
+      "valor_minimo": "R$ 211.280,19",
+      "valor_minimo_num": 211280.19,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771624285-4",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/878771624285-4/fotos/F878771624285421.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787716242854.pdf",
+          "url": "/data/ativos/878771624285-4/8787716242854.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/878771624285-4/EL00400226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -39.9,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771625203-5",
+      "cidade_satelite": "Itapoã",
+      "bairro": "Itapoã Parque",
+      "logradouro_curto": "Q QUADRA 501APTO. 104 BL F2  LOT 01  CJ 02, ITAPOA PARQUE (ITAPOA)",
+      "endereco": "Q QUADRA 501,N. SN APTO. 104 BL F2  LOT 01  CJ 02, ITAPOA PARQUE (ITAPOA) - CEP: 71592-059, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.7363,
+      "lng": -47.77575,
+      "tipo": "Apartamento",
+      "area": "46,40m2",
+      "valor_avaliacao": "R$ 135.000,00",
+      "valor_avaliacao_num": 135000.0,
+      "valor_minimo": "R$ 154.395,94",
+      "valor_minimo_num": 154395.94,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771625203-5",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/878771625203-5/fotos/F878771625203521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787716252035.pdf",
+          "url": "/data/ativos/878771625203-5/8787716252035.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/878771625203-5/EL00400226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -14.4,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771625720-7",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Subcentro Urbano (Recanto das Emas)",
+      "logradouro_curto": "RUA 6APTO. 337 LT 1 SETOR SUBCENTRO URBANO 400/600, RECANTO DAS EMAS",
+      "endereco": "RUA 6,N. SN APTO. 337 LT 1 SETOR SUBCENTRO URBANO 400/600, RECANTO DAS EMAS - CEP: 72630-650, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.9002,
+      "lng": -48.0651,
+      "tipo": "Apartamento",
+      "area": "28,07m2",
+      "valor_avaliacao": "R$ 166.000,00",
+      "valor_avaliacao_num": 166000.0,
+      "valor_minimo": "R$ 213.421,32",
+      "valor_minimo_num": 213421.32,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "24/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771625720-7",
+      "url_leiloeiro": "https://www.danielgarcialeiloes.com.br",
+      "site_leiloeiro_nome": "danielgarcialeiloes",
+      "site_leiloeiro_clean": "danielgarcialeiloes",
+      "fotos_list": [
+        "/data/ativos/878771625720-7/fotos/F878771625720721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787716257207.pdf",
+          "url": "/data/ativos/878771625720-7/8787716257207.pdf"
+        },
+        {
+          "nome": "EL00380226CPARE.PDF",
+          "url": "/data/ativos/878771625720-7/EL00380226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -28.6,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771645088-0",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Recanto das Emas",
+      "logradouro_curto": "AVENIDA BURITIS QUADRA 201(ANT RUA 6)APTO. 648  LT 01, RECANTO DAS EMAS",
+      "endereco": "AVENIDA BURITIS QUADRA 201(ANT RUA 6),N. SN APTO. 648  LT 01, RECANTO DAS EMAS - CEP: 72610-118, RECANTO DAS EMAS - DISTRITO FEDERAL",
+      "lat": -15.90845,
+      "lng": -48.0681,
+      "tipo": "Apartamento",
+      "area": "28,07m2",
+      "valor_avaliacao": "R$ 167.531,06",
+      "valor_avaliacao_num": 167531.06,
+      "valor_minimo": "R$ 213.421,32",
+      "valor_minimo_num": 213421.32,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "04/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771645088-0",
+      "url_leiloeiro": "https://www.emleilao.com.br",
+      "site_leiloeiro_nome": "emleilao",
+      "site_leiloeiro_clean": "emleilao",
+      "fotos_list": [
+        "/data/ativos/878771645088-0/fotos/F878771645088021.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787716450880.pdf",
+          "url": "/data/ativos/878771645088-0/8787716450880.pdf"
+        },
+        {
+          "nome": "EL00350226CPARE.PDF",
+          "url": "/data/ativos/878771645088-0/EL00350226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -27.4,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771655978-5",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Subcentro Urbano (Recanto das Emas)",
+      "logradouro_curto": "SETOR SUBCENTRO URBANO RUA 6APTO. 703 LT 1 SUBCENTRO URBANO 400/600, RECANTO DAS EMAS",
+      "endereco": "SETOR SUBCENTRO URBANO RUA 6,N. SN APTO. 703 LT 1 SUBCENTRO URBANO 400/600, RECANTO DAS EMAS - CEP: 72630-650, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.9032,
+      "lng": -48.0678,
+      "tipo": "Apartamento",
+      "area": "27,79m2",
+      "valor_avaliacao": "R$ 160.000,00",
+      "valor_avaliacao_num": 160000.0,
+      "valor_minimo": "R$ 211.280,19",
+      "valor_minimo_num": 211280.19,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771655978-5",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/878771655978-5/fotos/F878771655978521.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787716559785.pdf",
+          "url": "/data/ativos/878771655978-5/8787716559785.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/878771655978-5/EL00360226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -32.1,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771666400-7",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Recanto das Emas",
+      "logradouro_curto": "RUA 6APTO. 124 LT 01, RECANTO DAS EMAS",
+      "endereco": "RUA 6,N. SN APTO. 124 LT 01, RECANTO DAS EMAS - CEP: 72630-650, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.90035,
+      "lng": -48.0678,
+      "tipo": "Apartamento",
+      "area": "45,34m2",
+      "valor_avaliacao": "R$ 178.000,00",
+      "valor_avaliacao_num": 178000.0,
+      "valor_minimo": "R$ 344.691,29",
+      "valor_minimo_num": 344691.29,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "13/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771666400-7",
+      "url_leiloeiro": "https://www.granadoleiloes.com.br",
+      "site_leiloeiro_nome": "granadoleiloes",
+      "site_leiloeiro_clean": "granadoleiloes",
+      "fotos_list": [
+        "/data/ativos/878771666400-7/fotos/F878771666400721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787716664007.pdf",
+          "url": "/data/ativos/878771666400-7/8787716664007.pdf"
+        },
+        {
+          "nome": "EL00360226CPARE.PDF",
+          "url": "/data/ativos/878771666400-7/EL00360226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -93.6,
+      "score": 41,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771735464-8",
+      "cidade_satelite": "Itapoã",
+      "bairro": "Itapoã Parque",
+      "logradouro_curto": "QUADRA 401APTO. 04 BL C2 LT 11 CJ 02, ITAPOA PARQUE (ITAPOA)",
+      "endereco": "QUADRA 401,N. S/N APTO. 04 BL C2 LT 11 CJ 02, ITAPOA PARQUE (ITAPOA) - CEP: 71592-034, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.73465,
+      "lng": -47.77185,
+      "tipo": "Apartamento",
+      "area": "46,40m2",
+      "valor_avaliacao": "R$ 170.000,00",
+      "valor_avaliacao_num": 170000.0,
+      "valor_minimo": "R$ 100.741,08",
+      "valor_minimo_num": 100741.08,
+      "veredicto": "COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "23/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771735464-8",
+      "url_leiloeiro": "https://www.fidalgoleiloes.com.br",
+      "site_leiloeiro_nome": "fidalgoleiloes",
+      "site_leiloeiro_clean": "fidalgoleiloes",
+      "fotos_list": [
+        "/data/ativos/878771735464-8/fotos/F878771735464821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787717354648.pdf",
+          "url": "/data/ativos/878771735464-8/8787717354648.pdf"
+        },
+        {
+          "nome": "EA00180326CPVERE.PDF",
+          "url": "/data/ativos/878771735464-8/EA00180326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 40.7,
+      "score": 63,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878771872753-7",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "QN 110 CJ 2APTO. 503 LT 01, TORRE 3, SAMAMBAIA SUL",
+      "endereco": "QN 110 CJ 2,N. SN APTO. 503 LT 01, TORRE 3, SAMAMBAIA SUL - CEP: 72302-352, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8898,
+      "lng": -48.0906,
+      "tipo": "Apartamento",
+      "area": "45,32m2",
+      "valor_avaliacao": "R$ 255.000,00",
+      "valor_avaliacao_num": 255000.0,
+      "valor_minimo": "R$ 156.137,65",
+      "valor_minimo_num": 156137.65,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "16/07/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771872753-7",
+      "url_leiloeiro": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771872753-7",
+      "site_leiloeiro_nome": "caixa",
+      "site_leiloeiro_clean": "caixa",
+      "fotos_list": [
+        "/data/ativos/878771872753-7/fotos/F878771872753721.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787718727537.pdf",
+          "url": "/data/ativos/878771872753-7/8787718727537.pdf"
+        },
+        {
+          "nome": "EA00160326CPVERE.PDF",
+          "url": "/data/ativos/878771872753-7/EA00160326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 38.8,
+      "score": 54,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878771880329-2",
+      "cidade_satelite": "Recanto das Emas",
+      "bairro": "Recanto das Emas",
+      "logradouro_curto": "AVENIDA BURITIS QUADRA 201 (ANT RUA 06)APTO. 729 LT 01, RECANTO DAS EMAS",
+      "endereco": "AVENIDA BURITIS QUADRA 201 (ANT RUA 06),N. SN APTO. 729 LT 01, RECANTO DAS EMAS - CEP: 72610-118, RECANTO DAS EMAS - DISTRITO FEDERAL",
+      "lat": -15.8993,
+      "lng": -48.0669,
+      "tipo": "Apartamento",
+      "area": "45,05m2",
+      "valor_avaliacao": "R$ 231.640,68",
+      "valor_avaliacao_num": 231640.68,
+      "valor_minimo": "R$ 342.415,76",
+      "valor_minimo_num": 342415.76,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "04/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771880329-2",
+      "url_leiloeiro": "https://www.emleilao.com.br",
+      "site_leiloeiro_nome": "emleilao",
+      "site_leiloeiro_clean": "emleilao",
+      "fotos_list": [
+        "/data/ativos/878771880329-2/fotos/F878771880329221.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787718803292.pdf",
+          "url": "/data/ativos/878771880329-2/8787718803292.pdf"
+        },
+        {
+          "nome": "EL00350226CPARE.PDF",
+          "url": "/data/ativos/878771880329-2/EL00350226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -47.8,
+      "score": 36,
+      "classificacao": "Alerta"
+    },
+    {
+      "id": "878771929277-1",
+      "cidade_satelite": "Samambaia",
+      "bairro": "Samambaia Sul",
+      "logradouro_curto": "AREA 2 QD QN 110APTO. 1104 TR 3, SAMAMBAIA",
+      "endereco": "AREA 2 QD QN 110,N. SN APTO. 1104 TR 3, SAMAMBAIA            - CEP: 72302-352, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.8868,
+      "lng": -48.09015,
+      "tipo": "Apartamento",
+      "area": "45,32m2",
+      "valor_avaliacao": "R$ 270.394,89",
+      "valor_avaliacao_num": 270394.89,
+      "valor_minimo": "R$ 172.326,53",
+      "valor_minimo_num": 172326.53,
+      "veredicto": "COMPRAR (Atenção)",
+      "fgts": "Sim",
+      "has_photo": true,
+      "modalidade": "Licitação Aberta",
+      "data_1": "06/08/2026   10h00",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878771929277-1",
+      "url_leiloeiro": "https://www.oesteleiloes.com.br",
+      "site_leiloeiro_nome": "oesteleiloes",
+      "site_leiloeiro_clean": "oesteleiloes",
+      "fotos_list": [
+        "/data/ativos/878771929277-1/fotos/F878771929277121.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787719292771.pdf",
+          "url": "/data/ativos/878771929277-1/8787719292771.pdf"
+        },
+        {
+          "nome": "EA00210326CPVERE.PDF",
+          "url": "/data/ativos/878771929277-1/EA00210326CPVERE.PDF"
+        }
+      ],
+      "desconto_pct": 36.3,
+      "score": 57,
+      "classificacao": "Moderada"
+    },
+    {
+      "id": "878772037480-8",
+      "cidade_satelite": "Itapoã",
+      "bairro": "Itapoã Parque",
+      "logradouro_curto": "QUADRA 402APTO. 03 BL D1 LT 07 CJ 02, ITAPOA PARQUE (ITAPOA)",
+      "endereco": "QUADRA 402,N. SN APTO. 03 BL D1 LT 07 CJ 02, ITAPOA PARQUE (ITAPOA) - CEP: 71592-044, BRASILIA - DISTRITO FEDERAL",
+      "lat": -15.7492,
+      "lng": -47.7696,
+      "tipo": "Apartamento",
+      "area": "46,40m2",
+      "valor_avaliacao": "R$ 134.000,00",
+      "valor_avaliacao_num": 134000.0,
+      "valor_minimo": "R$ 172.841,23",
+      "valor_minimo_num": 172841.23,
+      "veredicto": "NÃO COMPRAR",
+      "fgts": "Não",
+      "has_photo": true,
+      "modalidade": "Venda Online",
+      "data_1": "",
+      "data_2": "",
+      "url_caixa": "https://venda-imoveis.caixa.gov.br/sistema/detalhe-imovel.asp?hdnImovel=878772037480-8",
+      "url_leiloeiro": "https://www.joaoemilio.com.br",
+      "site_leiloeiro_nome": "joaoemilio",
+      "site_leiloeiro_clean": "joaoemilio",
+      "fotos_list": [
+        "/data/ativos/878772037480-8/fotos/F878772037480821.jpg"
+      ],
+      "documentos_list": [
+        {
+          "nome": "8787720374808.pdf",
+          "url": "/data/ativos/878772037480-8/8787720374808.pdf"
+        },
+        {
+          "nome": "EL00400226CPARE.PDF",
+          "url": "/data/ativos/878772037480-8/EL00400226CPARE.PDF"
+        }
+      ],
+      "desconto_pct": -29.0,
+      "score": 36,
+      "classificacao": "Alerta"
+    }
+  ]
+}
