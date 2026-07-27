@@ -41,7 +41,10 @@ export function OpportunityTable({ properties }: OpportunityTableProps) {
                 key={p.id}
                 onMouseEnter={() => setHoveredPropertyId(p.id)}
                 onMouseLeave={() => setHoveredPropertyId(null)}
-                onClick={() => setSelectedPropertyId(p.id)}
+                onClick={() => {
+                  setSelectedPropertyId(p.id);
+                  window.location.href = `/detalhes/${p.id}`;
+                }}
                 className={`cursor-pointer transition-colors ${
                   isHovered
                     ? 'bg-blue-50/60 dark:bg-blue-950/40'
@@ -91,7 +94,11 @@ export function OpportunityTable({ properties }: OpportunityTableProps) {
                 </td>
                 <td className="p-3 text-center">
                   <button
-                    onClick={() => setSelectedPropertyId(p.id)}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setSelectedPropertyId(p.id);
+                      window.location.href = `/detalhes/${p.id}`;
+                    }}
                     className="rounded bg-blue-600 px-2 py-1 text-[10px] font-bold text-white hover:bg-blue-700 transition-colors"
                   >
                     Detalhes

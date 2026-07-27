@@ -4,6 +4,7 @@ import React, { createContext, useContext, useState, useEffect, useMemo } from '
 import { Property, FilterState, KPIStats, ColorPaletteKey } from '@/types/property';
 import { filterAndSortProperties, calculateKPIs } from '@/lib/scoring';
 import { applyColorPalette } from '@/lib/palettes';
+import { getUserSettings, saveUserSettings, UserSettings } from '@/lib/userSettings';
 
 interface DashboardContextType {
   allProperties: Property[];
@@ -23,10 +24,13 @@ interface DashboardContextType {
   kpis: KPIStats;
   theme: 'dark' | 'light';
   toggleTheme: () => void;
+  setThemeState: (theme: 'dark' | 'light') => void;
   colorPalette: ColorPaletteKey;
   setColorPalette: (palette: ColorPaletteKey) => void;
   lastScrapingDate: string;
   isLoading: boolean;
+  userSettings: UserSettings;
+  updateUserSettings: (newSettings: Partial<UserSettings>) => Promise<void>;
 }
 
 const initialFilters: FilterState = {
@@ -53,12 +57,23 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
   const [hoveredPropertyId, setHoveredPropertyId] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'cards' | 'table'>('cards');
   const [favorites, setFavorites] = useState<string[]>([]);
-  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
-  // Padrão de cor alterado para "Cítrico Quente" (citrico)
+  
+  // Settings do usuário (recuperadas de localStorage/banco ao iniciar)
+  const [userSettings, setUserSettingsState] = useState<UserSettings>(defaultUserSettings);
+  const [theme, setTheme] = useState<'dark' | 'light'>('light');
   const [colorPalette, setColorPaletteState] = useState<ColorPaletteKey>('citrico');
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  // Fetch initial properties from /data/properties.json
+  // 1. Restaurar configurações salvas do usuário ao inicializar o app/login
+  useEffect(() => {
+    const saved = getUserSettings();
+    setUserSettingsState(saved);
+    if (saved.theme) {
+      setTheme(saved.theme);
+    }
+  }, []);
+
+  // 2. Carregar lista de imóveis da base de dados local
   useEffect(() => {
     async function loadData() {
       try {
@@ -83,9 +98,10 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
     loadData();
   }, []);
 
-  // Sync Theme and Color Palette
+  // 3. Manter o tema e esquema de cores consistente em TODAS as telas e rotas
   useEffect(() => {
     const root = document.documentElement;
+    root.setAttribute('data-theme', theme);
     if (theme === 'dark') {
       root.classList.add('dark');
     } else {
@@ -94,12 +110,29 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
     applyColorPalette(colorPalette, theme);
   }, [theme, colorPalette]);
 
+  const updateUserSettings = async (newSettings: Partial<UserSettings>) => {
+    const next = { ...userSettings, ...newSettings };
+    setUserSettingsState(next);
+    if (newSettings.theme) {
+      setTheme(newSettings.theme);
+    }
+    await saveUserSettings(next);
+  };
+
   const toggleTheme = () => {
-    setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    const nextTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(nextTheme);
+    updateUserSettings({ theme: nextTheme });
+  };
+
+  const setThemeState = (newTheme: 'dark' | 'light') => {
+    setTheme(newTheme);
+    updateUserSettings({ theme: newTheme });
   };
 
   const setColorPalette = (palette: ColorPaletteKey) => {
     setColorPaletteState(palette);
+    updateUserSettings({ colorPalette: palette });
   };
 
   const updateFilter = (key: keyof FilterState, value: any) => {
@@ -122,7 +155,7 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
 
   const kpis = useMemo(() => {
     return calculateKPIs(allProperties, filteredProperties);
-  }, [allProperties, filters]);
+  }, [allProperties, filteredProperties]);
 
   return (
     <DashboardContext.Provider
@@ -144,16 +177,28 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
         kpis,
         theme,
         toggleTheme,
+        setThemeState,
         colorPalette,
         setColorPalette,
         lastScrapingDate,
         isLoading,
+        userSettings,
+        updateUserSettings,
       }}
     >
       {children}
     </DashboardContext.Provider>
   );
 }
+
+const defaultUserSettings: UserSettings = {
+  theme: 'light',
+  minPreco: 50000,
+  maxPreco: 800000,
+  aceitaFGTS: true,
+  aceitaFinanciamento: true,
+  colorPalette: 'citrico',
+};
 
 export function useDashboard() {
   const context = useContext(DashboardContext);

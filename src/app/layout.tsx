@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="dark scroll-smooth">
-      <body className={`${inter.variable} min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-blue-500 selection:text-white`}>
+    <html lang="pt-BR" className="scroll-smooth">
+      <body className={`${inter.variable} min-h-screen bg-[var(--bg-page)] text-[var(--text-main)] antialiased selection:bg-[var(--color-primary)] selection:text-white transition-colors duration-200`}>
         <DashboardProvider>{children}</DashboardProvider>
       </body>
     </html>

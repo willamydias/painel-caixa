@@ -51,7 +51,10 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
     <div
       onMouseEnter={() => setHoveredPropertyId(property.id)}
       onMouseLeave={() => setHoveredPropertyId(null)}
-      onClick={() => setSelectedPropertyId(property.id)}
+      onClick={() => {
+        setSelectedPropertyId(property.id);
+        window.location.href = `/detalhes/${property.id}`;
+      }}
       className={`group relative flex flex-col overflow-hidden rounded-2xl border bg-[var(--bg-card)] shadow-sm transition-all duration-200 cursor-pointer ${
         isHovered
           ? 'border-blue-500 ring-2 ring-blue-500/20 shadow-lg -translate-y-0.5'

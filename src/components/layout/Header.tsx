@@ -1,42 +1,24 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
+import Link from 'next/link';
 import { useDashboard } from '@/context/DashboardContext';
-import { COLOR_PALETTES } from '@/lib/palettes';
-import { Landmark, Search, Sun, Moon, Database, Sparkles, Palette, Check } from 'lucide-react';
+import { Landmark, Search, Database, Sparkles, Settings } from 'lucide-react';
 
 export function Header() {
   const {
     filters,
     updateFilter,
-    theme,
-    toggleTheme,
-    colorPalette,
-    setColorPalette,
     lastScrapingDate,
     allProperties,
   } = useDashboard();
-
-  const [isPaletteOpen, setIsPaletteOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setIsPaletteOpen(false);
-      }
-    }
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
-  }, []);
 
   return (
     <header className="sticky top-0 z-30 w-full border-b border-[var(--border-main)] bg-[var(--bg-header)]/95 backdrop-blur transition-colors">
       <div className="mx-auto flex h-16 max-w-[1920px] items-center justify-between px-4 sm:px-6 lg:px-8">
         
         {/* Left: Brand Commercial Minimalist Logo & Title */}
-        <div className="flex items-center gap-3">
+        <Link href="/dashboard" className="flex items-center gap-3">
           <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--color-primary)] text-white shadow-md shadow-[var(--color-primary)]/20 border border-white/20">
             <Landmark className="h-5 w-5" />
           </div>
@@ -53,7 +35,7 @@ export function Header() {
               Plataforma Analítica de Oportunidades CAIXA
             </p>
           </div>
-        </div>
+        </Link>
 
         {/* Center: Global Search Bar */}
         <div className="hidden md:flex flex-1 max-w-md mx-6">
@@ -77,7 +59,7 @@ export function Header() {
           </div>
         </div>
 
-        {/* Right: Scraping Date Badge, Palette Dropdown & Theme Switcher */}
+        {/* Right: Scraping Date Badge & Atalho para Configurações */}
         <div className="flex items-center gap-3">
           
           {/* Dynamic Scraping Date Version Badge */}
@@ -91,60 +73,14 @@ export function Header() {
             </span>
           </div>
 
-          {/* Color Palette Selector Dropdown (Texto "Cor 🔽" quando retraído) */}
-          <div className="relative" ref={dropdownRef}>
-            <button
-              onClick={() => setIsPaletteOpen(!isPaletteOpen)}
-              className="flex items-center gap-1.5 rounded-lg border border-[var(--border-main)] bg-[var(--bg-sub)] px-3 py-1.5 text-xs font-extrabold text-[var(--text-main)] shadow-sm hover:border-[var(--color-primary)] transition-colors"
-              title="Escolha a Paleta de Cores"
-            >
-              <Palette className="h-3.5 w-3.5 text-[var(--color-primary)]" />
-              <span>Cor 🔽</span>
-            </button>
-
-            {isPaletteOpen && (
-              <div className="absolute right-0 top-full mt-2 w-64 rounded-xl border border-[var(--border-main)] bg-[var(--bg-card)] p-2 shadow-2xl z-50 animate-in fade-in zoom-in-95 duration-150">
-                <div className="text-[10px] font-extrabold uppercase tracking-wider text-[var(--text-muted)] px-2.5 py-1">
-                  Selecione a Paleta de Cores
-                </div>
-                <div className="space-y-1 mt-1">
-                  {Object.values(COLOR_PALETTES).map((pal) => {
-                    const isSelected = colorPalette === pal.key;
-                    return (
-                      <button
-                        key={pal.key}
-                        onClick={() => {
-                          setColorPalette(pal.key);
-                          setIsPaletteOpen(false);
-                        }}
-                        className={`w-full flex items-center justify-between rounded-lg px-2.5 py-2 text-xs font-bold text-left transition-all ${
-                          isSelected
-                            ? 'bg-[var(--color-primary)] text-white shadow-sm'
-                            : 'text-[var(--text-main)] hover:bg-[var(--bg-sub)]'
-                        }`}
-                      >
-                        <span className="truncate pr-2">{pal.name}</span>
-                        <div className="flex items-center gap-1.5 shrink-0">
-                          <span className="h-3 w-3 rounded-full border border-black/10" style={{ backgroundColor: pal.primaryHex }} />
-                          <span className="h-3 w-3 rounded-full border border-black/10" style={{ backgroundColor: pal.secondaryHex }} />
-                          {isSelected && <Check className="h-3.5 w-3.5 ml-0.5" />}
-                        </div>
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Theme Switcher Button */}
-          <button
-            onClick={toggleTheme}
-            aria-label="Alternar Tema Claro/Escuro"
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border-main)] bg-[var(--bg-sub)] text-[var(--text-main)] hover:bg-[var(--bg-card)] transition-colors"
+          {/* Atalho para Subitem de Configurações no Sidebar (Substitui botão de alternar tema) */}
+          <Link
+            href="/configuracoes"
+            title="Ir para Configurações Globais & Preferências de Tema"
+            className="flex h-9 w-9 items-center justify-center rounded-lg border border-[var(--border-main)] bg-[var(--bg-sub)] text-[var(--text-main)] hover:border-[var(--color-primary)] hover:bg-[var(--bg-card)] transition-colors"
           >
-            {theme === 'dark' ? <Sun className="h-4 w-4 text-amber-400" /> : <Moon className="h-4 w-4 text-slate-600" />}
-          </button>
+            <Settings className="h-4 w-4 text-[var(--color-primary)]" />
+          </Link>
 
         </div>
 
