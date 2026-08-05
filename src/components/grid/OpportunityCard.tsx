@@ -5,7 +5,7 @@ import { Property } from '@/types/property';
 import { useDashboard } from '@/context/DashboardContext';
 import { ScoreBadge } from './ScoreBadge';
 import { formatCurrency, formatPercent } from '@/lib/formatters';
-import { MapPin, Building, Star, CheckCircle, AlertTriangle, ArrowRight, Zap, Globe } from 'lucide-react';
+import { MapPin, Building, Star, CheckCircle, AlertTriangle, ArrowRight, Zap, Globe, FileEdit } from 'lucide-react';
 
 interface OpportunityCardProps {
   property: Property;
@@ -18,11 +18,15 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
     setHoveredPropertyId,
     favorites,
     toggleFavorite,
+    setActiveNoteProperty,
+    propertyNotes,
   } = useDashboard();
 
   const [imgError, setImgError] = useState<boolean>(false);
   const isHovered = hoveredPropertyId === property.id;
   const isFavorite = favorites.includes(property.id);
+  const hasNote = Boolean(propertyNotes[property.id]);
+  const noteStatus = propertyNotes[property.id]?.kanban_status;
 
   const getModalidadeBadge = (mod: string) => {
     if (mod.includes('Venda Direta') || mod.includes('Compra Direta')) {
@@ -47,6 +51,10 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
     return 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20';
   };
 
+  const mainPhoto = (property.fotos_list && property.fotos_list.length > 0)
+    ? property.fotos_list[0]
+    : (property.has_photo ? `/fotos/${property.id}.jpg` : null);
+
   return (
     <div
       onMouseEnter={() => setHoveredPropertyId(property.id)}
@@ -57,17 +65,24 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
       }}
       className={`group relative flex flex-col overflow-hidden rounded-2xl border bg-[var(--bg-card)] shadow-sm transition-all duration-200 cursor-pointer ${
         isHovered
-          ? 'border-blue-500 ring-2 ring-blue-500/20 shadow-lg -translate-y-0.5'
-          : 'border-[var(--border-main)] hover:border-blue-500/50'
+          ? 'border-[var(--color-primary)] ring-2 ring-[var(--color-primary)]/20 shadow-lg -translate-y-0.5'
+          : 'border-[var(--border-main)] hover:border-[var(--color-primary)]/50'
       }`}
     >
       {/* Image Container */}
       <div className="relative h-44 w-full overflow-hidden bg-slate-900">
-        {!imgError && property.has_photo ? (
+        {!imgError && mainPhoto ? (
           <img
-            src={`/fotos/${property.id}.jpg`}
+            src={mainPhoto}
             alt={property.endereco}
-            onError={() => setImgError(true)}
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              if (target.src.includes('/data/ativos/')) {
+                target.src = `/fotos/${property.id}.jpg`;
+              } else {
+                setImgError(true);
+              }
+            }}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
@@ -86,21 +101,40 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
           </span>
         </div>
 
-        {/* Favorite Button */}
-        <button
-          type="button"
-          onClick={(e) => {
-            e.stopPropagation();
-            toggleFavorite(property.id);
-          }}
-          className={`absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full backdrop-blur transition-transform active:scale-95 ${
-            isFavorite
-              ? 'bg-amber-500 text-white shadow-md'
-              : 'bg-slate-900/60 text-slate-300 hover:bg-slate-900/90 hover:text-amber-400'
-          }`}
-        >
-          <Star className={`h-4 w-4 ${isFavorite ? 'fill-current' : ''}`} />
-        </button>
+        {/* Action Buttons Top Right: Favoritar & Anotação */}
+        <div className="absolute right-3 top-3 flex items-center gap-1.5">
+          <button
+            type="button"
+            title="Anotação & Status do Investidor"
+            onClick={(e) => {
+              e.stopPropagation();
+              setActiveNoteProperty(property);
+            }}
+            className={`flex h-8 w-8 items-center justify-center rounded-full backdrop-blur transition-transform active:scale-95 ${
+              hasNote
+                ? 'bg-[var(--color-primary)] text-white shadow-md'
+                : 'bg-slate-900/60 text-slate-300 hover:bg-slate-900/90 hover:text-[var(--color-primary)]'
+            }`}
+          >
+            <FileEdit className="h-4 w-4" />
+          </button>
+
+          <button
+            type="button"
+            title="Favoritar Imóvel"
+            onClick={(e) => {
+              e.stopPropagation();
+              toggleFavorite(property.id);
+            }}
+            className={`flex h-8 w-8 items-center justify-center rounded-full backdrop-blur transition-transform active:scale-95 ${
+              isFavorite
+                ? 'bg-amber-500 text-white shadow-md'
+                : 'bg-slate-900/60 text-slate-300 hover:bg-slate-900/90 hover:text-amber-400'
+            }`}
+          >
+            <Star className={`h-4 w-4 ${isFavorite ? 'fill-current' : ''}`} />
+          </button>
+        </div>
 
         {/* Score Badge Bottom Right Overlay */}
         <div className="absolute bottom-3 right-3">
@@ -113,7 +147,7 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
         <div>
           {/* Header Info: RA & Bairro & Tipo */}
           <div className="flex items-center justify-between text-xs font-semibold text-[var(--text-muted)] mb-1">
-            <span className="flex items-center gap-1 text-blue-500 font-bold uppercase tracking-wider truncate max-w-[70%]">
+            <span className="flex items-center gap-1 text-[var(--color-primary)] font-bold uppercase tracking-wider truncate max-w-[70%]">
               <MapPin className="h-3.5 w-3.5 shrink-0" />
               {property.cidade_satelite || 'Brasília'} • {property.bairro}
             </span>
@@ -121,7 +155,7 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
           </div>
 
           {/* Address Title */}
-          <h3 className="text-sm font-bold text-[var(--text-main)] line-clamp-2 leading-snug group-hover:text-blue-500 transition-colors">
+          <h3 className="text-sm font-bold text-[var(--text-main)] line-clamp-2 leading-snug group-hover:text-[var(--color-primary)] transition-colors">
             {property.endereco}
           </h3>
 
@@ -132,14 +166,14 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
                 <span className="text-[10px] font-bold uppercase tracking-wider text-[var(--text-muted)] block">
                   Valor Mínimo
                 </span>
-                <span className="text-lg font-extrabold text-emerald-500">
+                <span className="text-lg font-extrabold text-emerald-600">
                   {formatCurrency(property.valor_minimo_num)}
                 </span>
               </div>
 
               {property.desconto_pct > 0 && (
                 <div className="text-right">
-                  <span className="inline-block rounded-lg bg-emerald-500/10 px-2 py-0.5 text-xs font-extrabold text-emerald-500 border border-emerald-500/20">
+                  <span className="inline-block rounded-lg bg-emerald-500/10 px-2 py-0.5 text-xs font-extrabold text-emerald-600 border border-emerald-500/20">
                     -{formatPercent(property.desconto_pct)}
                   </span>
                   <span className="text-[11px] text-[var(--text-muted)] line-through block mt-0.5">
@@ -150,6 +184,14 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
             </div>
           </div>
         </div>
+
+        {/* Note Status Badge (Se existir anotação) */}
+        {hasNote && noteStatus && (
+          <div className="mt-2 text-[10px] font-bold text-[var(--color-primary)] bg-[var(--color-primary)]/10 border border-[var(--color-primary)]/20 rounded-lg px-2 py-1 flex items-center justify-between">
+            <span>Anotação: {noteStatus}</span>
+            <span>✓ Banco</span>
+          </div>
+        )}
 
         {/* Tags & Action Footer */}
         <div className="mt-4 pt-3 border-t border-[var(--border-main)] flex items-center justify-between">
@@ -164,7 +206,7 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
             </span>
 
             {property.fgts === 'Sim' && (
-              <span className="inline-flex items-center rounded-md bg-cyan-500/10 px-2 py-0.5 text-[10px] font-bold text-cyan-500 border border-cyan-500/20">
+              <span className="inline-flex items-center rounded-md bg-cyan-500/10 px-2 py-0.5 text-[10px] font-bold text-cyan-600 border border-cyan-500/20">
                 FGTS
               </span>
             )}
@@ -176,14 +218,14 @@ export function OpportunityCard({ property }: OpportunityCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-1 text-[11px] font-bold text-[var(--text-muted)] hover:text-blue-500 transition-colors"
+              className="inline-flex items-center gap-1 text-[11px] font-bold text-[var(--text-muted)] hover:text-[var(--color-primary)] transition-colors"
               title={`Site do Leiloeiro: ${property.site_leiloeiro_clean || 'caixa'}`}
             >
               <Globe className="h-3.5 w-3.5" />
               <span>{property.site_leiloeiro_clean || 'leiloeiro'}</span>
             </a>
 
-            <span className="inline-flex items-center gap-1 text-xs font-bold text-blue-500 group-hover:translate-x-0.5 transition-transform">
+            <span className="inline-flex items-center gap-1 text-xs font-bold text-[var(--color-primary)] group-hover:translate-x-0.5 transition-transform">
               Detalhes <ArrowRight className="h-3.5 w-3.5" />
             </span>
           </div>

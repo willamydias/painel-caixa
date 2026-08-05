@@ -280,7 +280,9 @@ export default function InteractiveMap() {
         const cat = getScoreColorCategory(p.score);
         const isHovered = hoveredPropertyId === p.id;
         const isSelected = selectedPropertyId === p.id;
-        const photoUrl = p.has_photo ? `/fotos/${p.id}.jpg` : null;
+        const photoUrl = (p.fotos_list && p.fotos_list.length > 0)
+          ? p.fotos_list[0]
+          : (p.has_photo ? `/fotos/${p.id}.jpg` : null);
 
         const iconHtml = `
           <div style="

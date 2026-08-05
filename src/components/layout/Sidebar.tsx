@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useDashboard } from '@/context/DashboardContext';
+import { useUser } from '@/context/UserContext';
 import {
   LayoutDashboard,
   Search,
@@ -33,8 +34,8 @@ export function Sidebar() {
   const [collapsed, setCollapsed] = useState(false);
   const pathname = usePathname();
   const { selectedPropertyId, filters } = useDashboard();
+  const { currentUser, isAdmin } = useUser();
 
-  // Verificar se existe um imóvel selecionado ou filtro ativo
   const hasActiveFilterOrProperty =
     selectedPropertyId !== null ||
     filters.searchQuery !== '' ||
@@ -50,7 +51,6 @@ export function Sidebar() {
     { label: 'Oportunidades', href: '/oportunidades', icon: Search, badge: 'Caixa' },
     { label: 'Mapa de Imóveis', href: '/mapa', icon: MapPin },
     { label: 'Calendário de Leilões', href: '/calendario', icon: Calendar },
-    // O subitem "Detalhes do Imóvel" fica escondido até selecionar um imóvel ou filtro
     ...(hasActiveFilterOrProperty
       ? [{ label: 'Detalhes do Imóvel', href: '/detalhes', icon: FileText, badge: 'Ativo' }]
       : []),
@@ -66,7 +66,9 @@ export function Sidebar() {
     { label: 'Minha Conta', href: '/conta', icon: User },
     { label: 'Configurações', href: '/configuracoes', icon: Settings },
     { label: 'Estados Especiais', href: '/estados-especiais', icon: AlertTriangle },
-    { label: 'Painel Admin', href: '/admin', icon: ShieldCheck, badge: 'Pro' },
+    ...(isAdmin
+      ? [{ label: 'Painel Admin', href: '/admin', icon: ShieldCheck, badge: 'Mestre' }]
+      : [{ label: 'Painel Admin', href: '/admin', icon: ShieldCheck, badge: 'Restrito' }]),
   ];
 
   const renderNavGroup = (title: string, items: NavItem[]) => (
@@ -128,25 +130,30 @@ export function Sidebar() {
         {renderNavGroup('Sistema', systemNav)}
       </div>
 
-      {/* Footer / Perfil resumido & botão recolher */}
+      {/* Footer / Perfil Ativo Resumido & Botão Recolher */}
       <div className="border-t border-[var(--border-main)] pt-3">
         {!collapsed && (
-          <div className="mb-3 rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] p-2.5 flex items-center gap-2.5">
+          <Link
+            href="/conta"
+            className="mb-3 rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] p-2.5 flex items-center gap-2.5 hover:border-[var(--color-primary)] transition-all group"
+          >
             <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-[var(--color-primary)] text-white text-xs font-bold shrink-0">
-              W
+              {currentUser.full_name.charAt(0)}
             </div>
             <div className="truncate">
-              <div className="text-xs font-bold text-[var(--text-main)] truncate">Wagner Jr.</div>
+              <div className="text-xs font-bold text-[var(--text-main)] truncate group-hover:text-[var(--color-primary)]">
+                {currentUser.full_name}
+              </div>
               <div className="text-[10px] text-[var(--color-primary)] font-semibold flex items-center gap-1">
-                <Sparkles className="h-2.5 w-2.5" /> Plano Pro (Ativo)
+                <Sparkles className="h-2.5 w-2.5" /> Perfil {currentUser.role}
               </div>
             </div>
-          </div>
+          </Link>
         )}
 
         <button
           onClick={() => setCollapsed(!collapsed)}
-          className="w-full flex items-center justify-center gap-2 rounded-lg border border-[var(--border-main)] bg-[var(--bg-sub)] py-2 text-xs font-bold text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-card)] transition-all"
+          className="w-full flex items-center justify-center gap-2 rounded-lg border border-[var(--border-main)] bg-[var(--bg-sub)] py-2 text-xs font-bold text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-card)] transition-all cursor-pointer"
         >
           {collapsed ? <ChevronRight className="h-4 w-4" /> : <ChevronLeft className="h-4 w-4" />}
           {!collapsed && <span>Recolher Menu</span>}

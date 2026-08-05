@@ -5,6 +5,8 @@ import { Property, FilterState, KPIStats, ColorPaletteKey } from '@/types/proper
 import { filterAndSortProperties, calculateKPIs } from '@/lib/scoring';
 import { applyColorPalette } from '@/lib/palettes';
 import { getUserSettings, saveUserSettings, UserSettings } from '@/lib/userSettings';
+import { useUser } from '@/context/UserContext';
+import { UserNoteDB } from '@/lib/db';
 
 interface DashboardContextType {
   allProperties: Property[];
@@ -21,6 +23,8 @@ interface DashboardContextType {
   setViewMode: (mode: 'cards' | 'table') => void;
   favorites: string[];
   toggleFavorite: (id: string) => void;
+  propertyNotes: Record<string, UserNoteDB>;
+  updatePropertyNote: (propertyId: string, noteData: Partial<UserNoteDB>) => Promise<void>;
   kpis: KPIStats;
   theme: 'dark' | 'light';
   toggleTheme: () => void;
@@ -31,6 +35,8 @@ interface DashboardContextType {
   isLoading: boolean;
   userSettings: UserSettings;
   updateUserSettings: (newSettings: Partial<UserSettings>) => Promise<void>;
+  activeNoteProperty: Property | null;
+  setActiveNoteProperty: (prop: Property | null) => void;
 }
 
 const initialFilters: FilterState = {
@@ -50,30 +56,26 @@ const initialFilters: FilterState = {
 const DashboardContext = createContext<DashboardContextType | undefined>(undefined);
 
 export function DashboardProvider({ children }: { children: React.ReactNode }) {
+  const { currentUser } = useUser();
   const [allProperties, setAllProperties] = useState<Property[]>([]);
   const [lastScrapingDate, setLastScrapingDate] = useState<string>('23/07/2026');
   const [filters, setFilters] = useState<FilterState>(initialFilters);
   const [selectedPropertyId, setSelectedPropertyId] = useState<string | null>(null);
   const [hoveredPropertyId, setHoveredPropertyId] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'cards' | 'table'>('cards');
-  const [favorites, setFavorites] = useState<string[]>([]);
   
-  // Settings do usuário (recuperadas de localStorage/banco ao iniciar)
+  // Dados Isolados do Usuário Ativo
+  const [favorites, setFavorites] = useState<string[]>([]);
+  const [propertyNotes, setPropertyNotes] = useState<Record<string, UserNoteDB>>({});
+  const [activeNoteProperty, setActiveNoteProperty] = useState<Property | null>(null);
+
+  // Settings do usuário
   const [userSettings, setUserSettingsState] = useState<UserSettings>(defaultUserSettings);
   const [theme, setTheme] = useState<'dark' | 'light'>('light');
   const [colorPalette, setColorPaletteState] = useState<ColorPaletteKey>('citrico');
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
-  // 1. Restaurar configurações salvas do usuário ao inicializar o app/login
-  useEffect(() => {
-    const saved = getUserSettings();
-    setUserSettingsState(saved);
-    if (saved.theme) {
-      setTheme(saved.theme);
-    }
-  }, []);
-
-  // 2. Carregar lista de imóveis da base de dados local
+  // 1. Carregar lista global de imóveis da base de dados local
   useEffect(() => {
     async function loadData() {
       try {
@@ -98,6 +100,51 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
     loadData();
   }, []);
 
+  // 2. Carregar dados do Banco de Dados ao trocar de Usuário Ativo (Multiusuário)
+  useEffect(() => {
+    if (!currentUser?.id) return;
+
+    async function loadUserData() {
+      try {
+        // A. Preferências & Configurações
+        const stRes = await fetch(`/api/user-settings?userId=${currentUser.id}`);
+        if (stRes.ok) {
+          const stData = await stRes.json();
+          if (stData.preferences) {
+            const pref = stData.preferences;
+            setUserSettingsState({
+              theme: pref.theme || 'light',
+              colorPalette: pref.color_palette || pref.colorPalette || 'citrico',
+              minPreco: pref.min_preco || pref.minPreco || 50000,
+              maxPreco: pref.max_preco || pref.maxPreco || 800000,
+              aceitaFGTS: pref.aceita_fgts ?? pref.aceitaFGTS ?? true,
+              aceitaFinanciamento: pref.aceita_financiamento ?? pref.aceitaFinanciamento ?? true,
+            });
+            if (pref.theme) setTheme(pref.theme);
+            if (pref.color_palette || pref.colorPalette) setColorPaletteState((pref.color_palette || pref.colorPalette) as ColorPaletteKey);
+          }
+        }
+
+        // B. Imóveis Favoritos
+        const favRes = await fetch(`/api/favorites?userId=${currentUser.id}`);
+        if (favRes.ok) {
+          const favData = await favRes.json();
+          setFavorites(favData.favorites || []);
+        }
+
+        // C. Anotações Personalizadas & Status Kanban
+        const notesRes = await fetch(`/api/notes?userId=${currentUser.id}`);
+        if (notesRes.ok) {
+          const notesData = await notesRes.json();
+          setPropertyNotes(notesData.notes || {});
+        }
+      } catch (err) {
+        console.warn('Erro ao carregar dados do usuário:', err);
+      }
+    }
+    loadUserData();
+  }, [currentUser]);
+
   // 3. Manter o tema e esquema de cores consistente em TODAS as telas e rotas
   useEffect(() => {
     const root = document.documentElement;
@@ -113,10 +160,19 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
   const updateUserSettings = async (newSettings: Partial<UserSettings>) => {
     const next = { ...userSettings, ...newSettings };
     setUserSettingsState(next);
-    if (newSettings.theme) {
-      setTheme(newSettings.theme);
-    }
+    if (newSettings.theme) setTheme(newSettings.theme);
+    if (newSettings.colorPalette) setColorPaletteState(newSettings.colorPalette as ColorPaletteKey);
+
     await saveUserSettings(next);
+    try {
+      await fetch('/api/user-settings', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ user_id: currentUser.id, ...next }),
+      });
+    } catch (err) {
+      console.warn('Sincronização em background:', err);
+    }
   };
 
   const toggleTheme = () => {
@@ -143,10 +199,58 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
     setFilters(initialFilters);
   };
 
-  const toggleFavorite = (id: string) => {
-    setFavorites((prev) =>
-      prev.includes(id) ? prev.filter((fav) => fav !== id) : [...prev, id]
-    );
+  const toggleFavorite = async (propertyId: string) => {
+    const isFav = favorites.includes(propertyId);
+    const updatedFavs = isFav ? favorites.filter((id) => id !== propertyId) : [...favorites, propertyId];
+    setFavorites(updatedFavs);
+
+    try {
+      await fetch('/api/favorites', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ userId: currentUser.id, propertyId }),
+      });
+    } catch (err) {
+      console.warn('Erro ao atualizar favorito no banco:', err);
+    }
+  };
+
+  const updatePropertyNote = async (propertyId: string, noteData: Partial<UserNoteDB>) => {
+    const current = propertyNotes[propertyId] || {
+      user_id: currentUser.id,
+      property_id: propertyId,
+      kanban_status: 'Interessante',
+      note_text: '',
+      tags: [],
+      updated_at: new Date().toISOString(),
+    };
+
+    const nextNote: UserNoteDB = {
+      ...current,
+      ...noteData,
+      user_id: currentUser.id,
+      property_id: propertyId,
+      updated_at: new Date().toISOString(),
+    };
+
+    setPropertyNotes((prev) => ({ ...prev, [propertyId]: nextNote }));
+
+    try {
+      await fetch('/api/notes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId: currentUser.id,
+          propertyId,
+          kanbanStatus: nextNote.kanban_status,
+          noteText: nextNote.note_text,
+          maxLance: nextNote.max_lance,
+          tags: nextNote.tags,
+        }),
+      });
+    } catch (err) {
+      console.warn('Erro ao salvar nota no banco:', err);
+    }
   };
 
   const filteredProperties = useMemo(() => {
@@ -155,7 +259,7 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
 
   const kpis = useMemo(() => {
     return calculateKPIs(allProperties, filteredProperties);
-  }, [allProperties, filteredProperties]);
+  }, [allProperties, filters]);
 
   return (
     <DashboardContext.Provider
@@ -174,6 +278,8 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
         setViewMode,
         favorites,
         toggleFavorite,
+        propertyNotes,
+        updatePropertyNote,
         kpis,
         theme,
         toggleTheme,
@@ -184,6 +290,8 @@ export function DashboardProvider({ children }: { children: React.ReactNode }) {
         isLoading,
         userSettings,
         updateUserSettings,
+        activeNoteProperty,
+        setActiveNoteProperty,
       }}
     >
       {children}

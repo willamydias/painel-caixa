@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+README.md
+*.log
+.DS_Store
+public/data/ativos
+playwright_profile
+*.tmp

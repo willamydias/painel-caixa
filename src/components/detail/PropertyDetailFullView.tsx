@@ -27,11 +27,28 @@ import {
   MapPin,
   Maximize2,
   ArrowLeft,
+  Clock,
 } from 'lucide-react';
 import Link from 'next/link';
 
 interface PropertyDetailFullViewProps {
   propertyId?: string;
+}
+
+function getCleanAddress(address: string): string {
+  if (!address) return '';
+  let clean = address;
+  clean = clean.replace(/,\s*(SAMAMBAIA|TAGUATINGA|BRASILIA|CEILANDIA|AGUAS CLARAS|PLANALTINA|GAMA|RECANTO DOS DOURADOS|SOBRADINHO|GUARA|NUCLEO BANDEIRANTE|CANDANGOLANDIA|PARANOA|SANTA MARIA|SUDOESTE|OCTOGONAL|CRUZEIRO|LAGO NORTE|LAGO SUL|JARDIM BOTANICO|ITARARE)\s*(?=\s*-?\s*CEP:|\b)/gi, '');
+  clean = clean.replace(/,\s*TAGUATINGA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/,\s*BRASILIA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/,\s*SAMAMBAIA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/,\s*CEILANDIA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/NORTE\s*\([^)]*\)\s*-\s*/gi, '');
+  clean = clean.replace(/SUL\s*\([^)]*\)\s*-\s*/gi, '');
+  clean = clean.replace(/\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/\s*-?\s*CEP:/gi, ' - CEP:');
+  clean = clean.replace(/,\s*-/gi, ' -');
+  return clean.trim();
 }
 
 export function PropertyDetailFullView({ propertyId }: PropertyDetailFullViewProps) {
@@ -46,8 +63,21 @@ export function PropertyDetailFullView({ propertyId }: PropertyDetailFullViewPro
   const [copied, setCopied] = useState<boolean>(false);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
   const [showScreenshotModal, setShowScreenshotModal] = useState<boolean>(false);
+  const [selectedPdfDoc, setSelectedPdfDoc] = useState<{ nome: string; url: string } | null>(null);
 
   const isFavorite = property ? favorites.includes(property.id) : false;
+
+  // Keydown handler (ESC to close modals)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setShowScreenshotModal(false);
+        setSelectedPdfDoc(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
 
   // Set initial selected photo
   useEffect(() => {
@@ -111,7 +141,7 @@ export function PropertyDetailFullView({ propertyId }: PropertyDetailFullViewPro
       {/* 1. Header do Detalhe do Imóvel & Controles de Ação */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[var(--border-main)] pb-5">
         <div>
-          <div className="flex items-center gap-2 mb-2">
+          <div className="flex flex-wrap items-center gap-2 mb-2">
             <Link
               href="/oportunidades"
               className="inline-flex items-center gap-1 text-xs font-bold text-[var(--color-primary)] hover:underline mr-2"
@@ -124,65 +154,103 @@ export function PropertyDetailFullView({ propertyId }: PropertyDetailFullViewPro
             <span className="rounded-md bg-[var(--bg-sub)] text-[var(--text-muted)] px-2 py-0.5 text-[11px] font-bold uppercase">
               {property.modalidade}
             </span>
+
+            {/* Tag Score com lógica cromática (Sem texto Moderada/Alerta) */}
+            <span className={`rounded-md px-2 py-0.5 text-[11px] font-extrabold border ${
+              property.score >= 70
+                ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                : property.score >= 45
+                  ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                  : 'bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/30'
+            }`}>
+              Score {property.score}
+            </span>
+
+            {/* Tag Veredicto (somente "COMPRAR", "ATENÇÃO", "NÃO COMPRAR") */}
+            <span className={`rounded-md px-2 py-0.5 text-[11px] font-extrabold uppercase border ${
+              property.veredicto.includes('NÃO COMPRAR')
+                ? 'bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/30'
+                : property.veredicto.includes('Atenção')
+                  ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                  : 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+            }`}>
+              {property.veredicto.includes('NÃO COMPRAR') ? 'NÃO COMPRAR' : property.veredicto.includes('Atenção') ? 'ATENÇÃO' : 'COMPRAR'}
+            </span>
+
+            {/* Tag Prazo Contínuo ou Relógio Regressivo */}
+            {property.modalidade.toLowerCase().includes('venda direta') || property.modalidade.toLowerCase().includes('compra direta') || (!property.data_1 && !property.data_2) ? (
+              <span className="rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30 px-2 py-0.5 text-[11px] font-bold flex items-center gap-1">
+                <Clock className="h-3 w-3" /> Prazo contínuo
+              </span>
+            ) : (
+              <CountdownBadge targetDateStr={property.data_1 || property.data_2} />
+            )}
           </div>
-          <h1 className="text-2xl sm:text-3xl font-extrabold text-[var(--text-main)] tracking-tight">
-            {property.endereco}
+          <h1 className="text-xl sm:text-2xl font-extrabold text-[var(--text-main)] tracking-tight">
+            {getCleanAddress(property.endereco)}
           </h1>
-          <p className="text-xs sm:text-sm text-[var(--text-muted)] mt-1 flex items-center gap-1.5">
-            <MapPin className="h-4 w-4 text-[var(--color-primary)] shrink-0" />
-            <span>{property.cidade_satelite || 'DF'} • {property.bairro} • Tipo: {property.tipo} • Área: {property.area}</span>
+          <p className="text-xs sm:text-sm text-[var(--text-muted)] mt-1.5 flex flex-wrap items-center gap-2">
+            <span className="flex items-center gap-1">
+              <MapPin className="h-3.5 w-3.5 text-[var(--color-primary)] shrink-0" />
+              <strong>Região:</strong> <span className="text-[var(--text-main)] font-semibold">{property.bairro}</span>
+            </span>
+            <span className="text-[var(--border-main)]">•</span>
+            <span className="flex items-center gap-1">
+              <strong>Cidade:</strong> <span className="text-[var(--text-main)] font-semibold">{property.cidade_satelite || 'Samambaia'}</span>
+            </span>
+            <span className="text-[var(--border-main)]">•</span>
+            <span className="flex items-center gap-1">
+              <Building className="h-3.5 w-3.5 text-blue-500 shrink-0" />
+              <strong>Tipo:</strong> <span className="text-[var(--text-main)] font-semibold">{property.tipo}</span>
+            </span>
+            <span className="text-[var(--border-main)]">•</span>
+            <span className="flex items-center gap-1">
+              <TrendingUp className="h-3.5 w-3.5 text-emerald-500 shrink-0" />
+              <strong>Área:</strong> <span className="text-[var(--text-main)] font-semibold">{property.area}</span>
+            </span>
+            <span className="text-[var(--border-main)]">•</span>
+            <span className="flex items-center gap-1">
+              <ShieldCheck className={`h-3.5 w-3.5 shrink-0 ${property.fgts === 'Sim' ? 'text-emerald-500' : 'text-amber-500'}`} />
+              <strong>FGTS:</strong> <span className={`font-bold ${property.fgts === 'Sim' ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-600 dark:text-amber-400'}`}>
+                {property.fgts === 'Sim' ? 'Permitido' : 'Não se Aplica'}
+              </span>
+            </span>
           </p>
         </div>
 
-        {/* Botões de Ação Topo */}
+        {/* Botões de Ação Topo (Links Discretos) */}
         <div className="flex items-center gap-2">
           <button
             onClick={() => toggleFavorite(property.id)}
-            className={`flex items-center gap-2 rounded-xl border px-4 py-2.5 text-xs font-bold transition-all ${isFavorite
+            className={`p-2.5 rounded-xl border transition-all cursor-pointer ${isFavorite
               ? 'border-amber-500 bg-amber-500 text-white shadow-md'
-              : 'border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-main)] hover:border-amber-500 hover:text-amber-500'
+              : 'border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-muted)] hover:border-amber-500 hover:text-amber-500'
               }`}
+            title={isFavorite ? 'Remover dos Favoritos' : 'Adicionar aos Favoritos'}
           >
             <Star className={`h-4 w-4 ${isFavorite ? 'fill-current' : ''}`} />
-            <span>{isFavorite ? 'Favoritado' : 'Favoritar'}</span>
           </button>
 
           <button
             onClick={handleCopyLink}
-            className="flex items-center gap-2 rounded-xl border border-[var(--border-main)] bg-[var(--bg-card)] px-4 py-2.5 text-xs font-bold text-[var(--text-main)] hover:bg-[var(--bg-sub)] transition-colors"
+            className="p-2.5 rounded-xl border border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-muted)] hover:text-[var(--text-main)] hover:bg-[var(--bg-sub)] transition-colors cursor-pointer"
+            title="Copiar Link da Oportunidade"
           >
             {copied ? <Check className="h-4 w-4 text-emerald-500" /> : <Share2 className="h-4 w-4" />}
-            <span>{copied ? 'Link Copiado' : 'Compartilhar'}</span>
           </button>
 
           <a
             href={mainLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 rounded-xl bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white px-5 py-2.5 text-xs font-bold shadow-md transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-xl border border-[var(--color-primary)]/30 bg-[var(--color-primary)]/10 text-[var(--color-primary)] px-3.5 py-2 text-xs font-bold hover:bg-[var(--color-primary)] hover:text-white transition-all shadow-sm"
+            title={`Acessar leiloeiro oficial ${property.site_leiloeiro_nome || ''}`}
           >
             <Globe className="h-4 w-4" />
-            <span>Ir para o Leiloeiro</span>
-            <ExternalLink className="h-3.5 w-3.5" />
+            <span>Leiloeiro ({property.site_leiloeiro_nome || 'Oficial'})</span>
+            <ExternalLink className="h-3 w-3" />
           </a>
         </div>
-      </div>
-
-      {/* 2. Banner de Destaque: Score rings & Veredito */}
-      <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-950 p-6 text-white shadow-md border border-slate-800">
-        <div className="flex items-center gap-4">
-          <ScoreBadge score={property.score} size="lg" />
-          <div>
-            <div className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-              Score de Oportunidade: {property.score}/100 ({property.classificacao})
-            </div>
-            <div className="text-lg font-extrabold text-emerald-400 flex items-center gap-2 mt-0.5">
-              <span>Veredito da IA: {property.veredicto}</span>
-            </div>
-          </div>
-        </div>
-
-        <CountdownBadge targetDateStr={property.data_1 || property.data_2} />
       </div>
 
       {/* 3. Grid Principal: ESQUERDA (Parecer IA) & DIREITA (Galeria, Resumo Financeiro, Leiloeiro, Central de Documentos) */}
@@ -283,21 +351,8 @@ export function PropertyDetailFullView({ propertyId }: PropertyDetailFullViewPro
 
         </div>
 
-        {/* COLUNA DIREITA (5 cols): Galeria de Fotos, Resumo Financeiro, Leiloeiro e Central de Documentos */}
+        {/* COLUNA DIREITA (5 cols): Galeria de Fotos, Resumo Financeiro e Central de Documentos */}
         <div className="lg:col-span-5 space-y-6">
-          {/* Atalhos Rápidos para o Leiloeiro Oficial */}
-          <div className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-5 shadow-sm space-y-2">
-            <a
-              href={mainLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white p-3 text-xs font-bold shadow-md transition-colors"
-            >
-              <Globe className="h-4 w-4" />
-              <span>Acessar Site do Leiloeiro Oficial</span>
-              <ExternalLink className="h-4 w-4" />
-            </a>
-          </div>
 
           {/* Mídia & Galeria de Fotos */}
           <div className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-5 shadow-sm space-y-4">
@@ -404,19 +459,40 @@ export function PropertyDetailFullView({ propertyId }: PropertyDetailFullViewPro
               {/* Listagem dos demais PDFs anexados */}
               {property.documentos_list && property.documentos_list.length > 0 &&
                 property.documentos_list.map((doc, idx) => (
-                  <a
+                  <div
                     key={idx}
-                    href={doc.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-between rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] p-3 text-xs font-bold text-[var(--text-main)] hover:border-[var(--color-primary)] transition-colors"
+                    onClick={() => setSelectedPdfDoc({ nome: doc.nome, url: doc.url })}
+                    className="flex items-center justify-between rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] p-3 text-xs font-bold text-[var(--text-main)] hover:border-[var(--color-primary)] transition-colors cursor-pointer text-left group"
                   >
                     <div className="flex items-center gap-2.5 truncate">
                       <FileCode className="h-4 w-4 text-red-500 shrink-0" />
-                      <span className="truncate">{doc.nome}</span>
+                      <span className="truncate group-hover:text-[var(--color-primary)] transition-colors">{doc.nome}</span>
                     </div>
-                    <Download className="h-4 w-4 text-[var(--text-muted)] hover:text-[var(--color-primary)] shrink-0" />
-                  </a>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setSelectedPdfDoc({ nome: doc.nome, url: doc.url });
+                        }}
+                        className="text-[var(--text-muted)] hover:text-[var(--color-primary)] p-1 transition-colors"
+                        title="Visualizar em Janela Sobreposta"
+                      >
+                        <Maximize2 className="h-4 w-4" />
+                      </button>
+                      <a
+                        href={doc.url}
+                        download={doc.nome}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="text-[var(--text-muted)] hover:text-[var(--color-primary)] p-1 transition-colors"
+                        title="Baixar Arquivo PDF"
+                      >
+                        <Download className="h-4 w-4" />
+                      </a>
+                    </div>
+                  </div>
                 ))}
             </div>
           </div>
@@ -449,6 +525,46 @@ export function PropertyDetailFullView({ propertyId }: PropertyDetailFullViewPro
                   (e.target as HTMLImageElement).src = '/data/ativos/1013765-3/screenshot.png';
                 }}
                 className="w-full h-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal de Visualização de Documentos PDF em Janela Sobreposta */}
+      {selectedPdfDoc && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4">
+          <div className="relative max-w-5xl w-full bg-[var(--bg-card)] rounded-2xl border border-[var(--border-main)] p-4 space-y-4 shadow-2xl">
+            <div className="flex items-center justify-between border-b border-[var(--border-main)] pb-3">
+              <h3 className="text-sm font-bold text-[var(--text-main)] flex items-center gap-2 truncate pr-4">
+                <FileCode className="h-4 w-4 text-red-500 shrink-0" />
+                <span className="truncate">{selectedPdfDoc.nome}</span>
+              </h3>
+              <div className="flex items-center gap-2.5 shrink-0">
+                <a
+                  href={selectedPdfDoc.url}
+                  download={selectedPdfDoc.nome}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 rounded-xl bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white px-3.5 py-1.5 text-xs font-bold shadow-md transition-all cursor-pointer"
+                >
+                  <Download className="h-4 w-4" />
+                  <span>Baixar PDF</span>
+                </a>
+                <button
+                  onClick={() => setSelectedPdfDoc(null)}
+                  className="rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-3 py-1.5 text-xs font-bold text-[var(--text-main)] hover:bg-[var(--bg-card)] cursor-pointer transition-colors"
+                >
+                  Fechar (ESC)
+                </button>
+              </div>
+            </div>
+
+            <div className="h-[76vh] w-full rounded-xl border border-[var(--border-main)] overflow-hidden bg-slate-900">
+              <iframe
+                src={selectedPdfDoc.url}
+                title={selectedPdfDoc.nome}
+                className="w-full h-full border-0"
               />
             </div>
           </div>

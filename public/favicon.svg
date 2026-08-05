@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Container -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Border Ring -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="none" stroke="url(#goldGrad)" stroke-width="12" stroke-opacity="0.4"/>
+
+  <!-- Building / Real Estate Roof & Structure -->
+  <!-- Roof Shape -->
+  <path d="M256 96 L416 224 H368 V384 C368 401.673 353.673 416 336 416 H176 C158.327 416 144 401.673 144 384 V224 H96 L256 96 Z" fill="url(#goldGrad)"/>
+
+  <!-- Inner Architectural Cutout -->
+  <path d="M256 160 L336 224 V368 H288 V288 H224 V368 H176 V224 L256 160 Z" fill="#0f172a"/>
+
+  <!-- Growth Trend Line / Intelligence Overlay -->
+  <path d="M120 340 L220 250 L290 300 L400 170" fill="none" stroke="url(#accentGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="400,150 415,190 375,185" fill="#38bdf8"/>
+
+  <!-- Central Star / Gem Opportunity Marker -->
+  <circle cx="256" cy="224" r="20" fill="url(#goldGrad)"/>
+</svg>

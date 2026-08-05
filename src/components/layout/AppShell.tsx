@@ -1,8 +1,11 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useUser } from '@/context/UserContext';
 import { Header } from '@/components/layout/Header';
 import { Sidebar } from '@/components/layout/Sidebar';
+import { PropertyNoteModal } from '@/components/modals/PropertyNoteModal';
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -10,6 +13,32 @@ interface AppShellProps {
 }
 
 export function AppShell({ children, showSidebar = true }: AppShellProps) {
+  const { isAuthenticated, isAuthLoaded } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isAuthLoaded && !isAuthenticated) {
+      router.replace('/login');
+    }
+  }, [isAuthenticated, isAuthLoaded, router]);
+
+  // Aguardar carregamento síncrono da sessão
+  if (!isAuthLoaded) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[var(--bg-page)] text-[var(--text-main)] text-xs font-bold">
+        Carregando sessão...
+      </div>
+    );
+  }
+
+  if (!isAuthenticated) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[var(--bg-page)] text-[var(--text-main)] text-xs font-bold">
+        Autenticação necessária. Redirecionando para login...
+      </div>
+    );
+  }
+
   return (
     <div className="flex min-h-screen flex-col bg-[var(--bg-page)] text-[var(--text-main)] transition-colors">
       <Header />
@@ -19,6 +48,7 @@ export function AppShell({ children, showSidebar = true }: AppShellProps) {
           {children}
         </main>
       </div>
+      <PropertyNoteModal />
     </div>
   );
 }

@@ -21,7 +21,28 @@ import {
   FolderDown,
   FileCode,
   Globe,
+  Maximize2,
+  Clock,
+  MapPin,
+  TrendingUp,
+  ShieldCheck,
 } from 'lucide-react';
+
+function getCleanAddress(address: string): string {
+  if (!address) return '';
+  let clean = address;
+  clean = clean.replace(/,\s*(SAMAMBAIA|TAGUATINGA|BRASILIA|CEILANDIA|AGUAS CLARAS|PLANALTINA|GAMA|RECANTO DOS DOURADOS|SOBRADINHO|GUARA|NUCLEO BANDEIRANTE|CANDANGOLANDIA|PARANOA|SANTA MARIA|SUDOESTE|OCTOGONAL|CRUZEIRO|LAGO NORTE|LAGO SUL|JARDIM BOTANICO|ITARARE)\s*(?=\s*-?\s*CEP:|\b)/gi, '');
+  clean = clean.replace(/,\s*TAGUATINGA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/,\s*BRASILIA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/,\s*SAMAMBAIA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/,\s*CEILANDIA\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/NORTE\s*\([^)]*\)\s*-\s*/gi, '');
+  clean = clean.replace(/SUL\s*\([^)]*\)\s*-\s*/gi, '');
+  clean = clean.replace(/\s*-\s*DISTRITO\s*FEDERAL/gi, '');
+  clean = clean.replace(/\s*-?\s*CEP:/gi, ' - CEP:');
+  clean = clean.replace(/,\s*-/gi, ' -');
+  return clean.trim();
+}
 
 export function OpportunityDetailDrawer() {
   const { selectedPropertyId, setSelectedPropertyId, allProperties, favorites, toggleFavorite } = useDashboard();
@@ -29,6 +50,7 @@ export function OpportunityDetailDrawer() {
   const [isLoadingMarkdown, setIsLoadingMarkdown] = useState<boolean>(false);
   const [copied, setCopied] = useState<boolean>(false);
   const [selectedPhoto, setSelectedPhoto] = useState<string | null>(null);
+  const [selectedPdfDoc, setSelectedPdfDoc] = useState<{ nome: string; url: string } | null>(null);
 
   const property = allProperties.find((p) => p.id === selectedPropertyId);
   const isFavorite = property ? favorites.includes(property.id) : false;
@@ -116,12 +138,60 @@ export function OpportunityDetailDrawer() {
                 #{property.id}
               </div>
               <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-400 dark:text-slate-500 block">
-                  Lote CAIXA Econômica Federal
-                </span>
-                <h2 className="text-base font-bold text-slate-900 dark:text-white truncate max-w-md">
-                  {property.endereco}
+                <div className="flex flex-wrap items-center gap-1.5 mb-1">
+                  <span className="rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 px-2 py-0.5 text-[10px] font-bold uppercase border border-blue-500/20">
+                    {property.modalidade}
+                  </span>
+
+                  {/* Tag Score */}
+                  <span className={`rounded-md px-2 py-0.5 text-[10px] font-extrabold border ${
+                    property.score >= 70
+                      ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                      : property.score >= 45
+                        ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                        : 'bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/30'
+                  }`}>
+                    Score {property.score}
+                  </span>
+
+                  {/* Tag Veredicto */}
+                  <span className={`rounded-md px-2 py-0.5 text-[10px] font-extrabold uppercase border ${
+                    property.veredicto.includes('NÃO COMPRAR')
+                      ? 'bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/30'
+                      : property.veredicto.includes('Atenção')
+                        ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                        : 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                  }`}>
+                    {property.veredicto.includes('NÃO COMPRAR') ? 'NÃO COMPRAR' : property.veredicto.includes('Atenção') ? 'ATENÇÃO' : 'COMPRAR'}
+                  </span>
+
+                  {/* Tag Prazo Contínuo ou Relógio Regressivo */}
+                  {property.modalidade.toLowerCase().includes('venda direta') || property.modalidade.toLowerCase().includes('compra direta') || (!property.data_1 && !property.data_2) ? (
+                    <span className="rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/30 px-2 py-0.5 text-[10px] font-bold flex items-center gap-1">
+                      <Clock className="h-3 w-3" /> Prazo contínuo
+                    </span>
+                  ) : (
+                    <CountdownBadge targetDateStr={property.data_1 || property.data_2} />
+                  )}
+                </div>
+
+                <h2 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate max-w-md">
+                  {getCleanAddress(property.endereco)}
                 </h2>
+
+                <p className="text-[11px] text-slate-500 dark:text-slate-400 mt-1 flex flex-wrap items-center gap-1.5">
+                  <span><strong>Região:</strong> {property.bairro}</span>
+                  <span>•</span>
+                  <span><strong>Cidade:</strong> {property.cidade_satelite || 'Samambaia'}</span>
+                  <span>•</span>
+                  <span><strong>Tipo:</strong> {property.tipo}</span>
+                  <span>•</span>
+                  <span><strong>Área:</strong> {property.area}</span>
+                  <span>•</span>
+                  <span className={`font-bold ${property.fgts === 'Sim' ? 'text-emerald-600 dark:text-emerald-400' : 'text-amber-600 dark:text-amber-400'}`}>
+                    <strong>FGTS:</strong> {property.fgts === 'Sim' ? 'Permitido' : 'Não se Aplica'}
+                  </span>
+                </p>
               </div>
             </div>
 
@@ -157,23 +227,6 @@ export function OpportunityDetailDrawer() {
 
           {/* Drawer Body (Scrollable) */}
           <div className="flex-1 overflow-y-auto p-4 sm:p-6 space-y-6">
-            
-            {/* Top Score & Countdown Banner */}
-            <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-gradient-to-r from-slate-900 to-slate-950 p-4 text-white shadow-md">
-              <div className="flex items-center gap-3">
-                <ScoreBadge score={property.score} size="lg" />
-                <div>
-                  <span className="text-xs font-bold text-slate-400 block uppercase tracking-wider">
-                    {property.modalidade}
-                  </span>
-                  <span className="text-sm font-semibold text-emerald-400">
-                    Veredicto: {property.veredicto}
-                  </span>
-                </div>
-              </div>
-
-              <CountdownBadge targetDateStr={property.data_1 || property.data_2} />
-            </div>
 
             {/* MÓDULO 6: DOCUMENTOS E MÍDIA (MediaDocGallery) */}
             <div className="space-y-4">
@@ -228,19 +281,40 @@ export function OpportunityDetailDrawer() {
                 {property.documentos_list && property.documentos_list.length > 0 ? (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {property.documentos_list.map((doc, idx) => (
-                      <a
+                      <div
                         key={idx}
-                        href={doc.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+                        onClick={() => setSelectedPdfDoc({ nome: doc.nome, url: doc.url })}
+                        className="flex items-center justify-between rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 text-xs font-semibold text-slate-800 dark:text-slate-200 hover:border-blue-500 dark:hover:border-blue-500 transition-colors cursor-pointer group"
                       >
                         <div className="flex items-center gap-2 truncate">
                           <FileCode className="h-4 w-4 text-red-500 shrink-0" />
-                          <span className="truncate">{doc.nome}</span>
+                          <span className="truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{doc.nome}</span>
                         </div>
-                        <Download className="h-4 w-4 text-slate-400 hover:text-blue-500 shrink-0" />
-                      </a>
+                        <div className="flex items-center gap-1.5 shrink-0">
+                          <button
+                            type="button"
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedPdfDoc({ nome: doc.nome, url: doc.url });
+                            }}
+                            className="text-slate-400 hover:text-blue-500 p-1 transition-colors"
+                            title="Visualizar em Janela Sobreposta"
+                          >
+                            <Maximize2 className="h-3.5 w-3.5" />
+                          </button>
+                          <a
+                            href={doc.url}
+                            download={doc.nome}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            onClick={(e) => e.stopPropagation()}
+                            className="text-slate-400 hover:text-blue-500 p-1 transition-colors"
+                            title="Baixar Arquivo PDF"
+                          >
+                            <Download className="h-3.5 w-3.5" />
+                          </a>
+                        </div>
+                      </div>
                     ))}
                   </div>
                 ) : (
@@ -335,6 +409,46 @@ export function OpportunityDetailDrawer() {
 
         </div>
       </div>
+
+      {/* Modal de Visualização de Documentos PDF em Janela Sobreposta */}
+      {selectedPdfDoc && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4">
+          <div className="relative max-w-5xl w-full bg-[var(--bg-card)] rounded-2xl border border-[var(--border-main)] p-4 space-y-4 shadow-2xl">
+            <div className="flex items-center justify-between border-b border-[var(--border-main)] pb-3">
+              <h3 className="text-sm font-bold text-[var(--text-main)] flex items-center gap-2 truncate pr-4">
+                <FileCode className="h-4 w-4 text-red-500 shrink-0" />
+                <span className="truncate">{selectedPdfDoc.nome}</span>
+              </h3>
+              <div className="flex items-center gap-2.5 shrink-0">
+                <a
+                  href={selectedPdfDoc.url}
+                  download={selectedPdfDoc.nome}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 rounded-xl bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-white px-3.5 py-1.5 text-xs font-bold shadow-md transition-all cursor-pointer"
+                >
+                  <Download className="h-4 w-4" />
+                  <span>Baixar PDF</span>
+                </a>
+                <button
+                  onClick={() => setSelectedPdfDoc(null)}
+                  className="rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-3 py-1.5 text-xs font-bold text-[var(--text-main)] hover:bg-[var(--bg-card)] cursor-pointer transition-colors"
+                >
+                  Fechar (ESC)
+                </button>
+              </div>
+            </div>
+
+            <div className="h-[76vh] w-full rounded-xl border border-[var(--border-main)] overflow-hidden bg-slate-900">
+              <iframe
+                src={selectedPdfDoc.url}
+                title={selectedPdfDoc.nome}
+                className="w-full h-full border-0"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

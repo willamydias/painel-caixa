@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
+import { UserProvider } from '@/context/UserContext';
 import { DashboardProvider } from '@/context/DashboardContext';
 
 const inter = Inter({
@@ -11,6 +12,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Painel Caixa Ops - Plataforma de Inteligência de Oportunidades Imobiliárias',
   description: 'Dashboard analítico para investimento em imóveis da Caixa Econômica Federal no DF.',
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
+  manifest: '/site.webmanifest',
+  appleWebApp: {
+    title: 'Painel Imobiliário',
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +33,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
       <body className={`${inter.variable} min-h-screen bg-[var(--bg-page)] text-[var(--text-main)] antialiased selection:bg-[var(--color-primary)] selection:text-white transition-colors duration-200`}>
-        <DashboardProvider>{children}</DashboardProvider>
+        <UserProvider>
+          <DashboardProvider>{children}</DashboardProvider>
+        </UserProvider>
       </body>
     </html>
   );

@@ -4,6 +4,8 @@ import React from 'react';
 import { AppShell } from '@/components/layout/AppShell';
 import { ExecutiveKPIs } from '@/components/kpi/ExecutiveKPIs';
 import { AssessmentGrid } from '@/components/grid/AssessmentGrid';
+import { useUser } from '@/context/UserContext';
+import { useDashboard } from '@/context/DashboardContext';
 import {
   Sparkles,
   Search,
@@ -13,20 +15,23 @@ import {
   Bell,
   ArrowRight,
   TrendingUp,
-  ShieldAlert,
   SlidersHorizontal,
-  Clock,
   Building2,
-  CheckCircle2,
+  Database,
+  FileText,
+  UserCheck,
 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function DashboardPage() {
+  const { currentUser, isDbConnected } = useUser();
+  const { favorites, propertyNotes, lastScrapingDate, filteredProperties } = useDashboard();
+
   return (
     <AppShell>
       <div className="space-y-8 max-w-[1700px] mx-auto">
         
-        {/* 1. Header do Dashboard & Hero de Busca em Linguagem Natural */}
+        {/* 1. Header do Dashboard & Hero de Busca com Informações do Usuário */}
         <div className="rounded-3xl border border-[var(--border-main)] bg-[var(--bg-card)] p-6 sm:p-8 shadow-sm relative overflow-hidden">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6 mb-6">
             <div>
@@ -34,25 +39,30 @@ export default function DashboardPage() {
                 <Sparkles className="h-3.5 w-3.5" /> Inteligência de Mercado Ativa
               </div>
               <h1 className="text-2xl sm:text-3xl font-extrabold text-[var(--text-main)] tracking-tight">
-                Olá, Investidor Wagner 👋
+                Olá, {currentUser.full_name} 👋
               </h1>
               <p className="text-sm text-[var(--text-muted)] mt-1">
-                Confira as melhores oportunidades de imóveis CAIXA atualizadas hoje com veredito de IA.
+                Confira as melhores oportunidades da CAIXA no DF sincronizadas no PostgreSQL.
               </p>
             </div>
 
-            {/* Status Operacional & Perfil Resumido */}
-            <div className="flex items-center gap-3">
-              <div className="flex items-center gap-2 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-2 text-xs font-bold text-emerald-600">
-                <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span>Base CAIXA Atualizada (07:00 AM)</span>
+            {/* Status Operacional do Banco & Perfil */}
+            <div className="flex flex-wrap items-center gap-3">
+              <div className={`flex items-center gap-2 rounded-xl border px-3.5 py-2 text-xs font-bold ${
+                isDbConnected
+                  ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-600'
+                  : 'border-amber-500/30 bg-amber-500/10 text-amber-600'
+              }`}>
+                <Database className="h-4 w-4" />
+                <span>{isDbConnected ? 'PostgreSQL/Supabase Conectado' : 'Modo Offline / Local'}</span>
               </div>
+
               <Link
                 href="/conta"
-                className="hidden sm:flex items-center gap-2 rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-3.5 py-2 text-xs font-bold text-[var(--text-main)] hover:bg-[var(--bg-card)] transition-colors"
+                className="flex items-center gap-2 rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-3.5 py-2 text-xs font-bold text-[var(--text-main)] hover:bg-[var(--bg-card)] transition-colors"
               >
-                <span>Plano Pro</span>
-                <span className="rounded bg-[var(--color-primary)] text-white text-[10px] px-1.5 py-0.5 font-extrabold">ATIVO</span>
+                <UserCheck className="h-4 w-4 text-[var(--color-primary)]" />
+                <span>Perfil {currentUser.role}</span>
               </Link>
             </div>
           </div>
@@ -94,7 +104,7 @@ export default function DashboardPage() {
         {/* 2. KPIs Executivos */}
         <ExecutiveKPIs />
 
-        {/* 3. Acessos Rápidos & Atalhos de Ação */}
+        {/* 3. Acessos Rápidos & Módulos */}
         <div>
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-base font-extrabold text-[var(--text-main)] uppercase tracking-wider flex items-center gap-2">
@@ -149,14 +159,14 @@ export default function DashboardPage() {
                 <Bookmark className="h-5 w-5" />
               </div>
               <div>
-                <div className="text-sm font-bold text-[var(--text-main)]">Meus Favoritos</div>
-                <div className="text-xs text-[var(--text-muted)]">Esteira de análise</div>
+                <div className="text-sm font-bold text-[var(--text-main)]">Meus Favoritos ({favorites.length})</div>
+                <div className="text-xs text-[var(--text-muted)]">Salvos no Banco</div>
               </div>
             </Link>
           </div>
         </div>
 
-        {/* 4. Grid Principal: Oportunidades Em Destaque (Esquerda 8) & Alertas/Agenda (Direita 4) */}
+        {/* 4. Grid Principal: Oportunidades Em Destaque (Esquerda) & Resumo da Conta (Direita) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           
           {/* Coluna Esquerda: Oportunidades em Destaque */}
@@ -166,22 +176,87 @@ export default function DashboardPage() {
                 <h2 className="text-lg font-extrabold text-[var(--text-main)] flex items-center gap-2">
                   <TrendingUp className="h-5 w-5 text-emerald-600" /> Oportunidades de Maior ROI Hoje
                 </h2>
-                <p className="text-xs text-[var(--text-muted)]">Imóveis filtrados com Veredito COMPRAR e deságio superior a 40%</p>
+                <p className="text-xs text-[var(--text-muted)]">Imóveis filtrados com Veredito COMPRAR e deságio elevado</p>
               </div>
               <Link
                 href="/oportunidades"
                 className="text-xs font-bold text-[var(--color-primary)] hover:underline flex items-center gap-1"
               >
-                Ver todas (89) <ArrowRight className="h-3.5 w-3.5" />
+                Ver todas ({filteredProperties.length}) <ArrowRight className="h-3.5 w-3.5" />
               </Link>
             </div>
 
             <AssessmentGrid />
           </div>
 
-          {/* Coluna Direita: Alertas do Dia, Buscas Salvas & Status do Perfil */}
+          {/* Coluna Direita: Painel do Investidor & Anotações Salvas */}
           <div className="lg:col-span-4 space-y-6">
             
+            {/* Card de Perfil Ativo */}
+            <div className="rounded-2xl border border-[var(--border-main)] bg-gradient-to-br from-[var(--color-primary)]/10 via-[var(--bg-card)] to-[var(--bg-card)] p-5 shadow-sm space-y-4">
+              <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--color-primary)] text-white text-lg font-bold">
+                  {currentUser.full_name.charAt(0)}
+                </div>
+                <div>
+                  <div className="text-sm font-extrabold text-[var(--text-main)]">{currentUser.full_name}</div>
+                  <div className="text-xs text-[var(--text-muted)]">{currentUser.email}</div>
+                </div>
+              </div>
+
+              <div className="space-y-1.5 pt-3 border-t border-[var(--border-main)] text-xs">
+                <div className="flex justify-between">
+                  <span className="text-[var(--text-muted)]">Papel do Usuário:</span>
+                  <span className="font-bold uppercase text-[var(--color-primary)]">{currentUser.role}</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[var(--text-muted)]">Favoritos Salvos:</span>
+                  <span className="font-bold text-[var(--text-main)]">{favorites.length} imóveis</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[var(--text-muted)]">Anotações no Banco:</span>
+                  <span className="font-bold text-[var(--text-main)]">{Object.keys(propertyNotes).length} pareceres</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Card de Anotações Recentes */}
+            <div className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-5 shadow-sm space-y-4">
+              <div className="flex items-center justify-between border-b border-[var(--border-main)] pb-3">
+                <h3 className="text-sm font-extrabold text-[var(--text-main)] flex items-center gap-2">
+                  <FileText className="h-4 w-4 text-[var(--color-primary)]" /> Anotações do Investidor ({Object.keys(propertyNotes).length})
+                </h3>
+                <Link href="/labels" className="text-xs font-bold text-[var(--color-primary)] hover:underline">
+                  Kanban
+                </Link>
+              </div>
+
+              {Object.keys(propertyNotes).length === 0 ? (
+                <p className="text-xs text-[var(--text-muted)] italic text-center py-4">
+                  Nenhuma anotação registrada ainda. Clique em "Anotações" num card de imóvel para gravar observações.
+                </p>
+              ) : (
+                <div className="space-y-3 max-h-72 overflow-y-auto">
+                  {Object.values(propertyNotes).slice(0, 3).map((note) => (
+                    <div key={note.property_id} className="p-3 rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] text-xs space-y-1.5">
+                      <div className="flex items-center justify-between font-bold text-[var(--text-main)]">
+                        <span>ID #{note.property_id}</span>
+                        <span className="rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)] px-2 py-0.5 text-[9px] uppercase">
+                          {note.kanban_status}
+                        </span>
+                      </div>
+                      <p className="text-[var(--text-muted)] line-clamp-2">{note.note_text || 'Sem texto de observação'}</p>
+                      {note.max_lance && (
+                        <div className="text-[11px] font-extrabold text-emerald-600">
+                          Teto Lance: R$ {note.max_lance.toLocaleString('pt-BR')}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
             {/* Card de Alertas do Dia */}
             <div className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-5 shadow-sm space-y-4">
               <div className="flex items-center justify-between border-b border-[var(--border-main)] pb-3">
@@ -205,73 +280,6 @@ export default function DashboardPage() {
                   <Link href="/oportunidades" className="text-[11px] font-bold text-[var(--color-primary)] hover:underline inline-block pt-1">
                     Ver Oportunidade →
                   </Link>
-                </div>
-
-                <div className="p-3 rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] text-xs space-y-1">
-                  <div className="flex items-center justify-between font-bold text-[var(--text-main)]">
-                    <span>Encerramento Próximo</span>
-                    <span className="text-[10px] text-amber-600 font-bold">24h restantes</span>
-                  </div>
-                  <p className="text-[var(--text-muted)]">
-                    Casa em Taguatinga encerra a 2ª Praça amanhã às 14:00.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Card de Buscas Salvas */}
-            <div className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-5 shadow-sm space-y-4">
-              <div className="flex items-center justify-between border-b border-[var(--border-main)] pb-3">
-                <h3 className="text-sm font-extrabold text-[var(--text-main)] flex items-center gap-2">
-                  <SlidersHorizontal className="h-4 w-4 text-[var(--color-primary)]" /> Buscas Salvas
-                </h3>
-                <Link href="/alertas" className="text-xs font-bold text-[var(--color-primary)] hover:underline">
-                  Gerenciar
-                </Link>
-              </div>
-
-              <div className="space-y-2">
-                <div className="flex items-center justify-between p-2.5 rounded-xl border border-[var(--border-main)] hover:bg-[var(--bg-sub)] transition-colors text-xs">
-                  <div>
-                    <div className="font-bold text-[var(--text-main)]">Casas DF até 350k</div>
-                    <div className="text-[10px] text-[var(--text-muted)]">Frequência: Diária por E-mail</div>
-                  </div>
-                  <span className="rounded-lg bg-emerald-500/10 text-emerald-600 font-bold text-[10px] px-2 py-1">
-                    12 novos
-                  </span>
-                </div>
-
-                <div className="flex items-center justify-between p-2.5 rounded-xl border border-[var(--border-main)] hover:bg-[var(--bg-sub)] transition-colors text-xs">
-                  <div>
-                    <div className="font-bold text-[var(--text-main)]">Venda Direta com FGTS</div>
-                    <div className="text-[10px] text-[var(--text-muted)]">Frequência: Imediata</div>
-                  </div>
-                  <span className="rounded-lg bg-emerald-500/10 text-emerald-600 font-bold text-[10px] px-2 py-1">
-                    5 novos
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            {/* Card de Perfil & Retomar Análises */}
-            <div className="rounded-2xl border border-[var(--border-main)] bg-gradient-to-br from-[var(--color-primary)]/10 via-[var(--bg-card)] to-[var(--bg-card)] p-5 shadow-sm space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--color-primary)] text-white text-lg font-bold">
-                  W
-                </div>
-                <div>
-                  <div className="text-sm font-extrabold text-[var(--text-main)]">Wagner Junior</div>
-                  <div className="text-xs text-[var(--text-muted)]">Plano Investor Pro Active</div>
-                </div>
-              </div>
-              <div className="space-y-1 pt-2 border-t border-[var(--border-main)] text-xs text-[var(--text-muted)]">
-                <div className="flex justify-between">
-                  <span>Análises este mês:</span>
-                  <span className="font-bold text-[var(--text-main)]">42 / ilimitado</span>
-                </div>
-                <div className="flex justify-between">
-                  <span>Alertas ativos:</span>
-                  <span className="font-bold text-[var(--text-main)]">4 configurados</span>
                 </div>
               </div>
             </div>

@@ -1,11 +1,38 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { AppShell } from '@/components/layout/AppShell';
-import { User, CreditCard, ShieldCheck, Bell, Key, Sparkles, CheckCircle2, ArrowRight } from 'lucide-react';
+import { useUser } from '@/context/UserContext';
+import { User, CreditCard, ShieldCheck, Key, Sparkles, CheckCircle2, Save, Users } from 'lucide-react';
 
 export default function ContaPage() {
+  const { currentUser, updateUserProfile, isDbConnected } = useUser();
   const [activeTab, setActiveTab] = useState<'perfil' | 'plano' | 'seguranca' | 'api'>('perfil');
+
+  const [fullName, setFullName] = useState(currentUser.full_name);
+  const [email, setEmail] = useState(currentUser.email);
+  const [phone, setPhone] = useState(currentUser.phone);
+  const [role, setRole] = useState(currentUser.role);
+  const [savedFeedback, setSavedFeedback] = useState(false);
+
+  useEffect(() => {
+    setFullName(currentUser.full_name);
+    setEmail(currentUser.email);
+    setPhone(currentUser.phone);
+    setRole(currentUser.role);
+  }, [currentUser]);
+
+  const handleSaveProfile = async (e: React.FormEvent) => {
+    e.preventDefault();
+    await updateUserProfile({
+      full_name: fullName,
+      email,
+      phone,
+      role,
+    });
+    setSavedFeedback(true);
+    setTimeout(() => setSavedFeedback(false), 3000);
+  };
 
   return (
     <AppShell>
@@ -13,11 +40,16 @@ export default function ContaPage() {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
             <h1 className="text-2xl font-extrabold text-[var(--text-main)] tracking-tight">
-              Minha Conta & Assinatura
+              Minha Conta & Perfil de Investidor
             </h1>
             <p className="text-xs sm:text-sm text-[var(--text-muted)]">
-              Gerencie seus dados pessoais, plano Pro, faturamento e preferências de acesso.
+              Gerencie seus dados pessoais, papel de acesso RBAC e parâmetros da sua conta no PostgreSQL.
             </p>
+          </div>
+
+          <div className="flex items-center gap-2 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-3.5 py-2 text-xs font-bold text-emerald-600">
+            <CheckCircle2 className="h-4 w-4" />
+            <span>DB {isDbConnected ? 'PostgreSQL Conectado' : 'Modo Local'}</span>
           </div>
         </div>
 
@@ -26,7 +58,7 @@ export default function ContaPage() {
           {[
             { id: 'perfil', label: 'Dados de Perfil', icon: User },
             { id: 'plano', label: 'Plano & Faturamento', icon: CreditCard },
-            { id: 'seguranca', label: 'Segurança & Senha', icon: ShieldCheck },
+            { id: 'seguranca', label: 'Segurança & RBAC', icon: ShieldCheck },
             { id: 'api', label: 'Integrações & API', icon: Key },
           ].map((tab) => {
             const Icon = tab.icon;
@@ -48,11 +80,20 @@ export default function ContaPage() {
           })}
         </div>
 
+        {/* Feedback */}
+        {savedFeedback && (
+          <div className="rounded-xl border border-emerald-500/30 bg-emerald-500/10 p-4 text-xs font-bold text-emerald-600 flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4" />
+            <span>Perfil atualizado com sucesso no PostgreSQL e sincronizado na sessão!</span>
+          </div>
+        )}
+
         {/* Conteúdo da Tab */}
         {activeTab === 'perfil' && (
-          <div className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-6 shadow-sm space-y-6 max-w-2xl">
-            <h3 className="text-base font-bold text-[var(--text-main)] border-b border-[var(--border-main)] pb-3">
-              Informações do Usuário
+          <form onSubmit={handleSaveProfile} className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-6 shadow-sm space-y-6 max-w-2xl">
+            <h3 className="text-base font-bold text-[var(--text-main)] border-b border-[var(--border-main)] pb-3 flex items-center justify-between">
+              <span>Informações do Usuário Ativo</span>
+              <span className="text-xs text-[var(--color-primary)] font-semibold">ID: {currentUser.id}</span>
             </h3>
 
             <div className="space-y-4 text-xs">
@@ -60,8 +101,10 @@ export default function ContaPage() {
                 <label className="block uppercase font-bold text-[var(--text-muted)] mb-1">Nome Completo</label>
                 <input
                   type="text"
-                  defaultValue="Wagner Junior"
-                  className="w-full rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-4 py-2.5 text-sm text-[var(--text-main)]"
+                  required
+                  value={fullName}
+                  onChange={(e) => setFullName(e.target.value)}
+                  className="w-full rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-4 py-2.5 text-sm text-[var(--text-main)] font-semibold focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
 
@@ -69,8 +112,10 @@ export default function ContaPage() {
                 <label className="block uppercase font-bold text-[var(--text-muted)] mb-1">E-mail de Acesso</label>
                 <input
                   type="email"
-                  defaultValue="advwagnerjunior@gmail.com"
-                  className="w-full rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-4 py-2.5 text-sm text-[var(--text-main)]"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="w-full rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-4 py-2.5 text-sm text-[var(--text-main)] font-semibold focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
 
@@ -78,16 +123,34 @@ export default function ContaPage() {
                 <label className="block uppercase font-bold text-[var(--text-muted)] mb-1">Telefone / WhatsApp</label>
                 <input
                   type="text"
-                  defaultValue="(61) 99999-8888"
-                  className="w-full rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-4 py-2.5 text-sm text-[var(--text-main)]"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
+                  className="w-full rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-4 py-2.5 text-sm text-[var(--text-main)] font-semibold focus:border-[var(--color-primary)] focus:outline-none"
                 />
               </div>
 
-              <button className="rounded-xl bg-[var(--color-primary)] text-white px-5 py-2.5 font-bold shadow-md hover:bg-[var(--color-primary-hover)] transition-colors">
-                Salvar Alterações
+              <div>
+                <label className="block uppercase font-bold text-[var(--text-muted)] mb-1">Papel no Sistema (RBAC)</label>
+                <select
+                  value={role}
+                  onChange={(e) => setRole(e.target.value as any)}
+                  className="w-full rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)] px-4 py-2.5 text-sm font-bold text-[var(--text-main)]"
+                >
+                  <option value="admin">Administrador Sistema (Acesso Total)</option>
+                  <option value="investor">Investidor Pro (Favoritos & Anotações)</option>
+                  <option value="analyst">Analista Jurídico (Certidões & Diligência)</option>
+                </select>
+              </div>
+
+              <button
+                type="submit"
+                className="flex items-center gap-2 rounded-xl bg-[var(--color-primary)] text-white px-5 py-2.5 text-xs font-bold shadow-md hover:bg-[var(--color-primary-hover)] transition-colors cursor-pointer"
+              >
+                <Save className="h-4 w-4" />
+                <span>Salvar Alterações no Banco</span>
               </button>
             </div>
-          </div>
+          </form>
         )}
 
         {activeTab === 'plano' && (
@@ -110,23 +173,6 @@ export default function ContaPage() {
                 <button className="rounded-xl bg-[var(--color-primary)] text-white px-4 py-2.5 text-xs font-bold shadow-md hover:bg-[var(--color-primary-hover)]">
                   Upgrade para Enterprise
                 </button>
-              </div>
-            </div>
-
-            {/* Histórico de Faturas */}
-            <div className="rounded-2xl border border-[var(--border-main)] bg-[var(--bg-card)] p-6 shadow-sm space-y-4">
-              <h4 className="text-sm font-bold text-[var(--text-main)]">Histórico de Pagamentos</h4>
-              <div className="space-y-2 text-xs">
-                <div className="flex items-center justify-between p-3 rounded-xl border border-[var(--border-main)] bg-[var(--bg-sub)]">
-                  <div>
-                    <div className="font-bold text-[var(--text-main)]">Fatura #INV-2026-07</div>
-                    <div className="text-[10px] text-[var(--text-muted)]">25/07/2026 • Cartão de Crédito **** 4022</div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className="font-extrabold text-emerald-600">R$ 297,00</span>
-                    <button className="text-[var(--color-primary)] hover:underline font-bold">PDF</button>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
