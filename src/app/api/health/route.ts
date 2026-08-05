@@ -1,20 +1,22 @@
 import { NextResponse } from 'next/server';
 import { getDbHealthStatus } from '@/lib/db';
 
-export const dynamic = 'force-dynamic';
-
 export async function GET() {
   const dbHealth = await getDbHealthStatus();
-  
-  const status = {
-    status: dbHealth.primary || dbHealth.secondary ? 'ok' : 'degraded',
-    timestamp: new Date().toISOString(),
-    uptime: process.uptime(),
-    database: dbHealth,
-    environment: process.env.NODE_ENV || 'development',
-  };
+  const isHealthy = dbHealth.primary || dbHealth.secondary;
 
-  return NextResponse.json(status, {
-    status: status.status === 'ok' ? 200 : 503,
-  });
+  return NextResponse.json(
+    {
+      status: isHealthy ? 'ok' : 'degraded',
+      timestamp: new Date().toISOString(),
+      uptime: process.uptime(),
+      database: dbHealth,
+      environment: process.env.NODE_ENV,
+    },
+    { status: 200 }
+  );
+}
+
+export async function HEAD() {
+  return new NextResponse(null, { status: 200 });
 }

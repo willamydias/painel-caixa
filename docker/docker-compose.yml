@@ -27,7 +27,7 @@ services:
       - .env
     logging: *default-logging
     healthcheck:
-      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://127.0.0.1:3050/api/health"]
+      test: ["CMD-SHELL", "wget -q -O - http://127.0.0.1:3050/api/health > /dev/null || exit 1"]
       interval: 15s
       timeout: 5s
       retries: 3
