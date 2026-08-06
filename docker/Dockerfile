@@ -38,7 +38,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 USER nextjs
 EXPOSE 3050
 
-HEALTHCHECK --interval=15s --timeout=5s --retries=3 --start-period=15s \
+HEALTHCHECK --interval=20s --timeout=10s --retries=5 --start-period=40s \
   CMD wget -q -O - http://127.0.0.1:3050/api/health > /dev/null || exit 1
 
 CMD ["node", "server.js"]

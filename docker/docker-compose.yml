@@ -28,10 +28,10 @@ services:
     logging: *default-logging
     healthcheck:
       test: ["CMD-SHELL", "wget -q -O - http://127.0.0.1:3050/api/health > /dev/null || exit 1"]
-      interval: 15s
-      timeout: 5s
-      retries: 3
-      start_period: 15s
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
     environment:
       - PORT=3050
       - HOSTNAME=0.0.0.0
@@ -39,7 +39,7 @@ services:
       # Conexão Primária (Local Docker Supabase Container)
       - DATABASE_URL_PRIMARY=${DATABASE_URL_PRIMARY:-postgresql://postgres:L3il0jus_P4ssW0rd!2026@supabase-db:5432/postgres}
       # Conexão Secundária (Redundância em Nuvem Supabase / Replica)
-      - DATABASE_URL_SECONDARY=${DATABASE_URL_SECONDARY:-postgresql://postgres:L3il0jus_P4ssW0rd!2026@db.qrgkzvmxsrsdtrtqowep.supabase.co:5432/postgres}
+      - DATABASE_URL_SECONDARY=${DATABASE_URL_SECONDARY:-postgresql://postgres.qrgkzvmxsrsdtrtqowep:L3il0jus_P4ssW0rd%212026@aws-1-sa-east-1.pooler.supabase.com:6543/postgres}
       # Integração com API Gateway & Nuvem Supabase
       - NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL:-http://localhost:8000}
       - SUPABASE_INTERNAL_URL=${SUPABASE_INTERNAL_URL:-http://supabase-rest:3000}
